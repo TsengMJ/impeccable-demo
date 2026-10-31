@@ -1,0 +1,55 @@
+{
+  "recordedAt": "2026-10-31T15:13:57.506Z",
+  "records": [
+    {
+      "path": "/",
+      "status": 200,
+      "title": "Impeccable / Test Lab"
+    },
+    {
+      "path": "/guide",
+      "status": 200,
+      "title": "錄影手冊 / Impeccable Test Lab"
+    },
+    {
+      "path": "/cases/wallet",
+      "status": 200,
+      "title": "AEGIS / Impeccable Test Lab"
+    },
+    {
+      "path": "/demos/lumina/",
+      "status": 200,
+      "title": "Lumina — Intelligent workflows for modern product teams"
+    },
+    {
+      "path": "/baselines/lumina/index.html",
+      "status": 200,
+      "title": "Lumina — Intelligent workflows for modern product teams"
+    },
+    {
+      "path": "/demos/lumina-classic/",
+      "status": 200,
+      "title": "Lumina — The future of intelligent workflows"
+    },
+    {
+      "path": "/baselines/lumina-classic/index.html",
+      "status": 200,
+      "title": "Lumina — The future of intelligent workflows"
+    },
+    {
+      "path": "/experiments/wallet/",
+      "status": 200,
+      "title": "AEGIS — 待生成 / Test Lab"
+    },
+    {
+      "path": "/experiments/tea/",
+      "status": 200,
+      "title": "山間製茶 — 待生成 / Test Lab"
+    },
+    {
+      "path": "/experiments/festival/",
+      "status": 200,
+      "title": "OFFGRID — 待生成 / Test Lab"
+    }
+  ]
+}

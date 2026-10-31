@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.reference/
+.DS_Store
+.agents/skills/impeccable/scripts/bin/
+.impeccable/cache/
+recordings/runs/
+recordings/captures/

@@ -1,0 +1,37 @@
+{
+  "recordedAt": "2026-10-31T15:13:06.130Z",
+  "base": "http://127.0.0.1:5173",
+  "browser": "156.0.8078.4",
+  "checks": [
+    "Gallery filters: 5 / 2 / 3",
+    "lumina: direct case route, prompt match, clipboard, iteration command, preview/mode",
+    "lumina: direct standalone route",
+    "lumina-classic: direct case route, prompt match, clipboard, iteration command, preview/mode",
+    "lumina-classic: direct standalone route",
+    "wallet: direct case route, prompt match, clipboard, iteration command, preview/mode",
+    "Prompt download matches exact clipboard text",
+    "wallet: direct standalone route",
+    "tea: direct case route, prompt match, clipboard, iteration command, preview/mode",
+    "tea: direct standalone route",
+    "festival: direct case route, prompt match, clipboard, iteration command, preview/mode",
+    "festival: direct standalone route",
+    "390px: harness and placeholder routes have no horizontal overflow",
+    "360px: harness and placeholder routes have no horizontal overflow",
+    "Keyboard entry: skip link is the first focus target",
+    "Unknown route shows an explicit not-found state",
+    "No browser pageerror during smoke checks"
+  ],
+  "officialIssues": [
+    {
+      "case": "lumina",
+      "mobileOverflow": true,
+      "action": "Retained upstream HTML unchanged; this is a test target, not a harness regression."
+    },
+    {
+      "case": "lumina-classic",
+      "mobileOverflow": true,
+      "action": "Retained upstream HTML unchanged; this is a test target, not a harness regression."
+    }
+  ],
+  "errors": []
+}

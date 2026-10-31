@@ -1,0 +1,33 @@
+{
+  "recordedAt": "2026-10-31T15:15:06.355Z",
+  "records": [
+    {
+      "path": "recordings/captures/2026-10-31T15-12-56-985Z-lumina-baseline-desktop-8bc5be8d/clip.webm",
+      "bytes": 2456283,
+      "width": 1440,
+      "height": 900,
+      "readyState": 4
+    },
+    {
+      "path": "recordings/captures/2026-10-31T15-12-56-985Z-lumina-classic-baseline-desktop-302d705d/clip.webm",
+      "bytes": 2642304,
+      "width": 1440,
+      "height": 900,
+      "readyState": 4
+    },
+    {
+      "path": "recordings/captures/2026-10-31T15-13-55-535Z-lumina-classic-baseline-mobile-e189cf7a/clip.webm",
+      "bytes": 1171750,
+      "width": 390,
+      "height": 844,
+      "readyState": 4
+    },
+    {
+      "path": "recordings/captures/2026-10-31T15-13-55-555Z-lumina-baseline-mobile-5d785c16/clip.webm",
+      "bytes": 1301018,
+      "width": 390,
+      "height": 844,
+      "readyState": 3
+    }
+  ]
+}

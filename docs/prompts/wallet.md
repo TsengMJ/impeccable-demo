@@ -1,0 +1,21 @@
+# W01 — AEGIS / Web3 Agentic Wallet
+
+請在這個現有 Vite 專案製作 AEGIS 的單頁 Landing Page，直接編輯 experiments/wallet/index.html，路徑 /experiments/wallet/。這是一個虛構品牌的前端概念測試，所有畫面與交易都是模擬資料。
+
+產品：讓 AI Agent 在使用者定義的權限內執行鏈上任務的錢包。核心承諾是「Delegate the task. Keep the control.」，不是投資報酬。目標受眾是已理解加密錢包、正在研究 Agent 自動化的開發者與進階使用者。成功標準：訪客在 10 秒內明白 Agent 能做什麼、不能做什麼，以及自己如何停止它。主要文案使用英文。
+
+必備內容：
+1. Hero：產品名、清楚的價值主張、主 CTA「Try the sandbox」、次 CTA「See how permissions work」。不要把抽象 Web3 詞彙當作產品說明。
+2. 可互動的權限演示：每日支出上限預設 100 USDC；可選擇 Swap 或 Transfer；允許的協議固定為 DemoSwap；權限期限 24 小時；使用者可隨時 Revoke。畫面需明確標示「Simulation · No real funds」。
+3. 三個任務案例：在預設限額內兌換代幣、支付固定服務費、達到使用者自訂條件時通知。最後一項只通知、不自動交易。
+4. 一段可讀的模擬活動紀錄：20 USDC swap allowed、150 USDC transfer blocked、permission revoked；把執行理由與權限規則對上。
+5. 安全邊界：最小權限、交易前模擬、撤銷授權。明講這是概念介面，沒有接上真實錢包、合約或安全審計。
+6. FAQ 至少三題：Agent 能移走所有資產嗎？如何停止 Agent？是否需要連接真實錢包？最後一題回答不需要。
+
+互動：Try the sandbox 滾到演示區；使用者修改上限後，20 USDC 任務在上限足夠時顯示允許，150 USDC 任務只有在上限足夠且選擇 Transfer 時允許；Revoke 後所有任務顯示 blocked，並可重新啟用模擬授權。FAQ 可展開與收合。狀態除了顏色也要有文字。不要連 RPC、不要要求助記詞、不要發送真實交易。
+
+設計開放給你決定，讓「授權與控制的關係」成為視覺重點。避免以裝飾性金融圖表、虛構審計標章、合作品牌或收益率製造信任。希望成品有具體產品感，不能只是一頁功能卡片。
+
+實作限制：保持原生 HTML/CSS/JS，只修改 experiments/wallet/ 下的檔案；不要改工作台、其他頁面、官方 baseline 或 package.json。可使用語意化 HTML、CSS、SVG 幾何圖與本地圖片，不引入 UI 框架。所有素材須記錄來源或完整生成 Prompt。桌面 1440×900、手機 390×844 和 360×800 可用，200% 縮放不遮蔽內容；鍵盤可完成互動；支援 prefers-reduced-motion。不要使用假成功通知，狀態應與實際模擬一致。
+
+交付：完成頁面、實際執行 npm run build，檢查桌面與手機渲染。列出採用的視覺決策、檢查結果、已知問題、所有額外 Prompt、是否人工修補。保留失敗與限制，不用「完成」取代未驗證的結論。
