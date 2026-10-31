@@ -28,17 +28,19 @@ try {
     await page.locator('#prompt-text').waitFor();
     assert((await page.title()).includes(entry.label.split(' ')[0]));
     const raw = await readFile(entry.prompt, 'utf8');
-    assert.equal(await page.locator('#prompt-text').textContent(), formatPrompt(raw));
+    const initialMode = entry.baseline ? 'skill' : 'plain';
+    assert.equal(await page.locator('#prompt-text').textContent(), formatPrompt(raw, initialMode));
     await page.locator('#copy-prompt').click();
-    await page.waitForFunction(async text => (await navigator.clipboard.readText()) === text, formatPrompt(raw));
-    assert.equal(await page.evaluate(() => navigator.clipboard.readText()), formatPrompt(raw));
+    await page.waitForFunction(async text => (await navigator.clipboard.readText()) === text, formatPrompt(raw, initialMode));
+    assert.equal(await page.evaluate(() => navigator.clipboard.readText()), formatPrompt(raw, initialMode));
     await page.locator('[data-command="audit"]').click();
     await page.waitForFunction(async text => (await navigator.clipboard.readText()) === text, followupPrompt(entry, key, 'audit'));
     assert.equal(await page.evaluate(() => navigator.clipboard.readText()), followupPrompt(entry, key, 'audit'));
     if (!entry.baseline) {
+      await page.locator('#prompt-mode').selectOption('skill');
+      assert.equal(await page.locator('#prompt-text').textContent(), formatPrompt(raw, 'skill'));
       await page.locator('#prompt-mode').selectOption('plain');
       assert.equal(await page.locator('#prompt-text').textContent(), formatPrompt(raw, 'plain'));
-      await page.locator('#prompt-mode').selectOption('skill');
     } else {
       await page.locator('[data-width="390"]').click();
       assert.equal(await page.locator('.demo-frame').evaluate(frame => frame.style.width), '390px');
@@ -54,7 +56,7 @@ try {
       const downloadPromise = page.waitForEvent('download');
       await page.locator('#download-prompt').click();
       const download = await downloadPromise;
-      assert.equal(await readFile(await download.path(), 'utf8'), formatPrompt(raw));
+      assert.equal(await readFile(await download.path(), 'utf8'), formatPrompt(raw, 'plain'));
       checks.push('Prompt download matches exact clipboard text');
       await page.screenshot({ path: `${evidence}/wallet-brief-desktop.png`, fullPage: true });
     }
@@ -64,7 +66,7 @@ try {
       assert((await page.title()).includes('Lumina'));
       await page.setViewportSize({ width: 390, height: 844 });
       const overflow = await page.evaluate(() => document.documentElement.scrollWidth > innerWidth);
-      officialIssues.push({ case: key, mobileOverflow: overflow, action: 'Retained upstream HTML unchanged; this is a test target, not a harness regression.' });
+      officialIssues.push({ case: key, mobileOverflow: overflow, action: 'Working copy after first skill-guided modification; frozen upstream baseline remains separate.' });
       await page.setViewportSize({ width: 1440, height: 900 });
     } else assert((await page.title()).includes('待生成'));
     checks.push(`${key}: direct standalone route`);

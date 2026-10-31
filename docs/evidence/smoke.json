@@ -1,5 +1,5 @@
 {
-  "recordedAt": "2026-10-31T15:13:06.130Z",
+  "recordedAt": "2026-10-31T15:44:32.724Z",
   "base": "http://127.0.0.1:5173",
   "browser": "156.0.8078.4",
   "checks": [
@@ -24,13 +24,13 @@
   "officialIssues": [
     {
       "case": "lumina",
-      "mobileOverflow": true,
-      "action": "Retained upstream HTML unchanged; this is a test target, not a harness regression."
+      "mobileOverflow": false,
+      "action": "Working copy after first skill-guided modification; frozen upstream baseline remains separate."
     },
     {
       "case": "lumina-classic",
-      "mobileOverflow": true,
-      "action": "Retained upstream HTML unchanged; this is a test target, not a harness regression."
+      "mobileOverflow": false,
+      "action": "Working copy after first skill-guided modification; frozen upstream baseline remains separate."
     }
   ],
   "errors": []

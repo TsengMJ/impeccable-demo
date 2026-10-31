@@ -1,0 +1,70 @@
+{
+  "checkedAt": "2026-10-31T15:31:31.566Z",
+  "browser": "156.0.8078.4",
+  "preservedCopyAndLinks": true,
+  "results": [
+    {
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "navWidth": 1180,
+      "mainCount": 1,
+      "linkOffscreen": []
+    },
+    {
+      "viewport": 1024,
+      "scrollWidth": 1024,
+      "navWidth": 1024,
+      "mainCount": 1,
+      "linkOffscreen": []
+    },
+    {
+      "viewport": 768,
+      "scrollWidth": 768,
+      "navWidth": 768,
+      "mainCount": 1,
+      "linkOffscreen": []
+    },
+    {
+      "viewport": 720,
+      "scrollWidth": 720,
+      "navWidth": 720,
+      "mainCount": 1,
+      "linkOffscreen": []
+    },
+    {
+      "viewport": 600,
+      "scrollWidth": 600,
+      "navWidth": 600,
+      "mainCount": 1,
+      "linkOffscreen": []
+    },
+    {
+      "viewport": 390,
+      "scrollWidth": 390,
+      "navWidth": 390,
+      "mainCount": 1,
+      "linkOffscreen": []
+    },
+    {
+      "viewport": 360,
+      "scrollWidth": 360,
+      "navWidth": 360,
+      "mainCount": 1,
+      "linkOffscreen": []
+    },
+    {
+      "viewport": 320,
+      "scrollWidth": 320,
+      "navWidth": 320,
+      "mainCount": 1,
+      "linkOffscreen": []
+    }
+  ],
+  "firstFocus": {
+    "tag": "A",
+    "text": "Product",
+    "outline": "solid",
+    "width": 48
+  },
+  "pageErrors": []
+}

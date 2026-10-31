@@ -2,11 +2,24 @@
 
 ## 素材身份先說清楚
 
-- 本次是準備階段：2 份官方起始頁、3 份新題目、工作台與留證工具。
+- 目前已完成 2 份官方起始頁的第一輪修改與前後素材；3 份新題目、工作台與留證工具已準備，三題的頁面仍待生成。
 - 工作台、題目封面和預留頁都不是用 Impeccable 完整流程生成的測試結果。
 - 官方 Lumina 主版本與 classic 是兩個起始範例，不能剪成同一頁的改善前後。
 - 官方原始生成 Prompt 未公開；本地 D01/D02 是我們新擬的修改 Prompt。
-- 本次沒有執行設計指令。engine-probe 只證明引擎能啟動。
+- D01／D02 已讀取 Impeccable skill 與 playbook，執行 polish／distill 類型的修改；沒有在獨立新對話貼上 slash 指令。完整執行限制見 `docs/evidence/OFFICIAL-RESULTS.md`。先前的 engine-probe 只證明引擎能啟動。
+
+## 必須遵守的前後比較（使用者後續確認）
+
+三個題目皆已接受，但頁面尚未實作。後續每題必須依下列順序執行，不能只做有 skill 的漂亮結果：
+
+1. **A／未使用 Impeccable**：在乾淨的新對話與隔離專案，用相同 Brief 生成完整可操作頁面。檢查本地、全域、外掛與 hooks 都沒有載入 Impeccable，也不能帶入本對話已讀到的 skill 規則。只移除 `$impeccable` 前綴不算隔離。若無法確認隔離，不得標成無 skill 對照。
+2. **凍結 A**：保存實際 Prompt、模型與推理設定、素材、工具條件、程式碼、桌面／手機截圖與錄影。現在的預留頁不算 A。
+3. **B／使用 Impeccable 改善**：複製 A，在副本套用一個明確的 skill 指令。保留產品需求與模型設定，記錄額外指令、skill 問答、圖片生成與人工修補；不得覆蓋 A。
+4. **並排交付**：將 A、B 匯入同一個前端專案的兩個獨立路徑，擴充現有案例與錄影 registry，驗證兩份都可開啟；以相同尺寸、捲動節奏和互動情境錄製前後素材。兩份成果與紀錄齊全才算該題完成。
+
+這是「同一頁使用 skill 改善前後」的比較；B 多了一輪修改，不能把差異全部歸因於 skill。若另外測「有／無 skill 從零生成」，另設 C 組，使用同樣的空白起點與 Brief，不混作 A→B 的改善成果。
+
+AEGIS 的隔離目錄已建立（見 `docs/evidence/CONTROL-WALLET-SETUP.md`），仍須在新任務確認實際隔離；三題都尚未生成 A/B。工作台預設展示無 skill 的 A Prompt；skill Prompt 只供另開的從零生成 C 組使用。A 未完成與凍結前不得直接執行 B。現有 snapshot/capture 工具會保存單一路徑的狀態，尚不會自動建立或隔離 A/B 環境，正式開始前必須補上兩個成果路徑與對應錄影支援。
 
 ## 三個題目為什麼這樣選
 
@@ -20,9 +33,9 @@
 
 ## 建議測試順序與完整呼叫
 
-1. D01：工作台複製 `docs/prompts/lumina.md`，首行 `$impeccable polish demos/lumina/index.html`。整份貼上，不能只錄一行而實際傳入另一份需求。
-2. D02：複製 `docs/prompts/lumina-classic.md`，首行 `$impeccable distill demos/lumina-classic/index.html`。
-3. W01 / T01 / F01：工作台的「使用 Impeccable」會把 `$impeccable` 加在完整 Brief 前；不刪改其他內容。`scripts/prompt.mjs` 是共用的組合規則，snapshot 與畫面相同。
+1. D01：完整要求存於 `docs/prompts/lumina.md`，首行 `$impeccable polish demos/lumina/index.html`。本輪已由代理讀取本地 skill 與 polish playbook 執行；沒有獨立對話貼上整份 Prompt。不可在影片中宣稱錄下了 slash 指令。
+2. D02：完整要求存於 `docs/prompts/lumina-classic.md`，首行 `$impeccable distill demos/lumina-classic/index.html`。同樣是在此對話讀取 skill 與 distill playbook 後執行。
+3. W01 / T01 / F01：先依上節完成無 skill 的 A 並凍結，再在 A 的副本執行選定 skill 指令得到 B。工作台「使用 Impeccable」的完整生成 Prompt 保留供獨立 C 組使用，不能跳過 A。`scripts/prompt.mjs` 是共用的組合規則，snapshot 與畫面相同。
 4. 後續單輪：audit / critique 先評估，adapt 測手機，bolder 測變化。每一輪都從已記錄快照開始，不要一次貼三個修改指令。
 
 工作台後續按鈕複製的**完整格式**如下（由 `followupPrompt` 統一產生）：
@@ -36,6 +49,8 @@ $impeccable <command> <directory>/index.html
 命令不限於以上；自訂指令先存成 UTF-8 `.txt`，後續記錄用 `--prompt` 指向該檔。不要覆蓋上一輪 Prompt。
 
 ## 每輪實際操作
+
+以下是本專案匯入成果後的單輪快照／錄影工具範例，不能在 A 尚未生成時把主專案的 wallet 預留頁截成無 skill 成果；必須先滿足上方前後比較流程。階段名稱與 mode 應如實標記，例如 `a-no-skill` 配 `--mode plain`、`b-polish` 配該輪的完整 `--prompt`。
 
 終端機 A：
 
