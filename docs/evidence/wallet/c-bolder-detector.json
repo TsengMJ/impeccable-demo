@@ -1,0 +1,34 @@
+[
+  {
+    "antipattern": "wide-tracking",
+    "name": "Wide letter spacing on body text",
+    "description": "Letter spacing above 0.05em on body text disrupts natural character groupings and slows reading. Reserve wide tracking for short uppercase labels only.",
+    "severity": "warning",
+    "category": "quality",
+    "file": "/Users/tsengmingchun/Documents/LAB/impeccable/experiments/wallet/c/index.html",
+    "line": 0,
+    "snippet": "letter-spacing: 0.06em on body text"
+  },
+  {
+    "antipattern": "codex-grid-background",
+    "name": "Decorative grid-line background",
+    "description": "A decorative grid or line-field background drawn with hairline linear-gradient layers tiled by a fixed pixel cell is a recurring generated-UI signature. Reserve grid overlays for actual canvas, map, blueprint, or measurement surfaces; elsewhere use product structure or a plain surface.",
+    "severity": "advisory",
+    "category": "slop",
+    "file": "/Users/tsengmingchun/Documents/LAB/impeccable/experiments/wallet/c/index.html",
+    "line": 0,
+    "snippet": "two-axis grid-line gradient background",
+    "advisory": true
+  },
+  {
+    "antipattern": "codex-grid-background",
+    "name": "Decorative grid-line background",
+    "description": "A decorative grid or line-field background drawn with hairline linear-gradient layers tiled by a fixed pixel cell is a recurring generated-UI signature. Reserve grid overlays for actual canvas, map, blueprint, or measurement surfaces; elsewhere use product structure or a plain surface.",
+    "severity": "advisory",
+    "category": "slop",
+    "file": "/Users/tsengmingchun/Documents/LAB/impeccable/experiments/wallet/c/styles.css",
+    "line": 190,
+    "snippet": "two-axis grid-line gradient background",
+    "advisory": true
+  }
+]

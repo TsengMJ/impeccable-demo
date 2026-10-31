@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AEGIS — Delegate the task. Keep the control.</title>
+  <meta name="description" content="AEGIS lets an AI agent run on-chain tasks inside limits you define. You set the ceiling. You can revoke anytime.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#sandbox">Skip to permission sandbox</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="#top" aria-label="AEGIS home">
+        <svg class="brand__mark" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">
+          <rect x="2" y="2" width="24" height="24" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M8 18V10l6 4 6-4v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand__name">AEGIS</span>
+      </a>
+      <nav class="site-nav" aria-label="Page">
+        <a href="#sandbox">Sandbox</a>
+        <a href="#tasks">Tasks</a>
+        <a href="#boundaries">Boundaries</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__atmosphere" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <svg class="hero__gate" viewBox="0 0 720 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Authorization envelope: outer frame = your control, inner corridor = agent path -->
+          <rect class="gate-frame" x="48" y="40" width="624" height="440" rx="4" stroke="currentColor" stroke-width="1.25" opacity="0.35"/>
+          <rect class="gate-inner" x="160" y="110" width="400" height="300" rx="2" stroke="currentColor" stroke-width="1.5" opacity="0.55"/>
+          <path class="gate-rail" d="M160 260 H560" stroke="currentColor" stroke-width="1" stroke-dasharray="6 8" opacity="0.4"/>
+          <circle class="gate-node gate-node--start" cx="160" cy="260" r="7" fill="var(--ink)" stroke="var(--teal)" stroke-width="2"/>
+          <circle class="gate-node gate-node--end" cx="560" cy="260" r="7" fill="var(--surface)" stroke="var(--teal)" stroke-width="2"/>
+          <!-- Agent token travels YOU → LIMIT → CHAIN (motion thesis) -->
+          <circle class="gate-agent" cx="160" cy="260" r="5" fill="var(--teal)" opacity="0"/>
+          <rect class="gate-limit" x="360" y="220" width="80" height="80" rx="2" stroke="var(--teal)" stroke-width="2" fill="color-mix(in srgb, var(--teal) 12%, transparent)"/>
+          <text x="400" y="266" text-anchor="middle" fill="var(--teal)" font-family="IBM Plex Mono, monospace" font-size="11" font-weight="500">LIMIT</text>
+          <text x="160" y="246" text-anchor="middle" fill="var(--muted)" font-family="IBM Plex Mono, monospace" font-size="10">YOU</text>
+          <text x="560" y="246" text-anchor="middle" fill="var(--muted)" font-family="IBM Plex Mono, monospace" font-size="10">CHAIN</text>
+          <text x="260" y="248" fill="var(--muted)" font-family="IBM Plex Mono, monospace" font-size="10" opacity="0.8">AGENT PATH</text>
+        </svg>
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__brand">AEGIS</p>
+        <h1 id="hero-title" class="hero__title">Delegate the task.<br>Keep the control.</h1>
+        <p class="hero__lede">
+          An AI agent can swap, transfer, or watch conditions only inside the spend limit,
+          protocol, and time window you authorize. Outside that envelope, nothing moves.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#sandbox" id="cta-sandbox">Try the sandbox</a>
+          <a class="btn btn--ghost" href="#permissions-explainer" id="cta-permissions">See how permissions work</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--permissions" id="permissions-explainer" aria-labelledby="perm-title">
+      <div class="section__inner narrow">
+        <h2 id="perm-title">The agent acts. You draw the envelope.</h2>
+        <p class="section__lede">
+          AEGIS does not hand over your wallet. You grant a narrow, revocable mandate:
+          how much, what action, which protocol, and for how long. The agent cannot exceed it.
+        </p>
+        <ol class="perm-steps">
+          <li>
+            <span class="perm-steps__n">01</span>
+            <div>
+              <strong>Set the ceiling</strong>
+              <p>Daily spend limit and allowed action (swap or transfer).</p>
+            </div>
+          </li>
+          <li>
+            <span class="perm-steps__n">02</span>
+            <div>
+              <strong>Bound the path</strong>
+              <p>Protocol and duration lock where and when the agent may act.</p>
+            </div>
+          </li>
+          <li>
+            <span class="perm-steps__n">03</span>
+            <div>
+              <strong>Revoke anytime</strong>
+              <p>One control stops every pending and future action under that grant.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--sandbox" id="sandbox" aria-labelledby="sandbox-title">
+      <div class="section__inner">
+        <div class="sandbox-head">
+          <div>
+            <h2 id="sandbox-title">Permission sandbox</h2>
+            <p class="section__lede">
+              Adjust the mandate below. Task outcomes and the activity log update from the same rules:
+              no RPC, no seed phrase, no real funds.
+            </p>
+          </div>
+          <p class="sim-badge" role="status">Simulation · No real funds</p>
+        </div>
+
+        <div class="sandbox-layout">
+          <form class="mandate" id="mandate-form" aria-labelledby="mandate-heading">
+            <h3 id="mandate-heading" class="panel-title">Active mandate</h3>
+
+            <div class="field">
+              <label for="daily-limit">Daily spend limit (USDC)</label>
+              <div class="field__row">
+                <input
+                  type="number"
+                  id="daily-limit"
+                  name="dailyLimit"
+                  min="0"
+                  max="10000"
+                  step="1"
+                  value="100"
+                  inputmode="numeric"
+                  aria-describedby="limit-hint"
+                >
+                <span class="field__suffix" aria-hidden="true">USDC</span>
+              </div>
+              <p id="limit-hint" class="field__hint">Default 100. Tasks compare against this ceiling.</p>
+            </div>
+
+            <fieldset class="field field--segment">
+              <legend>Allowed action</legend>
+              <div class="segment">
+                <label class="segment__opt">
+                  <input type="radio" name="action" value="swap" checked>
+                  <span>Swap</span>
+                </label>
+                <label class="segment__opt">
+                  <input type="radio" name="action" value="transfer">
+                  <span>Transfer</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label for="protocol">Allowed protocol</label>
+              <input type="text" id="protocol" name="protocol" value="DemoSwap" readonly aria-readonly="true">
+              <p class="field__hint">Fixed for this simulation.</p>
+            </div>
+
+            <div class="field">
+              <label for="duration">Permission window</label>
+              <input type="text" id="duration" name="duration" value="24 hours" readonly aria-readonly="true">
+            </div>
+
+            <div class="mandate__status" id="mandate-status" role="status" aria-live="polite">
+              <span class="status-dot status-dot--live" aria-hidden="true"></span>
+              <span id="mandate-status-text">Authorization active — agent may act inside this envelope.</span>
+            </div>
+
+            <div class="mandate__actions">
+              <button type="button" class="btn btn--danger" id="btn-revoke">Revoke authorization</button>
+              <button type="button" class="btn btn--ghost" id="btn-reenable" hidden>Re-enable simulation grant</button>
+            </div>
+          </form>
+
+          <div class="sandbox-side">
+            <div class="task-panel" id="tasks" aria-labelledby="tasks-title">
+              <h3 id="tasks-title" class="panel-title">Task cases</h3>
+              <ul class="task-list" id="task-list">
+                <li class="task" data-task="swap20">
+                  <div class="task__meta">
+                    <span class="task__label">Case 01 · Swap</span>
+                    <span class="task__status" data-status>—</span>
+                  </div>
+                  <p class="task__title">Exchange tokens within the daily limit</p>
+                  <p class="task__detail">Agent requests a <strong>20 USDC</strong> swap on DemoSwap.</p>
+                  <p class="task__reason" data-reason></p>
+                </li>
+                <li class="task" data-task="transfer150">
+                  <div class="task__meta">
+                    <span class="task__label">Case 02 · Transfer</span>
+                    <span class="task__status" data-status>—</span>
+                  </div>
+                  <p class="task__title">Pay a fixed service fee</p>
+                  <p class="task__detail">Agent requests a <strong>150 USDC</strong> transfer for a service fee.</p>
+                  <p class="task__reason" data-reason></p>
+                </li>
+                <li class="task" data-task="notify">
+                  <div class="task__meta">
+                    <span class="task__label">Case 03 · Watch</span>
+                    <span class="task__status" data-status>—</span>
+                  </div>
+                  <p class="task__title">Notify when your condition is met</p>
+                  <p class="task__detail">Agent only notifies; it does not auto-trade when the condition fires.</p>
+                  <p class="task__reason" data-reason></p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="log-panel" aria-labelledby="log-title">
+              <h3 id="log-title" class="panel-title">Activity log</h3>
+              <p class="log-panel__intro">
+                Three scenarios from the current mandate: in-limit swap, over-limit transfer, and revoke.
+              </p>
+              <ol class="activity-log" id="activity-log" aria-live="polite"></ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--boundaries" id="boundaries" aria-labelledby="boundaries-title">
+      <div class="section__inner">
+        <h2 id="boundaries-title">Control is the product, not a footnote.</h2>
+        <p class="section__lede wide">
+          This page is a concept interface. It is not connected to a real wallet, smart contract,
+          or security audit. The rules below describe the intended product model.
+        </p>
+        <ul class="boundary-list">
+          <li>
+            <h3>Least privilege by default</h3>
+            <p>The agent receives only the action, protocol, amount, and window you set — nothing broader.</p>
+          </li>
+          <li>
+            <h3>Simulate before send</h3>
+            <p>Intended flow checks each request against your mandate before any on-chain step would run.</p>
+          </li>
+          <li>
+            <h3>Revoke stops everything</h3>
+            <p>Withdrawing authorization blocks pending and future actions under that grant immediately.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--faq" id="faq" aria-labelledby="faq-title">
+      <div class="section__inner narrow">
+        <h2 id="faq-title">Straight answers</h2>
+
+        <div class="faq" id="faq-list">
+          <div class="faq__item">
+            <h3>
+              <button
+                type="button"
+                class="faq__trigger"
+                id="faq-btn-1"
+                aria-expanded="false"
+                aria-controls="faq-panel-1"
+              >
+                <span>Can the agent move all of my assets?</span>
+                <span class="faq__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq__panel" id="faq-panel-1" role="region" aria-labelledby="faq-btn-1" hidden>
+              <p>
+                No. Under the AEGIS model the agent can only spend inside the daily limit, action type,
+                protocol, and time window you authorized. Requests outside that envelope are blocked.
+                This demo does not access any wallet.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <h3>
+              <button
+                type="button"
+                class="faq__trigger"
+                id="faq-btn-2"
+                aria-expanded="false"
+                aria-controls="faq-panel-2"
+              >
+                <span>How do I stop the agent?</span>
+                <span class="faq__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq__panel" id="faq-panel-2" role="region" aria-labelledby="faq-btn-2" hidden>
+              <p>
+                Revoke the authorization. In this sandbox, use <strong>Revoke authorization</strong>.
+                Every task then shows blocked until you re-enable the simulated grant.
+                In a real product, revoke would invalidate the on-chain or session mandate immediately.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <h3>
+              <button
+                type="button"
+                class="faq__trigger"
+                id="faq-btn-3"
+                aria-expanded="false"
+                aria-controls="faq-panel-3"
+              >
+                <span>Do I need to connect a real wallet?</span>
+                <span class="faq__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq__panel" id="faq-panel-3" role="region" aria-labelledby="faq-btn-3" hidden>
+              <p>
+                No. This page is a front-end simulation only. There is no wallet connection,
+                no RPC, no seed phrase prompt, and no real transactions.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <h3>
+              <button
+                type="button"
+                class="faq__trigger"
+                id="faq-btn-4"
+                aria-expanded="false"
+                aria-controls="faq-panel-4"
+              >
+                <span>What happens if a request exceeds my limit?</span>
+                <span class="faq__icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq__panel" id="faq-panel-4" role="region" aria-labelledby="faq-btn-4" hidden>
+              <p>
+                It is blocked and recorded in the activity log with the rule that failed
+                (for example, amount above the daily ceiling, or an action type you did not allow).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p><strong>AEGIS</strong> · Concept UI · Simulation only</p>
+      <p>No real wallet, contracts, or funds are involved on this page.</p>
+    </div>
+  </footer>
+
+  <script src="./app.js" type="module"></script>
+</body>
+</html>

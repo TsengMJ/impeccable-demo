@@ -1,0 +1,3 @@
+$impeccable bolder experiments/festival/c/index.html
+
+只處理 /experiments/festival/c/，以該目錄內現有 B 衍生頁為起點做 refinement。不得修改 experiments/festival/a/ 或 experiments/festival/b/ 或其他變體。遵守 docs/prompts 對應產品事實（官方頁則保留原有文案與連結）。先記錄此完整 Prompt；回報檢查證據與未解決問題。

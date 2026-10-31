@@ -1,0 +1,3 @@
+$impeccable distill demos/lumina/d/index.html
+
+只處理 /demos/lumina/d/，以該目錄內現有 B 衍生頁為起點做 refinement。不得修改 demos/lumina/a/ 或 demos/lumina/b/ 或其他變體。遵守 docs/prompts 對應產品事實（官方頁則保留原有文案與連結）。先記錄此完整 Prompt；回報檢查證據與未解決問題。

@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OFFGRID 離線聲場｜虛構活動・設計測試</title>
+    <meta
+      name="description"
+      content="OFFGRID 離線聲場——虛構的台北實驗電子音樂與視覺藝術活動。把訊號關掉，把感官打開。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Noto+Sans+TC:wght@400;500;700&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">跳到主要內容</a>
+
+    <div class="site-banner" role="status">
+      <strong>虛構活動・設計測試</strong>
+      <span>所有演出者、場地與票種均為展示設定，不開放實際購票。</span>
+    </div>
+
+    <header class="hero" id="top">
+      <div class="hero__main">
+        <div class="brand-lockup">
+          <p class="brand" aria-label="OFFGRID 離線聲場">
+            OFFGRID
+            <span>離線聲場</span>
+          </p>
+        </div>
+
+        <p class="claim">把訊號關掉，把感官打開。</p>
+
+        <div>
+          <dl class="hero__meta">
+            <dt>日期</dt>
+            <dd>2027.05.22　14:00–22:00</dd>
+            <dt>場地</dt>
+            <dd>台北・聲場倉庫（虛構場地，無實際地址）</dd>
+          </dl>
+          <div class="cta-row">
+            <a class="btn" href="#tickets">查看票種</a>
+            <a class="btn btn--ghost" href="#lineup-section">探索陣容</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__plane" aria-hidden="true">
+        <div class="hero-mark">
+          <div>
+            <strong>22</strong>
+            MAY / 2027
+            <br />
+            SIGNAL × NOISE
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section" id="lineup-section" aria-labelledby="lineup-title">
+        <div class="wrap">
+          <div class="section__head">
+            <div>
+              <p class="section__eyebrow">Lineup</p>
+              <h2 class="section__title" id="lineup-title">陣容</h2>
+              <p class="section__lede">
+                兩個舞台、六組虛構演出。點擊演出者展開介紹；舞台以標籤文字標示，不只靠顏色區分。
+              </p>
+            </div>
+          </div>
+          <div class="lineup-grid" id="lineup"></div>
+        </div>
+      </section>
+
+      <section class="section" id="schedule-section" aria-labelledby="schedule-title">
+        <div class="wrap">
+          <div class="section__head">
+            <div>
+              <p class="section__eyebrow">Timetable</p>
+              <h2 class="section__title" id="schedule-title">時刻表</h2>
+              <p class="section__lede">依時間排序。可用篩選切換全部／SIGNAL／NOISE。</p>
+            </div>
+            <div
+              class="filters"
+              id="stage-filters"
+              role="group"
+              aria-label="依舞台篩選時刻表"
+            >
+              <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">
+                全部
+              </button>
+              <button class="filter-btn" type="button" data-filter="SIGNAL" aria-pressed="false">
+                SIGNAL
+              </button>
+              <button class="filter-btn" type="button" data-filter="NOISE" aria-pressed="false">
+                NOISE
+              </button>
+            </div>
+          </div>
+          <div class="schedule" id="schedule" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section" id="tickets" aria-labelledby="tickets-title">
+        <div class="wrap">
+          <div class="section__head">
+            <div>
+              <p class="section__eyebrow">Tickets</p>
+              <h2 class="section__title" id="tickets-title">票種</h2>
+              <p class="section__lede">
+                可預覽票券摘要與張數計算。這是設計測試，不會產生訂單、不串金流、不收個資。
+              </p>
+            </div>
+          </div>
+
+          <div class="tickets">
+            <article class="ticket ticket--sold">
+              <p class="ticket__label">Ticket A</p>
+              <h3 class="ticket__name">早鳥</h3>
+              <p class="ticket__price">NT$980</p>
+              <p class="ticket__note">已售完。無法選取。</p>
+              <button class="btn" type="button" data-ticket="early" disabled aria-disabled="true">
+                已售完
+              </button>
+            </article>
+
+            <article class="ticket">
+              <p class="ticket__label">Ticket B</p>
+              <h3 class="ticket__name">一般</h3>
+              <p class="ticket__price">NT$1,280</p>
+              <p class="ticket__note">單人入場。可預覽票券摘要。</p>
+              <button class="btn" type="button" data-ticket="general">預覽票券</button>
+            </article>
+
+            <article class="ticket">
+              <p class="ticket__label">Ticket C</p>
+              <h3 class="ticket__name">雙人</h3>
+              <p class="ticket__price">NT$2,200</p>
+              <p class="ticket__note">兩人同行方案。可預覽票券摘要。</p>
+              <button class="btn" type="button" data-ticket="duo">預覽票券</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq" aria-labelledby="faq-title">
+        <div class="wrap">
+          <div class="section__head">
+            <div>
+              <p class="section__eyebrow">FAQ</p>
+              <h2 class="section__title" id="faq-title">常見問題</h2>
+            </div>
+          </div>
+          <div class="faq">
+            <details>
+              <summary>是否有年齡限制？</summary>
+              <p>未滿 18 歲需監護人陪同（活動設定）。</p>
+            </details>
+            <details>
+              <summary>是否可攜帶外食？</summary>
+              <p>場內不開放外食。</p>
+            </details>
+            <details>
+              <summary>無障礙動線？</summary>
+              <p>
+                示範規劃提供無階差入口與休息區；此為設計展示，不宣稱實地驗證。
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <strong>OFFGRID · 離線聲場</strong>
+        <p>
+          虛構活動・設計測試。演出者、場地與票種皆為展示內容。主張：把訊號關掉，把感官打開。
+        </p>
+      </div>
+    </footer>
+
+    <div
+      class="modal"
+      id="ticket-modal"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+    >
+      <div class="modal__backdrop" data-close-modal tabindex="-1" aria-hidden="true"></div>
+      <div class="modal__panel">
+        <div class="modal__head">
+          <h2 class="modal__title" id="modal-title">票券摘要</h2>
+          <button class="icon-btn" type="button" data-close-modal aria-label="關閉">
+            ×
+          </button>
+        </div>
+        <div class="ticket-summary">
+          <dl>
+            <dt>票種</dt>
+            <dd id="summary-name">—</dd>
+            <dt>單價</dt>
+            <dd id="summary-price">—</dd>
+          </dl>
+          <div class="qty">
+            <span>張數（1–4）</span>
+            <div class="qty__controls">
+              <button type="button" id="qty-dec" aria-label="減少張數">−</button>
+              <span class="qty__value" id="qty-value" aria-live="polite">1</span>
+              <button type="button" id="qty-inc" aria-label="增加張數">+</button>
+            </div>
+          </div>
+          <div class="total-row">
+            <span>總價</span>
+            <span id="total-value">NT$0</span>
+          </div>
+          <p class="modal__disclaimer">這是設計測試，不會產生訂單。</p>
+          <button class="btn" type="button" data-close-modal style="width: 100%; margin-top: 0.5rem">
+            關閉
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

@@ -1,37 +1,22 @@
 {
-  "recordedAt": "2026-10-31T15:44:32.724Z",
+  "recordedAt": "2026-10-31T18:20:30.385Z",
   "base": "http://127.0.0.1:5173",
   "browser": "156.0.8078.4",
   "checks": [
     "Gallery filters: 5 / 2 / 3",
-    "lumina: direct case route, prompt match, clipboard, iteration command, preview/mode",
-    "lumina: direct standalone route",
-    "lumina-classic: direct case route, prompt match, clipboard, iteration command, preview/mode",
-    "lumina-classic: direct standalone route",
-    "wallet: direct case route, prompt match, clipboard, iteration command, preview/mode",
-    "Prompt download matches exact clipboard text",
-    "wallet: direct standalone route",
-    "tea: direct case route, prompt match, clipboard, iteration command, preview/mode",
-    "tea: direct standalone route",
-    "festival: direct case route, prompt match, clipboard, iteration command, preview/mode",
-    "festival: direct standalone route",
-    "390px: harness and placeholder routes have no horizontal overflow",
-    "360px: harness and placeholder routes have no horizontal overflow",
-    "Keyboard entry: skip link is the first focus target",
-    "Unknown route shows an explicit not-found state",
-    "No browser pageerror during smoke checks"
-  ],
-  "officialIssues": [
-    {
-      "case": "lumina",
-      "mobileOverflow": false,
-      "action": "Working copy after first skill-guided modification; frozen upstream baseline remains separate."
-    },
-    {
-      "case": "lumina-classic",
-      "mobileOverflow": false,
-      "action": "Working copy after first skill-guided modification; frozen upstream baseline remains separate."
-    }
+    "lumina: A–E paths exist, preview switches A↔B",
+    "lumina: direct A and B routes",
+    "lumina-classic: A–E paths exist, preview switches A↔B",
+    "lumina-classic: direct A and B routes",
+    "wallet: A–E paths exist, preview switches A↔B",
+    "wallet: direct A and B routes",
+    "tea: A–E paths exist, preview switches A↔B",
+    "tea: direct A and B routes",
+    "festival: A–E paths exist, preview switches A↔B",
+    "festival: direct A and B routes",
+    "390px: harness routes have no horizontal overflow",
+    "360px: harness routes have no horizontal overflow",
+    "Keyboard entry: skip link is the first focus target"
   ],
   "errors": []
 }

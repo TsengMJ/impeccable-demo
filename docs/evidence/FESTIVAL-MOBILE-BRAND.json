@@ -1,0 +1,105 @@
+{
+  "recordedAt": "2026-10-31T18:16:58.452Z",
+  "findings": [
+    {
+      "variant": "a",
+      "width": 390,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "brandRight": 429,
+      "brandClientWidth": 409,
+      "heroOverflow": "clip",
+      "brandExtendsBeyondViewport": true
+    },
+    {
+      "variant": "b",
+      "width": 390,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "brandRight": 431,
+      "brandClientWidth": 411,
+      "heroOverflow": "clip",
+      "brandExtendsBeyondViewport": true
+    },
+    {
+      "variant": "c",
+      "width": 390,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "brandRight": 480,
+      "brandClientWidth": 460,
+      "heroOverflow": "clip",
+      "brandExtendsBeyondViewport": true
+    },
+    {
+      "variant": "d",
+      "width": 390,
+      "viewportWidth": 390,
+      "documentWidth": 435,
+      "brandRight": 435,
+      "brandClientWidth": 411,
+      "heroOverflow": "visible",
+      "brandExtendsBeyondViewport": true
+    },
+    {
+      "variant": "e",
+      "width": 390,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "brandRight": 431,
+      "brandClientWidth": 411,
+      "heroOverflow": "clip",
+      "brandExtendsBeyondViewport": true
+    },
+    {
+      "variant": "a",
+      "width": 360,
+      "viewportWidth": 360,
+      "documentWidth": 360,
+      "brandRight": 429,
+      "brandClientWidth": 409,
+      "heroOverflow": "clip",
+      "brandExtendsBeyondViewport": true
+    },
+    {
+      "variant": "b",
+      "width": 360,
+      "viewportWidth": 360,
+      "documentWidth": 360,
+      "brandRight": 431,
+      "brandClientWidth": 411,
+      "heroOverflow": "clip",
+      "brandExtendsBeyondViewport": true
+    },
+    {
+      "variant": "c",
+      "width": 360,
+      "viewportWidth": 360,
+      "documentWidth": 360,
+      "brandRight": 480,
+      "brandClientWidth": 460,
+      "heroOverflow": "clip",
+      "brandExtendsBeyondViewport": true
+    },
+    {
+      "variant": "d",
+      "width": 360,
+      "viewportWidth": 360,
+      "documentWidth": 435,
+      "brandRight": 435,
+      "brandClientWidth": 411,
+      "heroOverflow": "visible",
+      "brandExtendsBeyondViewport": true
+    },
+    {
+      "variant": "e",
+      "width": 360,
+      "viewportWidth": 360,
+      "documentWidth": 360,
+      "brandRight": 431,
+      "brandClientWidth": 411,
+      "heroOverflow": "clip",
+      "brandExtendsBeyondViewport": true
+    }
+  ]
+}

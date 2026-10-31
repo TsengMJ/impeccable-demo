@@ -1,0 +1,548 @@
+{
+  "createdAt": "2026-10-31T18:14:00.747Z",
+  "count": 60,
+  "success": 60,
+  "parallel": 3,
+  "records": [
+    {
+      "key": "lumina",
+      "variant": "a",
+      "view": "mobile",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-07-04-395Z-lumina-a-mobile-6e1c6afa",
+      "stderr": ""
+    },
+    {
+      "key": "lumina",
+      "variant": "b",
+      "view": "desktop",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-07-04-410Z-lumina-b-desktop-fc4c8bdc",
+      "stderr": ""
+    },
+    {
+      "key": "lumina",
+      "variant": "a",
+      "view": "desktop",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-07-04-397Z-lumina-a-desktop-13167391",
+      "stderr": ""
+    },
+    {
+      "key": "lumina",
+      "variant": "b",
+      "view": "mobile",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-07-20-144Z-lumina-b-mobile-a0d2c951",
+      "stderr": ""
+    },
+    {
+      "key": "lumina",
+      "variant": "c",
+      "view": "mobile",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-07-21-524Z-lumina-c-mobile-8b3f919f",
+      "stderr": ""
+    },
+    {
+      "key": "lumina",
+      "variant": "c",
+      "view": "desktop",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-07-21-382Z-lumina-c-desktop-5ca1d932",
+      "stderr": ""
+    },
+    {
+      "key": "lumina",
+      "variant": "d",
+      "view": "desktop",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-07-33-831Z-lumina-d-desktop-c744829c",
+      "stderr": ""
+    },
+    {
+      "key": "lumina",
+      "variant": "d",
+      "view": "mobile",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-07-36-365Z-lumina-d-mobile-93458b0c",
+      "stderr": ""
+    },
+    {
+      "key": "lumina",
+      "variant": "e",
+      "view": "desktop",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-07-38-926Z-lumina-e-desktop-8aeb6b90",
+      "stderr": ""
+    },
+    {
+      "key": "lumina",
+      "variant": "e",
+      "view": "mobile",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-07-49-198Z-lumina-e-mobile-dd549dd6",
+      "stderr": ""
+    },
+    {
+      "key": "lumina-classic",
+      "variant": "a",
+      "view": "desktop",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-07-50-562Z-lumina-classic-a-desktop-3df0cd57",
+      "stderr": ""
+    },
+    {
+      "key": "lumina-classic",
+      "variant": "a",
+      "view": "mobile",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-07-54-845Z-lumina-classic-a-mobile-26b34175",
+      "stderr": ""
+    },
+    {
+      "key": "lumina-classic",
+      "variant": "b",
+      "view": "desktop",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-08-03-342Z-lumina-classic-b-desktop-b1c5ccf4",
+      "stderr": ""
+    },
+    {
+      "key": "lumina-classic",
+      "variant": "b",
+      "view": "mobile",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-08-07-586Z-lumina-classic-b-mobile-7f188993",
+      "stderr": ""
+    },
+    {
+      "key": "lumina-classic",
+      "variant": "c",
+      "view": "desktop",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-08-10-256Z-lumina-classic-c-desktop-cf7dc518",
+      "stderr": ""
+    },
+    {
+      "key": "lumina-classic",
+      "variant": "c",
+      "view": "mobile",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-08-21-804Z-lumina-classic-c-mobile-06aa9dff",
+      "stderr": ""
+    },
+    {
+      "key": "lumina-classic",
+      "variant": "d",
+      "view": "desktop",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-08-22-739Z-lumina-classic-d-desktop-5a34c602",
+      "stderr": ""
+    },
+    {
+      "key": "lumina-classic",
+      "variant": "d",
+      "view": "mobile",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-08-29-178Z-lumina-classic-d-mobile-a6256fd3",
+      "stderr": ""
+    },
+    {
+      "key": "lumina-classic",
+      "variant": "e",
+      "view": "mobile",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-08-38-170Z-lumina-classic-e-mobile-ec3ee56c",
+      "stderr": ""
+    },
+    {
+      "key": "lumina-classic",
+      "variant": "e",
+      "view": "desktop",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-08-35-700Z-lumina-classic-e-desktop-6b90ba61",
+      "stderr": ""
+    },
+    {
+      "key": "wallet",
+      "variant": "a",
+      "view": "desktop",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-08-42-931Z-wallet-a-desktop-49503361",
+      "stderr": ""
+    },
+    {
+      "key": "wallet",
+      "variant": "a",
+      "view": "mobile",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-08-52-011Z-wallet-a-mobile-e35d2d97",
+      "stderr": ""
+    },
+    {
+      "key": "wallet",
+      "variant": "b",
+      "view": "desktop",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-08-53-419Z-wallet-b-desktop-232a3fd6",
+      "stderr": ""
+    },
+    {
+      "key": "wallet",
+      "variant": "b",
+      "view": "mobile",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-09-01-755Z-wallet-b-mobile-63e28229",
+      "stderr": ""
+    },
+    {
+      "key": "wallet",
+      "variant": "c",
+      "view": "desktop",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-09-05-641Z-wallet-c-desktop-8d6e769c",
+      "stderr": ""
+    },
+    {
+      "key": "wallet",
+      "variant": "c",
+      "view": "mobile",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-09-14-013Z-wallet-c-mobile-b21605b3",
+      "stderr": ""
+    },
+    {
+      "key": "wallet",
+      "variant": "d",
+      "view": "desktop",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-09-16-503Z-wallet-d-desktop-a6156fca",
+      "stderr": ""
+    },
+    {
+      "key": "wallet",
+      "variant": "d",
+      "view": "mobile",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-09-26-805Z-wallet-d-mobile-6ec4fb9c",
+      "stderr": ""
+    },
+    {
+      "key": "wallet",
+      "variant": "e",
+      "view": "desktop",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-09-28-890Z-wallet-e-desktop-b995ec91",
+      "stderr": ""
+    },
+    {
+      "key": "wallet",
+      "variant": "e",
+      "view": "mobile",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-09-35-091Z-wallet-e-mobile-eb2594ae",
+      "stderr": ""
+    },
+    {
+      "key": "tea",
+      "variant": "a",
+      "view": "desktop",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-09-40-850Z-tea-a-desktop-e86c53ed",
+      "stderr": ""
+    },
+    {
+      "key": "tea",
+      "variant": "a",
+      "view": "mobile",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-09-45-926Z-tea-a-mobile-160ecc2c",
+      "stderr": ""
+    },
+    {
+      "key": "tea",
+      "variant": "b",
+      "view": "desktop",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-09-48-914Z-tea-b-desktop-12608770",
+      "stderr": ""
+    },
+    {
+      "key": "tea",
+      "variant": "b",
+      "view": "mobile",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-09-58-256Z-tea-b-mobile-9b3566ea",
+      "stderr": ""
+    },
+    {
+      "key": "tea",
+      "variant": "c",
+      "view": "desktop",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-10-00-515Z-tea-c-desktop-a7da4c36",
+      "stderr": ""
+    },
+    {
+      "key": "tea",
+      "variant": "c",
+      "view": "mobile",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-10-09-230Z-tea-c-mobile-cddc11fe",
+      "stderr": ""
+    },
+    {
+      "key": "tea",
+      "variant": "d",
+      "view": "desktop",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-10-13-284Z-tea-d-desktop-9fba88b4",
+      "stderr": ""
+    },
+    {
+      "key": "tea",
+      "variant": "d",
+      "view": "mobile",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-10-20-430Z-tea-d-mobile-3151caa1",
+      "stderr": ""
+    },
+    {
+      "key": "tea",
+      "variant": "e",
+      "view": "desktop",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-10-23-703Z-tea-e-desktop-d3a78f1f",
+      "stderr": ""
+    },
+    {
+      "key": "tea",
+      "variant": "e",
+      "view": "mobile",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-10-31-962Z-tea-e-mobile-5cb970be",
+      "stderr": ""
+    },
+    {
+      "key": "festival",
+      "variant": "a",
+      "view": "desktop",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-10-35-508Z-festival-a-desktop-8abe3310",
+      "stderr": ""
+    },
+    {
+      "key": "festival",
+      "variant": "a",
+      "view": "mobile",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-10-45-455Z-festival-a-mobile-eda8b99c",
+      "stderr": ""
+    },
+    {
+      "key": "festival",
+      "variant": "b",
+      "view": "desktop",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-10-47-163Z-festival-b-desktop-baa33420",
+      "stderr": ""
+    },
+    {
+      "key": "festival",
+      "variant": "b",
+      "view": "mobile",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-10-54-975Z-festival-b-mobile-9a2fc4fe",
+      "stderr": ""
+    },
+    {
+      "key": "festival",
+      "variant": "c",
+      "view": "desktop",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-10-59-969Z-festival-c-desktop-bd93ae7e",
+      "stderr": ""
+    },
+    {
+      "key": "festival",
+      "variant": "c",
+      "view": "mobile",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-11-06-812Z-festival-c-mobile-162397c8",
+      "stderr": ""
+    },
+    {
+      "key": "festival",
+      "variant": "d",
+      "view": "desktop",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-11-09-794Z-festival-d-desktop-b8d7966e",
+      "stderr": ""
+    },
+    {
+      "key": "festival",
+      "variant": "d",
+      "view": "mobile",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-11-22-263Z-festival-d-mobile-87f2d9d0",
+      "stderr": ""
+    },
+    {
+      "key": "festival",
+      "variant": "e",
+      "view": "mobile",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-11-30-950Z-festival-e-mobile-993f3af0",
+      "stderr": ""
+    },
+    {
+      "key": "festival",
+      "variant": "e",
+      "view": "desktop",
+      "motion": "reduce",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-11-23-219Z-festival-e-desktop-4ccbfb90",
+      "stderr": ""
+    },
+    {
+      "key": "lumina",
+      "variant": "a",
+      "view": "desktop",
+      "motion": "no-preference",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-11-38-875Z-lumina-a-desktop-motion-18a63632",
+      "stderr": ""
+    },
+    {
+      "key": "lumina",
+      "variant": "e",
+      "view": "desktop",
+      "motion": "no-preference",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-11-48-040Z-lumina-e-desktop-motion-fc5bb794",
+      "stderr": ""
+    },
+    {
+      "key": "lumina-classic",
+      "variant": "a",
+      "view": "desktop",
+      "motion": "no-preference",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-11-55-512Z-lumina-classic-a-desktop-motion-cc7d5c12",
+      "stderr": ""
+    },
+    {
+      "key": "lumina-classic",
+      "variant": "e",
+      "view": "desktop",
+      "motion": "no-preference",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-12-05-687Z-lumina-classic-e-desktop-motion-fa7aaa9b",
+      "stderr": ""
+    },
+    {
+      "key": "wallet",
+      "variant": "a",
+      "view": "desktop",
+      "motion": "no-preference",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-12-10-751Z-wallet-a-desktop-motion-44a1fac0",
+      "stderr": ""
+    },
+    {
+      "key": "wallet",
+      "variant": "e",
+      "view": "desktop",
+      "motion": "no-preference",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-12-17-926Z-wallet-e-desktop-motion-39f57d46",
+      "stderr": ""
+    },
+    {
+      "key": "tea",
+      "variant": "a",
+      "view": "desktop",
+      "motion": "no-preference",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-12-36-248Z-tea-a-desktop-motion-1f718eb4",
+      "stderr": ""
+    },
+    {
+      "key": "tea",
+      "variant": "e",
+      "view": "desktop",
+      "motion": "no-preference",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-12-47-325Z-tea-e-desktop-motion-c8d8757b",
+      "stderr": ""
+    },
+    {
+      "key": "festival",
+      "variant": "a",
+      "view": "desktop",
+      "motion": "no-preference",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-12-56-491Z-festival-a-desktop-motion-03c32749",
+      "stderr": ""
+    },
+    {
+      "key": "festival",
+      "variant": "e",
+      "view": "desktop",
+      "motion": "no-preference",
+      "code": 0,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-13-21-680Z-festival-e-desktop-motion-10763d4a",
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "lumina": {
+    "demos/lumina/b/index.html": "d17b44e6bf8381427d7c9b7dc1c4edf6822142446305271d4bc7fef7061f4ab5"
+  },
+  "wallet": {
+    "experiments/wallet/b/app.js": "dc5ef7733d1715b9bb86fe6c4e6f42051cc8a1bd7af6e24023345554368dc852",
+    "experiments/wallet/b/index.html": "fb973d7655d4da433cfd8c14e4b4f93ad1efb9dcdfc6be1556379aa943b1c0be",
+    "experiments/wallet/b/styles.css": "60b5b22f5664617a004880bf9640e2e625683138cfd697bce7e4ed11961a7bf3"
+  },
+  "tea": {
+    "experiments/tea/b/index.html": "9515b32d937a9cb3f21a8425fefca0b9ce2398e64a35cb8e63335eb74a47d658",
+    "experiments/tea/b/script.js": "778a9c0ae6e7ec78484f56da74e4f832788b81c014174ca913cd6bd05285ea24",
+    "experiments/tea/b/styles.css": "be2ff901022d1a61993f10834ab2e2691e851e536fb16aacd27cd0f2c4ebc3ea"
+  },
+  "festival": {
+    "experiments/festival/b/app.js": "3a917caffb6551ff025daf3ee63b1ca113af7a2efa829b2ded7742bcfcfe924a",
+    "experiments/festival/b/index.html": "e0c8bdd60fd41a1ea49805b97ad29f5c7defda350552f3d7fb7aa9448c5101db",
+    "experiments/festival/b/styles.css": "56b639ec20e4ecb420847d9535c8727623ffe42e0f40f52f9e1b448dfaaaa257"
+  },
+  "lumina-classic": {
+    "demos/lumina-classic/b/index.html": "0b903ff4efbd74df931ce2b87ab8523d11d4a3e5ac59b50194e018ff81d6ff7e"
+  }
+}

@@ -2,7 +2,9 @@
 
 ## 素材身份先說清楚
 
-- 目前已完成 2 份官方起始頁的第一輪修改與前後素材；3 份新題目、工作台與留證工具已準備，三題的頁面仍待生成。
+**2026-11-01 更新：**五案 A–E 現已完成並錄製，請先看 [新素材索引](../recordings/MATRIX-INDEX.md)、[README 剪輯選片建議](../README.md#剪輯優先看哪些版本相對-a-變化最明顯) 與 [錄影稽核](evidence/CAPTURE-AUDIT.json)。以下較早的操作流程仍保留作方法與重跑參考；不能把舊的「待生成」狀態當成當前進度。
+
+- 五案 A–E 已上架，C／D／E 各自從 B 分叉；60 段頁面片與 15 段操作片已留證。
 - 工作台、題目封面和預留頁都不是用 Impeccable 完整流程生成的測試結果。
 - 官方 Lumina 主版本與 classic 是兩個起始範例，不能剪成同一頁的改善前後。
 - 官方原始生成 Prompt 未公開；本地 D01/D02 是我們新擬的修改 Prompt。
@@ -10,7 +12,7 @@
 
 ## 必須遵守的前後比較（使用者後續確認）
 
-三個題目皆已接受，但頁面尚未實作。後續每題必須依下列順序執行，不能只做有 skill 的漂亮結果：
+三個原創題目已依下列順序建立 A–E。此流程仍是重跑時必須遵守的比較原則：
 
 1. **A／未使用 Impeccable**：在乾淨的新對話與隔離專案，用相同 Brief 生成完整可操作頁面。檢查本地、全域、外掛與 hooks 都沒有載入 Impeccable，也不能帶入本對話已讀到的 skill 規則。只移除 `$impeccable` 前綴不算隔離。若無法確認隔離，不得標成無 skill 對照。
 2. **凍結 A**：保存實際 Prompt、模型與推理設定、素材、工具條件、程式碼、桌面／手機截圖與錄影。現在的預留頁不算 A。
@@ -19,7 +21,7 @@
 
 這是「同一頁使用 skill 改善前後」的比較；B 多了一輪修改，不能把差異全部歸因於 skill。若另外測「有／無 skill 從零生成」，另設 C 組，使用同樣的空白起點與 Brief，不混作 A→B 的改善成果。
 
-AEGIS 的隔離目錄已建立（見 `docs/evidence/CONTROL-WALLET-SETUP.md`），仍須在新任務確認實際隔離；三題都尚未生成 A/B。工作台預設展示無 skill 的 A Prompt；skill Prompt 只供另開的從零生成 C 組使用。A 未完成與凍結前不得直接執行 B。現有 snapshot/capture 工具會保存單一路徑的狀態，尚不會自動建立或隔離 A/B 環境，正式開始前必須補上兩個成果路徑與對應錄影支援。
+三題 A 是 Cursor 在隔離控制目錄啟動的子代理結果，並非全新 IDE 視窗；方法限制見 `docs/evidence/BRIEF-RESULTS.md`。工作台展示原始 Brief；矩陣內 B–E 使用另行記錄的 skill 指令。A–E 各有獨立路徑；capture 現支援 `--take a|b|c|d|e`，並在 metadata 保存來源雜湊。
 
 ## 三個題目為什麼這樣選
 
@@ -50,7 +52,7 @@ $impeccable <command> <directory>/index.html
 
 ## 每輪實際操作
 
-以下是本專案匯入成果後的單輪快照／錄影工具範例，不能在 A 尚未生成時把主專案的 wallet 預留頁截成無 skill 成果；必須先滿足上方前後比較流程。階段名稱與 mode 應如實標記，例如 `a-no-skill` 配 `--mode plain`、`b-polish` 配該輪的完整 `--prompt`。
+以下是重跑單輪時的快照／錄影工具範例；現有 A–E 成果與原始碼副本已在新素材索引。階段名稱與 mode 應如實標記，例如 `a-no-skill` 配 `--mode plain`、`b-polish` 配該輪的完整 `--prompt`。
 
 終端機 A：
 
@@ -78,8 +80,8 @@ npm run snapshot -- --case wallet --phase after --model "實際模型與設定" 
 # 省略 --transcript 也能保存，但必須在 observations.md 誠實註記沒有完整對話紀錄。
 
 # RUN_DIRECTORY 請替換成上一條真正輸出的快照路徑
-npm run capture -- --case wallet --take after --viewport desktop --run RUN_DIRECTORY
-npm run capture -- --case wallet --take after --viewport mobile --run RUN_DIRECTORY
+npm run capture -- --case wallet --take b --viewport desktop --run RUN_DIRECTORY
+npm run capture -- --case wallet --take b --viewport mobile --run RUN_DIRECTORY
 ```
 
 後續指令使用與工作台完全一致的 Prompt：
@@ -104,7 +106,7 @@ npm run snapshot -- --case tea --phase after-polish --model "實際模型" --pro
 - `recordings/captures/<UTC>-<case>-<take>-<viewport>-<uuid>/`：viewport.png、full-page.png、clip.webm、capture.json。
 - `capture.json` 含 URL、時間、尺寸、browser 版本、捲動時間點、console error、資源失敗和來源快照關聯。
 - 目前自動影片是無聲頁面捲動 B-roll，非滑鼠互動演示、非 Codex 對話錄影、非效能 benchmark。開頭可能有載入幀，使用 contentStartMs 裁掉；headless 錄影可能有時間量化，最終剪輯以播放器時間軸為準。
-- `--take baseline` 僅對官方兩頁可用，讀凍結原始版；其他 take 讀工作副本。待生成頁會拒絕錄製成成果。
+- `--take a|b|c|d|e` 分別錄五個公開變體；`baseline`／`working` 仍是舊版 a／b 別名。
 - 桌面 1440×900、手機 390×844、DPR 1、zh-TW、Asia/Taipei、light、reduced-motion；手機模式是窄 viewport，沒有模擬觸控或特定手機裝置。
 - reduced-motion 是為固定比較而設；要測完整動畫，請另用正常動態的實際瀏覽器錄製，標註模式，不能拿這份影片斷言動畫好壞。
 - Google Fonts 需要網路，字型載入若失敗會記錄。若要固定離線字型，另開一輪處理並記錄差異，不動官方原始碼基準。

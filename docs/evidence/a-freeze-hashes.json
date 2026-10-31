@@ -1,0 +1,29 @@
+{
+  "wallet": {
+    "experiments/wallet/a/app.js": "2674e8968e91445e87edd859ef97f42003fbbbfa97c90276b7a1d31c8bcabc51",
+    "experiments/wallet/a/index.html": "1b55e94adadaef3d848fe79a87c7f3e683658eeba90e9edbc7ce8e4dcfba3cca",
+    "experiments/wallet/a/styles.css": "112ac1721eece721b077d1f8fbf430545004c30eed0c5d92e3499a899b7f9713"
+  },
+  "tea": {
+    "experiments/tea/a/_checks/1440x900-full.png": "a79c896f8bfaf3a7f818c4544baa5a3b213ada7960c0abb7a979b0cb13a2bb46",
+    "experiments/tea/a/_checks/1440x900-hero.png": "2fe31f790deb90dc3fa8911875ce63f6ad8182d3cc0a0077e9e93871409471f0",
+    "experiments/tea/a/_checks/360x800-full.png": "de38545ab1448c71d6335ee45d4878d2b565b1ffe617b129c3a8b0a74702fccd",
+    "experiments/tea/a/_checks/360x800-hero.png": "29a895e1b554a25883cb04a8c557c9b67ff5f25d10175e2d258924814d05cdef",
+    "experiments/tea/a/_checks/390x844-full.png": "c56b324b2f9aef9fa62172a4c4b7d0a8beb58d2a2e2b39681382fe174c1fc587",
+    "experiments/tea/a/_checks/390x844-hero.png": "ac5bcde6fa164acc5af862102db6243e6e2934b8ed6e0b259a4ea950164474f0",
+    "experiments/tea/a/_checks/section-brew.png": "c59545d465afb704563b9d931ed7abc95df67f3141f778ea3dea46f8e867888d",
+    "experiments/tea/a/_checks/section-faq.png": "dcaf33c580069197e03a8055ffd7b8c2aa875662dfd9cb1e784b7824f67dd6f4",
+    "experiments/tea/a/_checks/section-plans.png": "40cfe0a71729db3fa9dd1ab5a4585776b15e180183cbf641a64eefee1dbc2396",
+    "experiments/tea/a/_checks/section-steps.png": "c2ca047845602fbff5d922a6368cf9958b4b0412bdcb4bd197ab880fd179c045",
+    "experiments/tea/a/_checks/section-teas.png": "081d656c68bfa3635ccc8e4741647a2de51375638c9c637d69b76ef74c9046f5",
+    "experiments/tea/a/_checks/zoom200-hero.png": "5d331adb55102bb588b3a8e702c063e1dedb099031bce064a0e4b52e5be33292",
+    "experiments/tea/a/index.html": "9c35c98d9b8ce3b7d0d6bbe15c98c8f6348c767c3054d7fd7364fba24a3e5e73",
+    "experiments/tea/a/script.js": "778a9c0ae6e7ec78484f56da74e4f832788b81c014174ca913cd6bd05285ea24",
+    "experiments/tea/a/styles.css": "5bc9306145e9f14502e941ec0dd9947854f7b747b00834c4f27750d12b666811"
+  },
+  "festival": {
+    "experiments/festival/a/app.js": "154e69f260402040d1bcfff983e70985fed39ab1974129ef2f15d08692d7b84d",
+    "experiments/festival/a/index.html": "8eac16098d1b8c3145bb2f832fd20dc77660ada31d972cf0febf55bd6eb22201",
+    "experiments/festival/a/styles.css": "eac781b0530390c4be74ba669278d700c85c1eecac431ae647e326606b9f370a"
+  }
+}

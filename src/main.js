@@ -1,6 +1,7 @@
 import './style.css';
 import { entries, source } from './data.js';
 import { formatPrompt, followupPrompt } from '../scripts/prompt.mjs';
+import { variantMeta } from '../scripts/cases.mjs';
 import { guideContent } from './guide.js';
 
 const app = document.querySelector('#app');
@@ -21,20 +22,36 @@ function preview(entry) {
   if (entry.key === 'tea') return `<div class="specimen tea"><div class="concept-top"><span>山間製茶</span><span>BRIEF / T01</span></div><div class="tea-word">一山。<br><span>一杯。</span></div><div class="tea-side">把一座山，留給一杯茶。</div><span class="preview-caption">題目封面 · 非生成結果</span></div>`;
   return `<div class="specimen festival"><div class="concept-top"><span>離線聲場</span><span>BRIEF / F01</span></div><div class="festival-word">OFF<br><span>GRID</span><svg aria-hidden="true" viewBox="0 0 100 100"><path d="M15 85 85 15H22M85 15v63" fill="none" stroke="currentColor" stroke-width="12"/></svg></div><span class="preview-caption">題目封面 · 非生成結果</span></div>`;
 }
+function isOfficial(entry) { return entry.kind === 'official'; }
+function hasMatrix(entry) { return Boolean(entry.variants?.a && entry.variants?.b); }
+function statusText(entry, detail = false) {
+  if (hasMatrix(entry)) return detail ? 'A–E 已上架 · 錄影已留證' : 'A–E 矩陣';
+  return detail ? 'Brief 已就緒 · 待生成' : '待生成';
+}
 function card(entry) {
-  return `<article class="case-card"><a class="preview-link" href="/cases/${entry.key}" aria-label="查看 ${entry.title} ${entry.subtitle}">${preview(entry)}</a><div class="card-info"><div class="card-meta"><span><code>${entry.id}</code> ${entry.type}</span><span class="status ${entry.kind}">${entry.kind === 'official' ? '第一輪完成' : '待生成'}</span></div><h3><a href="/cases/${entry.key}">${entry.title} ${arrow}</a></h3><div class="card-sub">${entry.subtitle}</div><p>${entry.description}</p><div class="card-bottom"><span>${entry.kind === 'official' ? '$impeccable ' + entry.command : '完整 Brief + Prompt'}</span><a href="/cases/${entry.key}">${entry.kind === 'official' ? '比較前後' : '查看題目'} ${arrow}</a></div></div></article>`;
+  return `<article class="case-card"><a class="preview-link" href="/cases/${entry.key}" aria-label="查看 ${entry.title} ${entry.subtitle}">${preview(entry)}</a><div class="card-info"><div class="card-meta"><span><code>${entry.id}</code> ${entry.type}</span><span class="status ${entry.kind}">${statusText(entry)}</span></div><h3><a href="/cases/${entry.key}">${entry.title} ${arrow}</a></h3><div class="card-sub">${entry.subtitle}</div><p>${entry.description}</p><div class="card-bottom"><span>A–E · polish／bolder／distill／animate</span><a href="/cases/${entry.key}">比較變體 ${arrow}</a></div></div></article>`;
 }
 function home() {
   document.title = 'Impeccable / Test Lab';
-  app.innerHTML = `${header()}<main id="main"><section class="intro"><div><h1>把設計能力，<br>放上<span class="accent-word">試驗台。</span></h1><p>從官方範例到全新命題，記錄每一句 Prompt、<br class="desktop-break">每一次迭代，以及漂亮畫面背後的能力邊界。</p><a class="text-link" href="/guide">查看錄影與比較流程 ${arrow}</a></div><aside class="session-sheet" aria-label="測試工作台狀態"><div class="sheet-top"><span class="live-dot"></span>本地測試環境<span>SESSION 001</span></div><dl><div><dt>官方案例</dt><dd>02<span>第一輪完成</span></dd></div><div><dt>原創命題</dt><dd>03<span>待生成</span></dd></div></dl><div class="sheet-bottom"><span>Vite + HTML / CSS / JS</span><span>可重現 · 可錄影</span></div></aside></section><section class="cases-section" aria-labelledby="cases-heading"><div class="section-bar"><h2 id="cases-heading">測試案例 <span>05</span></h2><div class="filters" role="group" aria-label="篩選案例"><button data-filter="all" aria-pressed="${filter === 'all'}">全部 <span>5</span></button><button data-filter="official" aria-pressed="${filter === 'official'}">官方 Demo <span>2</span></button><button data-filter="brief" aria-pressed="${filter === 'brief'}">原創題目 <span>3</span></button></div></div><div class="case-grid">${entries.filter(e => filter === 'all' || e.kind === filter).map(card).join('')}</div></section><section class="method-strip"><span class="method-number">A → B</span><div><h2>讓差異有跡可循。</h2><p>官方原始版保留不動。每次只測一個變因，Prompt、程式碼與錄影一起存檔。</p></div><a href="/guide" class="button secondary">查看測試方法 ${arrow}</a></section></main>${footer()}`;
+  app.innerHTML = `${header()}<main id="main"><section class="intro"><div><h1>把設計能力，<br>放上<span class="accent-word">試驗台。</span></h1><p>五案同一矩陣：A 原圖、B polish，再從 B 分出 C bolder／D distill／E animate。<br class="desktop-break">optimize 只收集證據，不上架。</p><a class="text-link" href="/guide">查看錄影與比較流程 ${arrow}</a></div><aside class="session-sheet" aria-label="測試工作台狀態"><div class="sheet-top"><span class="live-dot"></span>本地測試環境<span>SESSION 001</span></div><dl><div><dt>官方案例</dt><dd>02<span>A–E 矩陣</span></dd></div><div><dt>原創命題</dt><dd>03<span>A–E 矩陣</span></dd></div></dl><div class="sheet-bottom"><span>Vite + HTML / CSS / JS</span><span>可重現 · 可錄影</span></div></aside></section><section class="cases-section" aria-labelledby="cases-heading"><div class="section-bar"><h2 id="cases-heading">測試案例 <span>05</span></h2><div class="filters" role="group" aria-label="篩選案例"><button data-filter="all" aria-pressed="${filter === 'all'}">全部 <span>5</span></button><button data-filter="official" aria-pressed="${filter === 'official'}">官方 Demo <span>2</span></button><button data-filter="brief" aria-pressed="${filter === 'brief'}">原創題目 <span>3</span></button></div></div><div class="case-grid">${entries.filter(e => filter === 'all' || e.kind === filter).map(card).join('')}</div></section><section class="method-strip"><span class="method-number">A–E</span><div><h2>讓差異有跡可循。</h2><p>C／D／E 各自從凍結的 B 分叉，不做串燒。optimize 結果只進 evidence。</p></div><a href="/guide" class="button secondary">查看測試方法 ${arrow}</a></section></main>${footer()}`;
   document.querySelectorAll('[data-filter]').forEach(button => button.addEventListener('click', () => {
     filter = button.dataset.filter; home();
     document.querySelector(`[data-filter="${filter}"]`).focus({ preventScroll: true });
   }));
 }
+function compareSection(entry) {
+  const buttons = Object.entries(variantMeta).map(([letter, meta], i) =>
+    `<button data-variant="${letter}" aria-pressed="${i === 0}">${meta.label}</button>`).join('');
+  const links = Object.entries(entry.variants).map(([letter, route]) =>
+    `<a href="${route}" target="_blank" rel="noreferrer">${letter.toUpperCase()}</a>`).join(' · ');
+  return `<section class="preview-section"><div class="section-bar"><h2>A–E 變體比較</h2><span class="text-link">開新分頁：${links}</span></div><div class="preview-toolbar"><div class="segmented" role="group" aria-label="預覽變體">${buttons}</div><span id="preview-label">${variantMeta.a.label}</span><div class="segmented" role="group" aria-label="預覽尺寸"><button data-width="1440" aria-pressed="true">桌面 1440</button><button data-width="390" aria-pressed="false">手機 390</button></div></div><div class="frame-stage"><div class="frame-space"><iframe title="${entry.title} 預覽" src="${entry.variants.a}" sandbox="allow-scripts allow-same-origin" class="demo-frame"></iframe></div></div><p class="caption">C／D／E 皆由 B 獨立複製後套用單一指令。optimize 不上架。預覽縮放僅供掃讀；正式錄影請開獨立路徑。</p></section>`;
+}
 function detail(entry) {
   document.title = `${entry.title} / Impeccable Test Lab`;
-  app.innerHTML = `${header()}<main id="main" class="detail-main"><a href="/" class="back-link">← 所有測試案例</a><section class="detail-heading"><div><div class="detail-id"><code>${entry.id}</code><span>${entry.type}</span><span class="status ${entry.kind}">${entry.kind === 'official' ? '第一輪完成 · 可比較前後' : 'Brief 已就緒 · 待生成'}</span></div><h1>${entry.title}<span>${entry.subtitle}</span></h1><p>${entry.description}</p></div><a class="button primary" href="${entry.route}" target="_blank" rel="noreferrer">${entry.kind === 'official' ? '開啟結果頁' : '開啟預留頁面'} ${external}</a></section><div class="notice">${entry.note}</div>${entry.kind === 'official' ? `<section class="preview-section"><div class="section-bar"><h2>相同起點，逐步比較。</h2><a class="text-link" href="${entry.baseline}" target="_blank" rel="noreferrer">開啟凍結原始版 ${external}</a></div><div class="preview-toolbar"><div class="segmented" role="group" aria-label="預覽版本"><button data-version="baseline" aria-pressed="true">原始版</button><button data-version="working" aria-pressed="false">工作副本</button></div><span id="preview-label">凍結的官方原始碼</span><div class="segmented" role="group" aria-label="預覽尺寸"><button data-width="1440" aria-pressed="true">桌面 1440</button><button data-width="390" aria-pressed="false">手機 390</button></div></div><div class="frame-stage"><div class="frame-space"><iframe title="${entry.title} 預覽" src="${entry.baseline}" sandbox="allow-scripts allow-same-origin" class="demo-frame"></iframe></div></div><p class="caption">原始版是凍結的官方頁面；工作副本是本輪結果。預覽依可用空間等比例縮放；錄影請開啟獨立頁面，或使用 capture 指令。</p></section>` : `<div class="brief-banner">${preview(entry)}<div><h2>這次，要測什麼？</h2><ol>${entry.checks.map(c => `<li>${c}</li>`).join('')}</ol><p>封面只是題目識別。正式生成保留給錄影，未記錄任何測試成績。</p></div></div>`}<section class="prompt-layout"><div class="prompt-main"><div class="section-bar"><h2>完整需求 Prompt</h2><button class="button primary" id="copy-prompt">複製 Prompt ${arrow}</button></div>${entry.kind === 'brief' ? `<div class="prompt-options"><label for="prompt-mode">執行模式</label><select id="prompt-mode"><option value="plain">A：無 skill 生成 Prompt</option><option value="skill">獨立 C 組：使用 Impeccable 從零生成</option></select></div><p class="caption">A 必須在不載入 Impeccable 的隔離專案與新對話執行。凍結 A 後，複製到 B，再用明確的 skill 指令修改；下拉選單的 skill Prompt 是另一次從零生成的 C 組。</p>` : ''}<pre id="prompt-text" tabindex="0">${escape(formatPrompt(entry.raw, entry.kind === 'brief' ? 'plain' : 'skill'))}</pre><div class="prompt-footer"><code>${entry.prompt}</code><button id="download-prompt" class="text-button">下載 .txt</button></div></div><aside class="test-sidebar"><h2>拍攝觀察點</h2><ul class="check-list">${entry.checks.map(c => `<li>${c}</li>`).join('')}</ul><h3>後續測試指令</h3><p>以下只供複製，尚未執行。每次修改前先做快照。</p>${['audit', 'adapt', ...(entry.kind === 'brief' ? ['bolder'] : ['critique'])].map(command => `<button class="command-copy" data-command="${command}"><code>$impeccable ${command}</code><span>複製</span></button>`).join('')}<p class="caption">audit / critique 為評估；adapt / bolder 會修改頁面，應分開錄一輪。</p><a class="text-link" href="/guide">如何留下完整證據 ${arrow}</a></aside></section><section class="record-strip"><div><h2>保存每輪的真實起點。</h2><p>快照會保存實際 Prompt、來源碼、版本資訊與 SHA-256。它不會替你執行 skill。</p></div><pre>npm run snapshot -- --case ${entry.key} --phase before --model "填入實際模型"</pre></section></main>${footer()}`;
+  const bodyLead = hasMatrix(entry)
+    ? compareSection(entry)
+    : `<div class="brief-banner">${preview(entry)}<div><h2>這次，要測什麼？</h2><ol>${entry.checks.map(c => `<li>${c}</li>`).join('')}</ol></div></div>`;
+  app.innerHTML = `${header()}<main id="main" class="detail-main"><a href="/" class="back-link">← 所有測試案例</a><section class="detail-heading"><div><div class="detail-id"><code>${entry.id}</code><span>${entry.type}</span><span class="status ${entry.kind}">${statusText(entry, true)}</span></div><h1>${entry.title}<span>${entry.subtitle}</span></h1><p>${entry.description}</p></div><a class="button primary" href="${entry.route}" target="_blank" rel="noreferrer">開啟 B · polish ${external}</a></section><div class="notice">${entry.note}</div>${bodyLead}<section class="prompt-layout"><div class="prompt-main"><div class="section-bar"><h2>${entry.kind === 'brief' ? '原始需求 Prompt（A）' : entry.key === 'lumina-classic' ? '早期官方 distill Prompt' : '早期官方 polish Prompt'}</h2><button class="button primary" id="copy-prompt">複製 Prompt ${arrow}</button></div>${entry.kind === 'brief' ? `<div class="prompt-options"><label for="prompt-mode">執行模式</label><select id="prompt-mode"><option value="plain">A：無 skill 生成 Prompt</option><option value="skill">獨立從零：使用 Impeccable</option></select></div><p class="caption">矩陣內 B–E 已用明確 skill 指令；此處 skill 選項僅供另一次從零生成實驗。</p>` : ''}<pre id="prompt-text" tabindex="0">${escape(formatPrompt(entry.raw, entry.kind === 'brief' ? 'plain' : 'skill'))}</pre>${entry.kind === 'official' ? `<p class="caption">此欄保存較早的官方測試要求；本矩陣 B–E 的指令證據與缺漏情況請看 recordings/MATRIX-INDEX.md，勿把此文當成 B 的完整貼上對話。</p>` : ''}<div class="prompt-footer"><code>${entry.prompt}</code><button id="download-prompt" class="text-button">下載 .txt</button></div></div><aside class="test-sidebar"><h2>拍攝觀察點</h2><ul class="check-list">${entry.checks.map(c => `<li>${c}</li>`).join('')}</ul><h3>後續測試指令</h3><p>複製後請對準正確變體目錄。optimize 只寫證據。</p>${['audit', 'adapt', 'critique', 'optimize'].map(command => `<button class="command-copy" data-command="${command}"><code>$impeccable ${command}</code><span>複製</span></button>`).join('')}<a class="text-link" href="/guide">如何留下完整證據 ${arrow}</a></aside></section><section class="record-strip"><div><h2>保存每輪的真實起點。</h2><p>快照會保存實際 Prompt、來源碼、版本資訊與 SHA-256。</p></div><pre>npm run snapshot -- --case ${entry.key} --phase before --model "填入實際模型"</pre></section></main>${footer()}`;
   let mode = entry.kind === 'brief' ? 'plain' : 'skill';
   document.querySelector('#prompt-mode')?.addEventListener('change', event => {
     mode = event.target.value; document.querySelector('#prompt-text').textContent = formatPrompt(entry.raw, mode);
@@ -42,11 +59,12 @@ function detail(entry) {
   document.querySelector('#copy-prompt').addEventListener('click', () => copy(formatPrompt(entry.raw, mode)));
   document.querySelector('#download-prompt').addEventListener('click', () => download(`${entry.id}-${mode}-prompt.txt`, formatPrompt(entry.raw, mode)));
   document.querySelectorAll('[data-command]').forEach(button => button.addEventListener('click', () => copy(followupPrompt(entry, entry.key, button.dataset.command))));
-  if (entry.kind === 'official') setupPreview(entry);
+  if (hasMatrix(entry)) setupPreview(entry);
 }
 let observer;
 function setupPreview(entry) {
   let width = 1440;
+  let letter = 'a';
   const frame = document.querySelector('.demo-frame');
   const stage = document.querySelector('.frame-stage');
   const space = document.querySelector('.frame-space');
@@ -60,10 +78,11 @@ function setupPreview(entry) {
     width = Number(button.dataset.width);
     document.querySelectorAll('[data-width]').forEach(b => b.setAttribute('aria-pressed', String(b === button))); size();
   }));
-  document.querySelectorAll('[data-version]').forEach(button => button.addEventListener('click', () => {
-    const baseline = button.dataset.version === 'baseline'; frame.src = baseline ? entry.baseline : entry.route;
-    document.querySelector('#preview-label').textContent = baseline ? '凍結的官方原始碼' : '第一輪修改結果';
-    document.querySelectorAll('[data-version]').forEach(b => b.setAttribute('aria-pressed', String(b === button)));
+  document.querySelectorAll('[data-variant]').forEach(button => button.addEventListener('click', () => {
+    letter = button.dataset.variant;
+    frame.src = entry.variants[letter];
+    document.querySelector('#preview-label').textContent = variantMeta[letter].label;
+    document.querySelectorAll('[data-variant]').forEach(b => b.setAttribute('aria-pressed', String(b === button)));
   }));
   observer = new ResizeObserver(size); observer.observe(stage); size();
 }

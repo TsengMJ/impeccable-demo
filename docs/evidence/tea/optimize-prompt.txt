@@ -1,0 +1,3 @@
+$impeccable optimize experiments/tea/_optimize/index.html
+
+Copy frozen B → experiments/tea/_optimize/ (rsync --delete, exclude _checks). Apply optimize only inside _optimize/. Do not modify a/b/c/d/e and do not register optimize as a public variant. Preserve product copy and interactions. Record before/after metrics (source bytes html+css+js, Google Fonts weight requests, https:// refs, motion decls, approx DOM). First record this full Prompt; report changes and caveats.

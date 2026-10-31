@@ -1,7 +1,7 @@
 import { chromium } from 'playwright';
 import { readFile, writeFile, mkdir, rename } from 'node:fs/promises';
 import { randomUUID } from 'node:crypto';
-import { resolve, join, dirname } from 'node:path';
+import { resolve, join } from 'node:path';
 import { getCase, options, stamp } from './cases.mjs';
 import { inventory } from './files.mjs';
 
@@ -9,19 +9,23 @@ let browser;
 try {
   const args = options();
   if (args.help) {
-    console.log('npm run capture -- --case lumina --take baseline --viewport desktop|mobile [--run recordings/runs/ID] [--base http://127.0.0.1:5173]');
+    console.log('npm run capture -- --case lumina --take a|b|c|d|e --viewport desktop|mobile [--run recordings/runs/ID] [--base http://127.0.0.1:5173]');
     process.exit(0);
   }
   const entry = getCase(args.case);
-  const take = args.take || 'working';
+  const take = args.take || 'b';
   if (typeof take !== 'string' || !/^[a-z0-9-]+$/.test(take)) throw new Error('--take 只能使用英文小寫、數字與 -');
-  if (take === 'baseline' && !entry.baseline) throw new Error('此題目沒有生成基準，不能把待生成頁錄成 baseline。請先建立對照組。');
+  const variant = { baseline: 'a', working: 'b' }[take] || take;
+  if (!entry.variants?.[variant]) throw new Error('--take 必須是 a / b / c / d / e（baseline / working 為舊版別名）');
   const view = args.viewport || 'desktop';
   if (!['desktop', 'mobile'].includes(view)) throw new Error('--viewport 必須是 desktop 或 mobile');
+  const motion = args.motion || 'reduce';
+  if (!['reduce', 'no-preference'].includes(motion)) throw new Error('--motion 必須是 reduce 或 no-preference');
   const viewport = view === 'mobile' ? { width: 390, height: 844 } : { width: 1440, height: 900 };
-  const route = take === 'baseline' ? entry.baseline : entry.route;
+  const route = entry.variants[variant];
   const url = new URL(route, args.base || 'http://127.0.0.1:5173').href;
-  const sourceDirectory = take === 'baseline' ? dirname(join('public', entry.baseline.slice(1))) : entry.directory;
+  const sourceDirectory = join(entry.root, variant);
+  const sourceSha256 = await inventory(sourceDirectory);
   let run = null;
   if (args.run) {
     run = JSON.parse(await readFile(join(args.run, 'run.json'), 'utf8'));
@@ -33,10 +37,10 @@ try {
       if (current[file] !== run.sourceSha256[file]) throw new Error(`快照與實際錄製來源不同：${file}。請先建立正確快照再錄影。`);
     }
   }
-  const output = resolve('recordings/captures', `${stamp()}-${args.case}-${take}-${view}-${randomUUID().slice(0, 8)}`);
+  const output = resolve('recordings/captures', `${stamp()}-${args.case}-${take}-${view}${motion === 'no-preference' ? '-motion' : ''}-${randomUUID().slice(0, 8)}`);
   await mkdir(output, { recursive: true });
   browser = await chromium.launch();
-  const context = await browser.newContext({ viewport, deviceScaleFactor: 1, locale: 'zh-TW', timezoneId: 'Asia/Taipei', colorScheme: 'light', reducedMotion: 'reduce', recordVideo: { dir: output, size: viewport } });
+  const context = await browser.newContext({ viewport, deviceScaleFactor: 1, locale: 'zh-TW', timezoneId: 'Asia/Taipei', colorScheme: 'light', reducedMotion: motion, recordVideo: { dir: output, size: viewport } });
   const page = await context.newPage();
   const errors = [];
   const networkFailures = [];
@@ -72,9 +76,11 @@ try {
   const browserVersion = browser.version();
   await context.close();
   await rename(await video.path(), join(output, 'clip.webm'));
-  const metadata = { case: args.case, take, route, url, title, viewport, deviceScaleFactor: 1, browser: browserVersion, recordedAt: new Date().toISOString(), contentStartMs, durationMs: Date.now() - started, reducedMotion: 'reduce', locale: 'zh-TW', timezone: 'Asia/Taipei', sourceRun: args.run ? resolve(args.run) : null, promptSha256: run?.promptSha256 || null, steps, metrics, pageErrors: errors, networkFailures, note: 'Browser-only scroll recording. No agent conversation or interaction validation. Leading loading frames may be trimmed using contentStartMs.' };
+  const sourceAfter = await inventory(sourceDirectory);
+  const sourceChangedDuringCapture = JSON.stringify(sourceSha256) !== JSON.stringify(sourceAfter);
+  const metadata = { case: args.case, take, variant, route, url, title, viewport, deviceScaleFactor: 1, browser: browserVersion, recordedAt: new Date().toISOString(), contentStartMs, durationMs: Date.now() - started, reducedMotion: motion, locale: 'zh-TW', timezone: 'Asia/Taipei', sourceDirectory, sourceSha256, sourceChangedDuringCapture, sourceRun: args.run ? resolve(args.run) : null, promptSha256: run?.promptSha256 || null, steps, metrics, pageErrors: errors, networkFailures, note: 'Browser-only scroll recording. No agent conversation or interaction validation. Leading loading frames may be trimmed using contentStartMs.' };
   await writeFile(join(output, 'capture.json'), JSON.stringify(metadata, null, 2) + '\n');
   console.log(output);
-  if (errors.length || networkFailures.length) console.warn('錄影已保存；capture.json 包含瀏覽器或網路問題，使用前請檢查。');
+  if (errors.length || networkFailures.length || sourceChangedDuringCapture) console.warn('錄影已保存；capture.json 包含瀏覽器、網路或來源變動問題，使用前請檢查。');
 } catch (error) { console.error(error.message); process.exitCode = 1; }
 finally { if (browser) await browser.close(); }

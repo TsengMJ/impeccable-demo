@@ -1,0 +1,3 @@
+$impeccable bolder demos/lumina-classic/c/index.html
+
+只處理 /demos/lumina-classic/c/。從凍結 B 分叉；不得改 a/ 或 b/。

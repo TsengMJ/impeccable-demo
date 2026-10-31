@@ -1,0 +1,351 @@
+{
+  "checkedAt": "2026-10-31T18:16:27.846Z",
+  "pass": true,
+  "checks": [
+    {
+      "key": "wallet",
+      "variant": "a",
+      "pass": true,
+      "steps": [
+        {
+          "step": "01-default",
+          "value": "Blocked"
+        },
+        {
+          "step": "02-transfer-allowed",
+          "value": "Allowed"
+        },
+        {
+          "step": "03-revoked",
+          "value": "Blocked"
+        },
+        {
+          "step": "04-reenabled",
+          "value": "Allowed"
+        }
+      ]
+    },
+    {
+      "key": "wallet",
+      "variant": "b",
+      "pass": true,
+      "steps": [
+        {
+          "step": "01-default",
+          "value": "Blocked"
+        },
+        {
+          "step": "02-transfer-allowed",
+          "value": "Allowed"
+        },
+        {
+          "step": "03-revoked",
+          "value": "Blocked"
+        },
+        {
+          "step": "04-reenabled",
+          "value": "Allowed"
+        }
+      ]
+    },
+    {
+      "key": "wallet",
+      "variant": "c",
+      "pass": true,
+      "steps": [
+        {
+          "step": "01-default",
+          "value": "Blocked"
+        },
+        {
+          "step": "02-transfer-allowed",
+          "value": "Allowed"
+        },
+        {
+          "step": "03-revoked",
+          "value": "Blocked"
+        },
+        {
+          "step": "04-reenabled",
+          "value": "Allowed"
+        }
+      ]
+    },
+    {
+      "key": "wallet",
+      "variant": "d",
+      "pass": true,
+      "steps": [
+        {
+          "step": "01-default",
+          "value": "Blocked"
+        },
+        {
+          "step": "02-transfer-allowed",
+          "value": "Allowed"
+        },
+        {
+          "step": "03-revoked",
+          "value": "Blocked"
+        },
+        {
+          "step": "04-reenabled",
+          "value": "Allowed"
+        }
+      ]
+    },
+    {
+      "key": "wallet",
+      "variant": "e",
+      "pass": true,
+      "steps": [
+        {
+          "step": "01-default",
+          "value": "Blocked"
+        },
+        {
+          "step": "02-transfer-allowed",
+          "value": "Allowed"
+        },
+        {
+          "step": "03-revoked",
+          "value": "Blocked"
+        },
+        {
+          "step": "04-reenabled",
+          "value": "Allowed"
+        }
+      ]
+    },
+    {
+      "key": "tea",
+      "variant": "a",
+      "pass": true,
+      "steps": [
+        {
+          "step": "01-quarterly",
+          "value": "NT$980"
+        },
+        {
+          "step": "02-annual",
+          "value": "NT$3,600"
+        },
+        {
+          "step": "03-preview",
+          "value": "NT$3,600／年（四次寄送）"
+        },
+        {
+          "step": "04-ruby-brew",
+          "value": "90°C"
+        }
+      ]
+    },
+    {
+      "key": "tea",
+      "variant": "b",
+      "pass": true,
+      "steps": [
+        {
+          "step": "01-quarterly",
+          "value": "NT$980"
+        },
+        {
+          "step": "02-annual",
+          "value": "NT$3,600"
+        },
+        {
+          "step": "03-preview",
+          "value": "NT$3,600／年（四次寄送）"
+        },
+        {
+          "step": "04-ruby-brew",
+          "value": "90°C"
+        }
+      ]
+    },
+    {
+      "key": "tea",
+      "variant": "c",
+      "pass": true,
+      "steps": [
+        {
+          "step": "01-quarterly",
+          "value": "NT$980"
+        },
+        {
+          "step": "02-annual",
+          "value": "NT$3,600"
+        },
+        {
+          "step": "03-preview",
+          "value": "NT$3,600／年（四次寄送）"
+        },
+        {
+          "step": "04-ruby-brew",
+          "value": "90°C"
+        }
+      ]
+    },
+    {
+      "key": "tea",
+      "variant": "d",
+      "pass": true,
+      "steps": [
+        {
+          "step": "01-quarterly",
+          "value": "NT$980"
+        },
+        {
+          "step": "02-annual",
+          "value": "NT$3,600"
+        },
+        {
+          "step": "03-preview",
+          "value": "NT$3,600／年（四次寄送）"
+        },
+        {
+          "step": "04-ruby-brew",
+          "value": "90°C"
+        }
+      ]
+    },
+    {
+      "key": "tea",
+      "variant": "e",
+      "pass": true,
+      "steps": [
+        {
+          "step": "01-quarterly",
+          "value": "NT$980"
+        },
+        {
+          "step": "02-annual",
+          "value": "NT$3,600"
+        },
+        {
+          "step": "03-preview",
+          "value": "NT$3,600／年（四次寄送）"
+        },
+        {
+          "step": "04-ruby-brew",
+          "value": "90°C"
+        }
+      ]
+    },
+    {
+      "key": "festival",
+      "variant": "a",
+      "pass": true,
+      "steps": [
+        {
+          "step": "01-schedule-all",
+          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n15:00–16:00\nNOISE\n玻璃海\nNOISE 舞台\n16:00–17:00\nSIGNAL\n低頻植物\nSIGNAL 舞台\n17:00–18:00\nNOISE\nNULL FM\nNOISE 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台\n20:00–22:00\nNOISE\n夜間格式\nNOISE 舞台"
+        },
+        {
+          "step": "02-signal-filter",
+          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n16:00–17:00\nSIGNAL\n低頻植物\nSIGNAL 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台"
+        },
+        {
+          "step": "03-general-ticket",
+          "value": "NT$1,280"
+        },
+        {
+          "step": "04-two-tickets",
+          "value": "NT$2,560"
+        }
+      ]
+    },
+    {
+      "key": "festival",
+      "variant": "b",
+      "pass": true,
+      "steps": [
+        {
+          "step": "01-schedule-all",
+          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n15:00–16:00\nNOISE\n玻璃海\nNOISE 舞台\n16:00–17:00\nSIGNAL\n低頻植物\nSIGNAL 舞台\n17:00–18:00\nNOISE\nNULL FM\nNOISE 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台\n20:00–22:00\nNOISE\n夜間格式\nNOISE 舞台"
+        },
+        {
+          "step": "02-signal-filter",
+          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n16:00–17:00\nSIGNAL\n低頻植物\nSIGNAL 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台"
+        },
+        {
+          "step": "03-general-ticket",
+          "value": "NT$1,280"
+        },
+        {
+          "step": "04-two-tickets",
+          "value": "NT$2,560"
+        }
+      ]
+    },
+    {
+      "key": "festival",
+      "variant": "c",
+      "pass": true,
+      "steps": [
+        {
+          "step": "01-schedule-all",
+          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n15:00–16:00\nNOISE\n玻璃海\nNOISE 舞台\n16:00–17:00\nSIGNAL\n低頻植物\nSIGNAL 舞台\n17:00–18:00\nNOISE\nNULL FM\nNOISE 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台\n20:00–22:00\nNOISE\n夜間格式\nNOISE 舞台"
+        },
+        {
+          "step": "02-signal-filter",
+          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n16:00–17:00\nSIGNAL\n低頻植物\nSIGNAL 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台"
+        },
+        {
+          "step": "03-general-ticket",
+          "value": "NT$1,280"
+        },
+        {
+          "step": "04-two-tickets",
+          "value": "NT$2,560"
+        }
+      ]
+    },
+    {
+      "key": "festival",
+      "variant": "d",
+      "pass": true,
+      "steps": [
+        {
+          "step": "01-schedule-all",
+          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n15:00–16:00\nNOISE\n玻璃海\nNOISE 舞台\n16:00–17:00\nSIGNAL\n低頻植物\nSIGNAL 舞台\n17:00–18:00\nNOISE\nNULL FM\nNOISE 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台\n20:00–22:00\nNOISE\n夜間格式\nNOISE 舞台"
+        },
+        {
+          "step": "02-signal-filter",
+          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n16:00–17:00\nSIGNAL\n低頻植物\nSIGNAL 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台"
+        },
+        {
+          "step": "03-general-ticket",
+          "value": "NT$1,280"
+        },
+        {
+          "step": "04-two-tickets",
+          "value": "NT$2,560"
+        }
+      ]
+    },
+    {
+      "key": "festival",
+      "variant": "e",
+      "pass": true,
+      "steps": [
+        {
+          "step": "01-schedule-all",
+          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n15:00–16:00\nNOISE\n玻璃海\nNOISE 舞台\n16:00–17:00\nSIGNAL\n低頻植物\nSIGNAL 舞台\n17:00–18:00\nNOISE\nNULL FM\nNOISE 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台\n20:00–22:00\nNOISE\n夜間格式\nNOISE 舞台"
+        },
+        {
+          "step": "02-signal-filter",
+          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n16:00–17:00\nSIGNAL\n低頻植物\nSIGNAL 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台"
+        },
+        {
+          "step": "03-general-ticket",
+          "value": "NT$1,280"
+        },
+        {
+          "step": "04-two-tickets",
+          "value": "NT$2,560"
+        }
+      ]
+    }
+  ]
+}

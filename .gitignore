@@ -6,3 +6,5 @@ dist/
 .impeccable/cache/
 recordings/runs/
 recordings/captures/
+recordings/interactions/
+recordings/source-freeze-*/

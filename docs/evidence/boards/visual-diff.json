@@ -1,0 +1,195 @@
+{
+  "note": "Viewport PNG pixel difference from A at the same size, sampled every fourth pixel. This is a visual coverage heuristic, not a design quality score; E motion is absent under reduced-motion capture.",
+  "differences": {
+    "lumina": {
+      "desktop": {
+        "b": {
+          "meanRgbDelta": 4.4,
+          "changedPixelsPct": 3.1
+        },
+        "c": {
+          "meanRgbDelta": 13.1,
+          "changedPixelsPct": 7
+        },
+        "d": {
+          "meanRgbDelta": 21.7,
+          "changedPixelsPct": 7.7
+        },
+        "e": {
+          "meanRgbDelta": 4.9,
+          "changedPixelsPct": 3.3
+        }
+      },
+      "mobile": {
+        "b": {
+          "meanRgbDelta": 36.3,
+          "changedPixelsPct": 21
+        },
+        "c": {
+          "meanRgbDelta": 38.6,
+          "changedPixelsPct": 21.2
+        },
+        "d": {
+          "meanRgbDelta": 43.6,
+          "changedPixelsPct": 22
+        },
+        "e": {
+          "meanRgbDelta": 36.7,
+          "changedPixelsPct": 21.2
+        }
+      }
+    },
+    "lumina-classic": {
+      "desktop": {
+        "b": {
+          "meanRgbDelta": 14.4,
+          "changedPixelsPct": 9.9
+        },
+        "c": {
+          "meanRgbDelta": 18.6,
+          "changedPixelsPct": 8.9
+        },
+        "d": {
+          "meanRgbDelta": 22.6,
+          "changedPixelsPct": 15
+        },
+        "e": {
+          "meanRgbDelta": 14.9,
+          "changedPixelsPct": 10
+        }
+      },
+      "mobile": {
+        "b": {
+          "meanRgbDelta": 35.6,
+          "changedPixelsPct": 28.7
+        },
+        "c": {
+          "meanRgbDelta": 31.2,
+          "changedPixelsPct": 21.1
+        },
+        "d": {
+          "meanRgbDelta": 44.4,
+          "changedPixelsPct": 43.8
+        },
+        "e": {
+          "meanRgbDelta": 36.1,
+          "changedPixelsPct": 28.8
+        }
+      }
+    },
+    "wallet": {
+      "desktop": {
+        "b": {
+          "meanRgbDelta": 3.9,
+          "changedPixelsPct": 2.7
+        },
+        "c": {
+          "meanRgbDelta": 8,
+          "changedPixelsPct": 5.6
+        },
+        "d": {
+          "meanRgbDelta": 16.7,
+          "changedPixelsPct": 7.5
+        },
+        "e": {
+          "meanRgbDelta": 3.9,
+          "changedPixelsPct": 2.7
+        }
+      },
+      "mobile": {
+        "b": {
+          "meanRgbDelta": 32.6,
+          "changedPixelsPct": 21.3
+        },
+        "c": {
+          "meanRgbDelta": 31.7,
+          "changedPixelsPct": 21.1
+        },
+        "d": {
+          "meanRgbDelta": 38,
+          "changedPixelsPct": 22.9
+        },
+        "e": {
+          "meanRgbDelta": 32.6,
+          "changedPixelsPct": 21.3
+        }
+      }
+    },
+    "tea": {
+      "desktop": {
+        "b": {
+          "meanRgbDelta": 46.8,
+          "changedPixelsPct": 57.2
+        },
+        "c": {
+          "meanRgbDelta": 42.1,
+          "changedPixelsPct": 53.8
+        },
+        "d": {
+          "meanRgbDelta": 49.2,
+          "changedPixelsPct": 61.3
+        },
+        "e": {
+          "meanRgbDelta": 46.8,
+          "changedPixelsPct": 57.2
+        }
+      },
+      "mobile": {
+        "b": {
+          "meanRgbDelta": 47.8,
+          "changedPixelsPct": 51.4
+        },
+        "c": {
+          "meanRgbDelta": 47.9,
+          "changedPixelsPct": 51.6
+        },
+        "d": {
+          "meanRgbDelta": 49.1,
+          "changedPixelsPct": 52.3
+        },
+        "e": {
+          "meanRgbDelta": 47.8,
+          "changedPixelsPct": 51.4
+        }
+      }
+    },
+    "festival": {
+      "desktop": {
+        "b": {
+          "meanRgbDelta": 9.7,
+          "changedPixelsPct": 5.9
+        },
+        "c": {
+          "meanRgbDelta": 38.6,
+          "changedPixelsPct": 21.1
+        },
+        "d": {
+          "meanRgbDelta": 58.5,
+          "changedPixelsPct": 27.3
+        },
+        "e": {
+          "meanRgbDelta": 10,
+          "changedPixelsPct": 6.2
+        }
+      },
+      "mobile": {
+        "b": {
+          "meanRgbDelta": 24,
+          "changedPixelsPct": 14
+        },
+        "c": {
+          "meanRgbDelta": 47.9,
+          "changedPixelsPct": 37.6
+        },
+        "d": {
+          "meanRgbDelta": 81.7,
+          "changedPixelsPct": 45.1
+        },
+        "e": {
+          "meanRgbDelta": 28.2,
+          "changedPixelsPct": 18.8
+        }
+      }
+    }
+  }
+}

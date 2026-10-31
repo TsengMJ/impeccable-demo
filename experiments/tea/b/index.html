@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>山間製茶 · 季節茶訂閱</title>
+  <meta name="description" content="山間製茶——每季寄出兩款台灣茶與一張沖泡卡。把一座山，留給一杯茶。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要內容</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="山間製茶首頁">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">山間製茶</span>
+      </a>
+      <nav class="nav" aria-label="主要導覽">
+        <a href="#teas">本季茶款</a>
+        <a href="#steps">怎麼訂</a>
+        <a href="#brew">沖泡指南</a>
+        <a href="#plans">方案</a>
+        <a href="#faq">常見問題</a>
+      </nav>
+      <a class="btn btn-sm btn-primary header-cta" href="#plans" aria-label="選擇這一季的茶">
+        <span class="cta-full">選擇這一季的茶</span>
+        <span class="cta-short">選方案</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <div class="hero-visual" aria-hidden="true">
+        <svg class="hero-svg" viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#7fa8a0"/>
+              <stop offset="45%" stop-color="#c5d6c8"/>
+              <stop offset="100%" stop-color="#e8efe6"/>
+            </linearGradient>
+            <linearGradient id="ridge1" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#2d5a4a"/>
+              <stop offset="100%" stop-color="#1a3d32"/>
+            </linearGradient>
+            <linearGradient id="ridge2" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#3f6e58"/>
+              <stop offset="100%" stop-color="#254838"/>
+            </linearGradient>
+            <linearGradient id="mist" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#e8efe6" stop-opacity="0"/>
+              <stop offset="60%" stop-color="#e8efe6" stop-opacity="0.55"/>
+              <stop offset="100%" stop-color="#e8efe6" stop-opacity="0.9"/>
+            </linearGradient>
+            <radialGradient id="steam" cx="50%" cy="80%" r="50%">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+              <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="1440" height="900" fill="url(#sky)"/>
+          <!-- distant ridges -->
+          <path fill="#5a8574" opacity="0.55" d="M0 420 C180 360 320 380 480 340 C640 300 780 280 920 310 C1080 345 1240 300 1440 330 L1440 900 L0 900 Z"/>
+          <path fill="url(#ridge2)" d="M0 500 C220 430 380 470 560 440 C760 405 900 450 1080 420 C1220 400 1340 430 1440 410 L1440 900 L0 900 Z"/>
+          <path fill="url(#ridge1)" d="M0 620 C160 560 300 590 460 555 C640 515 800 580 980 545 C1140 515 1280 560 1440 530 L1440 900 L0 900 Z"/>
+          <!-- terrace lines -->
+          <path fill="none" stroke="#8fb89a" stroke-width="1.2" opacity="0.35" d="M0 640 Q360 600 720 630 T1440 610"/>
+          <path fill="none" stroke="#8fb89a" stroke-width="1" opacity="0.25" d="M0 680 Q400 650 800 675 T1440 655"/>
+          <!-- mist -->
+          <rect y="520" width="1440" height="380" fill="url(#mist)"/>
+          <!-- cup: wide keeps right; narrow recenters so slice crop cannot hide it -->
+          <g class="hero-cup hero-cup-wide" transform="translate(1080 580)">
+            <ellipse cx="0" cy="120" rx="78" ry="14" fill="#1a3d32" opacity="0.18"/>
+            <path fill="#f4f7f2" stroke="#1a3d32" stroke-width="2.5" d="M-55 40 L-48 115 Q-48 130 0 130 Q48 130 48 115 L55 40 Z"/>
+            <ellipse cx="0" cy="40" rx="55" ry="16" fill="#2a6b4f"/>
+            <ellipse cx="0" cy="40" rx="42" ry="11" fill="#c47a3a"/>
+            <path fill="none" stroke="#1a3d32" stroke-width="2.5" d="M55 55 Q85 55 85 85 Q85 115 55 110"/>
+            <g class="steam-lines" fill="url(#steam)">
+              <ellipse class="steam s1" cx="-12" cy="10" rx="10" ry="28"/>
+              <ellipse class="steam s2" cx="8" cy="0" rx="12" ry="34"/>
+              <ellipse class="steam s3" cx="22" cy="14" rx="8" ry="24"/>
+            </g>
+          </g>
+          <g class="hero-cup hero-cup-narrow" transform="translate(720 290) scale(0.92)">
+            <ellipse cx="0" cy="120" rx="78" ry="14" fill="#1a3d32" opacity="0.18"/>
+            <path fill="#f4f7f2" stroke="#1a3d32" stroke-width="2.5" d="M-55 40 L-48 115 Q-48 130 0 130 Q48 130 48 115 L55 40 Z"/>
+            <ellipse cx="0" cy="40" rx="55" ry="16" fill="#2a6b4f"/>
+            <ellipse cx="0" cy="40" rx="42" ry="11" fill="#c47a3a"/>
+            <path fill="none" stroke="#1a3d32" stroke-width="2.5" d="M55 55 Q85 55 85 85 Q85 115 55 110"/>
+            <g class="steam-lines" fill="url(#steam)">
+              <ellipse class="steam s1" cx="-12" cy="10" rx="10" ry="28"/>
+              <ellipse class="steam s2" cx="8" cy="0" rx="12" ry="34"/>
+              <ellipse class="steam s3" cx="22" cy="14" rx="8" ry="24"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="shell hero-content">
+        <h1 id="hero-title" class="hero-brand">山間製茶</h1>
+        <p class="hero-tagline">把一座山，留給一杯茶。</p>
+        <p class="hero-lede">每季寄出兩款台灣茶與一張沖泡卡——給想把喝茶變成日常、卻還不熟茶葉分類的人。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#plans">選擇這一季的茶</a>
+          <a class="btn btn-ghost" href="#brew">看看怎麼沖</a>
+        </div>
+        <p class="hero-note">示範商品 · 非實際販售</p>
+      </div>
+    </section>
+
+    <section id="teas" class="section teas" aria-labelledby="teas-title">
+      <div class="shell">
+        <header class="section-head">
+          <h2 id="teas-title">本季兩款茶</h2>
+          <p>來自阿里山與南投的示範配方，各 50g，風味清楚可辨。</p>
+        </header>
+        <div class="tea-grid">
+          <article class="tea-item">
+            <div class="tea-swatch tea-swatch-oolong" aria-hidden="true">
+              <svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+                <rect width="200" height="160" fill="#dce8dc"/>
+                <ellipse cx="100" cy="95" rx="58" ry="18" fill="#b7c9b0"/>
+                <path d="M55 90 L62 40 Q100 28 138 40 L145 90 Z" fill="#6b9a6e"/>
+                <ellipse cx="100" cy="40" rx="40" ry="12" fill="#8fb48a"/>
+                <circle cx="78" cy="72" r="3" fill="#e8dcc8" opacity="0.8"/>
+                <circle cx="112" cy="68" r="2.5" fill="#e8dcc8" opacity="0.7"/>
+                <circle cx="95" cy="82" r="2" fill="#e8dcc8" opacity="0.6"/>
+              </svg>
+            </div>
+            <div class="tea-body">
+              <p class="tea-demo">示範商品</p>
+              <h3>阿里山烏龍</h3>
+              <p class="tea-meta">50g · 清花香／柔和甘甜</p>
+              <p class="tea-desc">產地設定：阿里山。花香清透，入口柔和，尾韻帶甘。</p>
+            </div>
+          </article>
+          <article class="tea-item">
+            <div class="tea-swatch tea-swatch-ruby" aria-hidden="true">
+              <svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+                <rect width="200" height="160" fill="#e8d9cc"/>
+                <ellipse cx="100" cy="95" rx="58" ry="18" fill="#c9a890"/>
+                <path d="M55 90 L62 40 Q100 28 138 40 L145 90 Z" fill="#8b3d2a"/>
+                <ellipse cx="100" cy="40" rx="40" ry="12" fill="#a85238"/>
+                <circle cx="78" cy="72" r="3" fill="#d4a574" opacity="0.85"/>
+                <circle cx="112" cy="68" r="2.5" fill="#d4a574" opacity="0.75"/>
+                <circle cx="95" cy="82" r="2" fill="#d4a574" opacity="0.65"/>
+              </svg>
+            </div>
+            <div class="tea-body">
+              <p class="tea-demo">示範商品</p>
+              <h3>南投紅玉</h3>
+              <p class="tea-meta">50g · 肉桂香／清涼尾韻</p>
+              <p class="tea-desc">產地設定：南投。肉桂香氣明顯，杯底留下清涼尾韻。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="steps" class="section steps" aria-labelledby="steps-title">
+      <div class="shell">
+        <header class="section-head">
+          <h2 id="steps-title">三個步驟</h2>
+          <p>從選方案到按卡沖泡，把喝茶放進日常節奏。</p>
+        </header>
+        <ol class="step-list">
+          <li>
+            <span class="step-num" aria-hidden="true">01</span>
+            <h3>選擇方案</h3>
+            <p>季付或年付，決定這一季要寄到家的節奏。</p>
+          </li>
+          <li>
+            <span class="step-num" aria-hidden="true">02</span>
+            <h3>每季收茶</h3>
+            <p>兩款各 50g，附一張沖泡卡，標明溫度與時間。</p>
+          </li>
+          <li>
+            <span class="step-num" aria-hidden="true">03</span>
+            <h3>按卡沖泡</h3>
+            <p>照卡上的參數沖第一泡，再依口味微調。</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="brew" class="section brew" aria-labelledby="brew-title">
+      <div class="shell brew-layout">
+        <header class="section-head">
+          <h2 id="brew-title">沖泡指南</h2>
+          <p>切換茶款，查看第一泡建議參數。</p>
+        </header>
+        <div class="brew-panel" role="region" aria-live="polite">
+          <div class="brew-tabs" role="tablist" aria-label="選擇茶款">
+            <button type="button" class="brew-tab is-active" role="tab" id="tab-oolong" aria-selected="true" aria-controls="brew-panel-body" data-tea="oolong">阿里山烏龍</button>
+            <button type="button" class="brew-tab" role="tab" id="tab-ruby" aria-selected="false" aria-controls="brew-panel-body" data-tea="ruby">南投紅玉</button>
+          </div>
+          <div id="brew-panel-body" class="brew-body" role="tabpanel" aria-labelledby="tab-oolong">
+            <p class="brew-name" id="brew-name">阿里山烏龍</p>
+            <dl class="brew-params">
+              <div>
+                <dt>水溫</dt>
+                <dd id="brew-temp">95°C</dd>
+              </div>
+              <div>
+                <dt>水量</dt>
+                <dd id="brew-water">150ml</dd>
+              </div>
+              <div>
+                <dt>第一泡</dt>
+                <dd id="brew-time">60 秒</dd>
+              </div>
+            </dl>
+            <p class="brew-hint" id="brew-hint">花香清透時，可略縮短浸泡；想要更厚的口感，可再延長 10 秒。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="plans" class="section plans" aria-labelledby="plans-title">
+      <div class="shell">
+        <header class="section-head">
+          <h2 id="plans-title">訂閱方案</h2>
+          <p>每次兩款各 50g，含沖泡卡。台灣本島免運；離島運費尚未提供。</p>
+        </header>
+
+        <div class="plan-toggle" role="group" aria-label="計費週期">
+          <button type="button" class="plan-opt is-active" data-plan="quarterly" aria-pressed="true">季付</button>
+          <button type="button" class="plan-opt" data-plan="annual" aria-pressed="false">年付</button>
+        </div>
+
+        <div class="plan-card" aria-live="polite">
+          <p class="plan-label" id="plan-label">季付方案</p>
+          <p class="plan-price">
+            <span class="plan-amount" id="plan-amount">NT$980</span>
+            <span class="plan-period" id="plan-period">／季</span>
+          </p>
+          <ul class="plan-points">
+            <li id="plan-ships">每季寄送 1 次 · 兩款各 50g + 沖泡卡</li>
+            <li>台灣本島免運</li>
+            <li>離島運費尚未提供，暫不開放訂閱</li>
+            <li>下次出貨七日前可取消後續續訂</li>
+          </ul>
+          <p class="plan-summary" id="plan-summary">摘要：季付 NT$980／季，每年約 4 次寄送節奏以季節為準；本示範不收款。</p>
+          <button type="button" class="btn btn-primary btn-block" id="preview-btn">預覽訂閱</button>
+          <p class="plan-fine">示範互動 · 不付款、不送出訂單</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq" aria-labelledby="faq-title">
+      <div class="shell narrow">
+        <header class="section-head">
+          <h2 id="faq-title">常見問題</h2>
+        </header>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>如何保存？</summary>
+            <p>建議保持密封、避光、乾燥。開封後盡快飲用，避免潮濕與異味。本頁為示範說明，非專業保存保證。</p>
+          </details>
+          <details class="faq-item">
+            <summary>何時寄送？</summary>
+            <p>示範寄送日為每季首月 15 日。實際品牌若上線，會另行公告。</p>
+          </details>
+          <details class="faq-item">
+            <summary>可以取消嗎？</summary>
+            <p>可以。下次出貨七日前可取消後續續訂。本示範不承諾退款細節，亦不處理真實訂單。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p class="footer-brand">山間製茶</p>
+      <p class="footer-note">虛構品牌 · 展示用 Landing Page · 示範商品非實際販售</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="preview-modal" hidden>
+    <div class="modal-backdrop" data-close-modal tabindex="-1"></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+      <button type="button" class="modal-close" data-close-modal aria-label="關閉">×</button>
+      <h2 id="modal-title">訂閱預覽</h2>
+      <p class="modal-warn">此為頁內示範摘要，不付款、不送出訂單。</p>
+      <dl class="modal-summary">
+        <div>
+          <dt>方案</dt>
+          <dd id="modal-plan">季付</dd>
+        </div>
+        <div>
+          <dt>價格</dt>
+          <dd id="modal-price">NT$980／季</dd>
+        </div>
+        <div>
+          <dt>寄送</dt>
+          <dd id="modal-ships">每季 1 次 · 兩款各 50g + 沖泡卡</dd>
+        </div>
+        <div>
+          <dt>運費</dt>
+          <dd>台灣本島免運；離島尚未開放</dd>
+        </div>
+        <div>
+          <dt>取消</dt>
+          <dd>下次出貨七日前可取消後續續訂</dd>
+        </div>
+      </dl>
+      <button type="button" class="btn btn-ghost btn-block" data-close-modal>關閉</button>
+    </div>
+  </div>
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>

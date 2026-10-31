@@ -1,9 +1,40 @@
+/** @typedef {{ id: string, label: string, root: string, prompt: string, variants: Record<string,string>, baseline?: string, gate?: string, directory: string, route: string }} CaseEntry */
+
+const brief = (id, label, root, prompt) => {
+  const variants = Object.fromEntries(['a', 'b', 'c', 'd', 'e'].map(v => [v, `/${root}/${v}/`]));
+  return {
+    id, label, root, prompt, variants, gate: `/${root}/`,
+    baseline: variants.a + 'index.html',
+    directory: `${root}/b`,
+    route: variants.b,
+  };
+};
+
+const official = (id, label, root, prompt) => {
+  const variants = Object.fromEntries(['a', 'b', 'c', 'd', 'e'].map(v => [v, `/${root}/${v}/`]));
+  return {
+    id, label, root, prompt, variants,
+    // Immutable upstream freeze remains the provenance A; demos/*/a mirrors it for uniform switching.
+    baseline: variants.a + 'index.html',
+    directory: `${root}/b`,
+    route: variants.b,
+  };
+};
+
 export const cases = {
-  lumina: { id: 'D01', label: 'Lumina', route: '/demos/lumina/', directory: 'demos/lumina', prompt: 'docs/prompts/lumina.md', baseline: '/baselines/lumina/index.html' },
-  'lumina-classic': { id: 'D02', label: 'Lumina Classic', route: '/demos/lumina-classic/', directory: 'demos/lumina-classic', prompt: 'docs/prompts/lumina-classic.md', baseline: '/baselines/lumina-classic/index.html' },
-  wallet: { id: 'W01', label: 'AEGIS', route: '/experiments/wallet/', directory: 'experiments/wallet', prompt: 'docs/prompts/wallet.md' },
-  tea: { id: 'T01', label: '山間製茶', route: '/experiments/tea/', directory: 'experiments/tea', prompt: 'docs/prompts/tea.md' },
-  festival: { id: 'F01', label: 'OFFGRID 離線聲場', route: '/experiments/festival/', directory: 'experiments/festival', prompt: 'docs/prompts/festival.md' },
+  lumina: official('D01', 'Lumina', 'demos/lumina', 'docs/prompts/lumina.md'),
+  'lumina-classic': official('D02', 'Lumina Classic', 'demos/lumina-classic', 'docs/prompts/lumina-classic.md'),
+  wallet: brief('W01', 'AEGIS', 'experiments/wallet', 'docs/prompts/wallet.md'),
+  tea: brief('T01', '山間製茶', 'experiments/tea', 'docs/prompts/tea.md'),
+  festival: brief('F01', 'OFFGRID 離線聲場', 'experiments/festival', 'docs/prompts/festival.md'),
+};
+
+export const variantMeta = {
+  a: { label: 'A · 原圖', command: null },
+  b: { label: 'B · polish', command: 'polish' },
+  c: { label: 'C · bolder', command: 'bolder' },
+  d: { label: 'D · distill', command: 'distill' },
+  e: { label: 'E · animate', command: 'animate' },
 };
 
 export function options(args = process.argv.slice(2)) {

@@ -1,0 +1,231 @@
+{
+  "lumina": {
+    "bytes_before": 11810,
+    "bytes_after": 11953,
+    "bytes_delta": 143,
+    "bytes_pct": 1.2,
+    "html_bytes_delta": 143,
+    "css_bytes_delta": 0,
+    "js_bytes_delta": 0,
+    "external_http_refs_before": 3,
+    "external_http_refs_after": 3,
+    "external_http_refs_delta": 0,
+    "font_weight_requests_before": 8,
+    "font_weight_requests_after": 6,
+    "font_weight_requests_delta": -2,
+    "font_weight_requests_pct": -25,
+    "font_weight_count_before": 5,
+    "font_weight_count_after": 3,
+    "font_weight_count_delta": -2,
+    "font_weights_before": [
+      300,
+      400,
+      500,
+      600,
+      700
+    ],
+    "font_weights_after": [
+      400,
+      500,
+      600
+    ],
+    "font_family_specs_before": [
+      "Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700",
+      "Inter:wght@400;500;600"
+    ],
+    "font_family_specs_after": [
+      "Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600",
+      "Inter:wght@400;500;600"
+    ],
+    "motion_decl_total_before": 2,
+    "motion_decl_total_after": 2,
+    "motion_decl_total_delta": 0,
+    "has_display_swap_after": true,
+    "dom_approx_tags_before": 135,
+    "dom_approx_tags_after": 135
+  },
+  "lumina-classic": {
+    "bytes_before": 13621,
+    "bytes_after": 13782,
+    "bytes_delta": 161,
+    "bytes_pct": 1.2,
+    "html_bytes_delta": 161,
+    "css_bytes_delta": 0,
+    "js_bytes_delta": 0,
+    "external_http_refs_before": 3,
+    "external_http_refs_after": 3,
+    "external_http_refs_delta": 0,
+    "font_weight_requests_before": 5,
+    "font_weight_requests_after": 4,
+    "font_weight_requests_delta": -1,
+    "font_weight_requests_pct": -20,
+    "font_weight_count_before": 5,
+    "font_weight_count_after": 4,
+    "font_weight_count_delta": -1,
+    "font_weights_before": [
+      400,
+      500,
+      600,
+      700,
+      800
+    ],
+    "font_weights_after": [
+      400,
+      600,
+      700,
+      800
+    ],
+    "font_family_specs_before": [
+      "Inter:wght@400;500;600;700;800"
+    ],
+    "font_family_specs_after": [
+      "Inter:wght@400;600;700;800"
+    ],
+    "motion_decl_total_before": 2,
+    "motion_decl_total_after": 2,
+    "motion_decl_total_delta": 0,
+    "has_display_swap_after": true,
+    "dom_approx_tags_before": 136,
+    "dom_approx_tags_after": 136
+  },
+  "wallet": {
+    "bytes_before": 44382,
+    "bytes_after": 45190,
+    "bytes_delta": 808,
+    "bytes_pct": 1.8,
+    "html_bytes_delta": 36,
+    "css_bytes_delta": 332,
+    "js_bytes_delta": 440,
+    "external_http_refs_before": 3,
+    "external_http_refs_after": 3,
+    "external_http_refs_delta": 0,
+    "font_weight_requests_before": 8,
+    "font_weight_requests_after": 7,
+    "font_weight_requests_delta": -1,
+    "font_weight_requests_pct": -12.5,
+    "font_weight_count_before": 5,
+    "font_weight_count_after": 5,
+    "font_weight_count_delta": 0,
+    "font_weights_before": [
+      400,
+      500,
+      600,
+      700,
+      800
+    ],
+    "font_weights_after": [
+      400,
+      500,
+      600,
+      700,
+      800
+    ],
+    "font_family_specs_before": [
+      "IBM Plex Mono:wght@400;500",
+      "IBM Plex Sans:wght@400;500;600",
+      "Syne:wght@600;700;800"
+    ],
+    "font_family_specs_after": [
+      "IBM Plex Mono:wght@400;500",
+      "IBM Plex Sans:wght@400;500;600",
+      "Syne:wght@700;800"
+    ],
+    "motion_decl_total_before": 9,
+    "motion_decl_total_after": 9,
+    "motion_decl_total_delta": 0,
+    "has_display_swap_after": true,
+    "dom_approx_tags_before": 359,
+    "dom_approx_tags_after": 359
+  },
+  "tea": {
+    "bytes_before": 37344,
+    "bytes_after": 37975,
+    "bytes_delta": 631,
+    "bytes_pct": 1.7,
+    "html_bytes_delta": 36,
+    "css_bytes_delta": 193,
+    "js_bytes_delta": 402,
+    "external_http_refs_before": 3,
+    "external_http_refs_after": 3,
+    "external_http_refs_delta": 0,
+    "font_weight_requests_before": 5,
+    "font_weight_requests_after": 4,
+    "font_weight_requests_delta": -1,
+    "font_weight_requests_pct": -20,
+    "font_weight_count_before": 3,
+    "font_weight_count_after": 3,
+    "font_weight_count_delta": 0,
+    "font_weights_before": [
+      400,
+      500,
+      700
+    ],
+    "font_weights_after": [
+      400,
+      500,
+      700
+    ],
+    "font_family_specs_before": [
+      "Noto Sans TC:wght@400;500;700",
+      "Noto Serif TC:wght@500;700"
+    ],
+    "font_family_specs_after": [
+      "Noto Sans TC:wght@400;500;700",
+      "Noto Serif TC:wght@700"
+    ],
+    "motion_decl_total_before": 4,
+    "motion_decl_total_after": 4,
+    "motion_decl_total_delta": 0,
+    "has_display_swap_after": true,
+    "dom_approx_tags_before": 395,
+    "dom_approx_tags_after": 395
+  },
+  "festival": {
+    "bytes_before": 34942,
+    "bytes_after": 35576,
+    "bytes_delta": 634,
+    "bytes_pct": 1.8,
+    "html_bytes_delta": 48,
+    "css_bytes_delta": 185,
+    "js_bytes_delta": 401,
+    "external_http_refs_before": 3,
+    "external_http_refs_after": 3,
+    "external_http_refs_delta": 0,
+    "font_weight_requests_before": 7,
+    "font_weight_requests_after": 6,
+    "font_weight_requests_delta": -1,
+    "font_weight_requests_pct": -14.3,
+    "font_weight_count_before": 5,
+    "font_weight_count_after": 4,
+    "font_weight_count_delta": -1,
+    "font_weights_before": [
+      400,
+      500,
+      600,
+      700,
+      800
+    ],
+    "font_weights_after": [
+      400,
+      600,
+      700,
+      800
+    ],
+    "font_family_specs_before": [
+      "IBM Plex Mono:wght@400;600",
+      "Noto Sans TC:wght@400;500;700",
+      "Syne:wght@700;800"
+    ],
+    "font_family_specs_after": [
+      "IBM Plex Mono:wght@400;600",
+      "Noto Sans TC:wght@400;700",
+      "Syne:wght@700;800"
+    ],
+    "motion_decl_total_before": 13,
+    "motion_decl_total_after": 13,
+    "motion_decl_total_delta": 0,
+    "has_display_swap_after": true,
+    "dom_approx_tags_before": 235,
+    "dom_approx_tags_after": 235
+  }
+}
