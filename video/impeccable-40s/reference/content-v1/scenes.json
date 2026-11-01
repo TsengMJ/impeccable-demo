@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "projectId": "impeccable-40s",
+  "contentRevision": "v1",
+  "phase": "CONTENT_LOCK",
+  "phaseStatus": "IN_REVIEW",
+  "durationSec": 40,
+  "fps": 30,
+  "resolution": {
+    "width": 1080,
+    "height": 1920
+  },
+  "language": "zh-Hans",
+  "voiceLanguage": "Mandarin",
+  "voiceSelection": null,
+  "voiceTimingValidated": false,
+  "safeArea": {
+    "leftPx": 110,
+    "rightPx": 110,
+    "topPx": 250,
+    "bottomPx": 300
+  },
+  "reviewPolicy": "User confirms content before styleframes; confirms storyboard before animatic; only approved scenes become LOCKED; final assembly after all scenes approved.",
+  "paidServices": {
+    "providerOption": "Higgsfield",
+    "userConditionalAuthorization": true,
+    "authorizationNote": "User allows Higgsfield if needed and has pay-as-you-go access. No task submitted in this phase.",
+    "budgetUsd": null,
+    "quotedCostUsd": null,
+    "spentUsd": 0,
+    "quoteRequiredBeforeSubmission": true
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "startSec": 0,
+      "endSec": 3,
+      "durationSec": 3,
+      "status": "DRAFT",
+      "contentStatus": "IN_REVIEW",
+      "coreMessage": "先看到变化",
+      "voiceover": "AI 写的页面，还能这样改。",
+      "headline": "手机里，差别在这里",
+      "assets": [
+        "tea-a-mobile",
+        "tea-b-mobile"
+      ],
+      "visualPlan": "茶页同位置 A→B 快速揭示，前 1.5 秒内发生变化；不从 Logo 开始。",
+      "productionMethod": "Remotion composition of existing recordings and screenshots; no generated product imagery",
+      "generation": {
+        "required": false,
+        "provider": null,
+        "model": null,
+        "endpoint": null,
+        "prompt": null,
+        "estimatedCostUsd": 0,
+        "actualCostUsd": 0,
+        "jobs": []
+      },
+      "review": {
+        "approvedBy": null,
+        "approvedAt": null
+      },
+      "render": {
+        "revision": 0,
+        "path": null,
+        "dependencies": [
+          "tea-a-mobile",
+          "tea-b-mobile"
+        ]
+      }
+    },
+    {
+      "id": "S02",
+      "startSec": 3,
+      "endSec": 8,
+      "durationSec": 5,
+      "status": "DRAFT",
+      "contentStatus": "IN_REVIEW",
+      "coreMessage": "知道工具是什么",
+      "voiceover": "Impeccable，是给编程 AI 用的开源设计技能。",
+      "headline": "Impeccable",
+      "assets": [
+        "tea-b-mobile"
+      ],
+      "visualPlan": "保留真实茶页作背景，突出项目名称与「给编程 AI 的设计技能」，不展示功能清单。",
+      "productionMethod": "Remotion composition of existing recordings and screenshots; no generated product imagery",
+      "generation": {
+        "required": false,
+        "provider": null,
+        "model": null,
+        "endpoint": null,
+        "prompt": null,
+        "estimatedCostUsd": 0,
+        "actualCostUsd": 0,
+        "jobs": []
+      },
+      "review": {
+        "approvedBy": null,
+        "approvedAt": null
+      },
+      "render": {
+        "revision": 0,
+        "path": null,
+        "dependencies": [
+          "tea-b-mobile"
+        ]
+      }
+    },
+    {
+      "id": "S03",
+      "startSec": 8,
+      "endSec": 16,
+      "durationSec": 8,
+      "status": "DRAFT",
+      "contentStatus": "IN_REVIEW",
+      "coreMessage": "看到 polish 的实际价值",
+      "voiceover": "茶页打磨后，茶杯回到画面里，文字也更好读。",
+      "headline": "polish · 打磨",
+      "assets": [
+        "tea-a-mobile",
+        "tea-b-mobile"
+      ],
+      "visualPlan": "同尺寸、同裁切依次展示 A 与 B。先指向茶杯，再指向文字区域，两个焦点不同时高亮。",
+      "productionMethod": "Remotion composition of existing recordings and screenshots; no generated product imagery",
+      "generation": {
+        "required": false,
+        "provider": null,
+        "model": null,
+        "endpoint": null,
+        "prompt": null,
+        "estimatedCostUsd": 0,
+        "actualCostUsd": 0,
+        "jobs": []
+      },
+      "review": {
+        "approvedBy": null,
+        "approvedAt": null
+      },
+      "render": {
+        "revision": 0,
+        "path": null,
+        "dependencies": [
+          "tea-a-mobile",
+          "tea-b-mobile"
+        ]
+      }
+    },
+    {
+      "id": "S04",
+      "startSec": 16,
+      "endSec": 27,
+      "durationSec": 11,
+      "status": "DRAFT",
+      "contentStatus": "IN_REVIEW",
+      "coreMessage": "看到精简如何改变信息顺序",
+      "voiceover": "钱包页先打磨、再精简，拿掉装饰，权限说明更早出现。",
+      "headline": "distill · 精简",
+      "assets": [
+        "wallet-a-mobile",
+        "wallet-b-mobile",
+        "wallet-d-mobile"
+      ],
+      "visualPlan": "先 A，再 B，最后 D；标签明确 A → B → D。D 停留最长，突出首屏出现的权限说明。",
+      "productionMethod": "Remotion composition of existing recordings and screenshots; no generated product imagery",
+      "generation": {
+        "required": false,
+        "provider": null,
+        "model": null,
+        "endpoint": null,
+        "prompt": null,
+        "estimatedCostUsd": 0,
+        "actualCostUsd": 0,
+        "jobs": []
+      },
+      "review": {
+        "approvedBy": null,
+        "approvedAt": null
+      },
+      "render": {
+        "revision": 0,
+        "path": null,
+        "dependencies": [
+          "wallet-a-mobile",
+          "wallet-b-mobile",
+          "wallet-d-mobile"
+        ]
+      }
+    },
+    {
+      "id": "S05",
+      "startSec": 27,
+      "endSec": 33,
+      "durationSec": 6,
+      "status": "DRAFT",
+      "contentStatus": "IN_REVIEW",
+      "coreMessage": "知道仍需人工验收",
+      "voiceover": "不过，音乐节的精简版，手机上还是会溢出。",
+      "headline": "手机排版，仍要检查",
+      "assets": [
+        "festival-d-mobile"
+      ],
+      "visualPlan": "保留完整的 390px 视口边界，指向右侧越界字标。编辑提示不能伪装成网页本身 UI。",
+      "productionMethod": "Remotion composition of existing recordings and screenshots; no generated product imagery",
+      "generation": {
+        "required": false,
+        "provider": null,
+        "model": null,
+        "endpoint": null,
+        "prompt": null,
+        "estimatedCostUsd": 0,
+        "actualCostUsd": 0,
+        "jobs": []
+      },
+      "review": {
+        "approvedBy": null,
+        "approvedAt": null
+      },
+      "render": {
+        "revision": 0,
+        "path": null,
+        "dependencies": [
+          "festival-d-mobile"
+        ]
+      }
+    },
+    {
+      "id": "S06",
+      "startSec": 33,
+      "endSec": 40,
+      "durationSec": 7,
+      "status": "DRAFT",
+      "contentStatus": "IN_REVIEW",
+      "coreMessage": "给出下一步行动",
+      "voiceover": "下次改页面，试试让它打磨或精简，再用手机验收。",
+      "headline": "让 AI 改得更具体",
+      "assets": [
+        "tea-b-mobile"
+      ],
+      "visualPlan": "回到茶页完成态，末尾保留项目地址至少 3 秒；不另起纯文字片尾，不追加安装步骤。",
+      "productionMethod": "Remotion composition of existing recordings and screenshots; no generated product imagery",
+      "generation": {
+        "required": false,
+        "provider": null,
+        "model": null,
+        "endpoint": null,
+        "prompt": null,
+        "estimatedCostUsd": 0,
+        "actualCostUsd": 0,
+        "jobs": []
+      },
+      "review": {
+        "approvedBy": null,
+        "approvedAt": null
+      },
+      "render": {
+        "revision": 0,
+        "path": null,
+        "dependencies": [
+          "tea-b-mobile"
+        ]
+      }
+    }
+  ]
+}

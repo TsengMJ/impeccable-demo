@@ -1,0 +1,347 @@
+{
+  "schemaVersion": 2,
+  "projectId": "impeccable-40s",
+  "contentRevision": "v2-official",
+  "phase": "ANIMATIC",
+  "phaseStatus": "IN_REVIEW",
+  "contentStatus": "LOCKED",
+  "durationSec": 40,
+  "fps": 30,
+  "resolution": {
+    "width": 1080,
+    "height": 1920
+  },
+  "language": "zh-Hans",
+  "voiceLanguage": "Mandarin",
+  "voiceSelection": "Tingting (macOS), temporary animatic guide only",
+  "voiceTimingValidated": true,
+  "safeArea": {
+    "leftPx": 110,
+    "rightPx": 110,
+    "topPx": 250,
+    "bottomPx": 300
+  },
+  "reviewPolicy": "User explicitly delegated revision and immediate content lock. Agent checks static styleframes before low-cost animatic. Visual scenes remain IN_REVIEW until user accepts. Final assembly only after scene acceptance.",
+  "paidServices": {
+    "providerOption": "Higgsfield",
+    "userConditionalAuthorization": true,
+    "budgetUsd": null,
+    "quotedCostUsd": null,
+    "spentUsd": 0,
+    "quoteRequiredBeforeSubmission": true,
+    "note": "No paid generation needed for this real-UI animatic. Guide narration uses local macOS TTS."
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "startSec": 0,
+      "endSec": 5,
+      "durationSec": 5,
+      "status": "IN_REVIEW",
+      "contentStatus": "LOCKED",
+      "coreMessage": "官方起点在手机上的实际问题",
+      "voiceover": "这页第一眼还行吧？一到手机，右边的导航直接没了。",
+      "headline": "手机一看，露馅了",
+      "assets": [
+        "lumina-a-desktop",
+        "lumina-a-mobile"
+      ],
+      "layout": "先给桌面 1 秒，再切真实手机截图。放大导航区域，保留右侧视口边界；698px / 390px 只在后半段出现。",
+      "animation": "同机位切换；不把桌面图缩窄冒充响应式网页。",
+      "transition": "Hard cut or 6-frame matched dissolve; no scene-duration overlap",
+      "productionMethod": "Remotion; original screenshots / recording + editorial crop / pan / labels",
+      "generation": {
+        "required": false,
+        "provider": null,
+        "model": null,
+        "endpoint": null,
+        "prompt": null,
+        "estimatedCostUsd": 0,
+        "actualCostUsd": 0,
+        "jobs": []
+      },
+      "review": {
+        "contentApprovedBy": "User delegated content lock after revision",
+        "contentApprovedAt": "2026-11-01T09:19:31.296363+00:00",
+        "visualApprovedBy": null,
+        "visualApprovedAt": null,
+        "agentVisualCheck": "PASS; static keyframes and encoded preview samples checked"
+      },
+      "render": {
+        "revision": 1,
+        "path": "previews/S01-r01.mp4",
+        "dependencies": [
+          "lumina-a-desktop",
+          "lumina-a-mobile"
+        ],
+        "completedAt": "2026-11-01T12:34:03.280447+00:00"
+      },
+      "styleframes": [
+        "styleframes/S01-r01-01.png",
+        "styleframes/S01-r01-02.png"
+      ]
+    },
+    {
+      "id": "S02",
+      "startSec": 5,
+      "endSec": 11,
+      "durationSec": 6,
+      "status": "IN_REVIEW",
+      "contentStatus": "LOCKED",
+      "coreMessage": "polish 修正可见的手机排版问题",
+      "voiceover": "我用这个设计技能打磨了一遍，导航和按钮就顺多了。",
+      "headline": "导航和按钮，顺了",
+      "assets": [
+        "lumina-a-mobile",
+        "lumina-b-mobile"
+      ],
+      "layout": "同位置 A→B；先看到导航恢复，再向下移动镜头看两个 CTA 改成直排。",
+      "animation": "对位切换，随后一次缓慢下移。",
+      "transition": "Hard cut or 6-frame matched dissolve; no scene-duration overlap",
+      "productionMethod": "Remotion; original screenshots / recording + editorial crop / pan / labels",
+      "generation": {
+        "required": false,
+        "provider": null,
+        "model": null,
+        "endpoint": null,
+        "prompt": null,
+        "estimatedCostUsd": 0,
+        "actualCostUsd": 0,
+        "jobs": []
+      },
+      "review": {
+        "contentApprovedBy": "User delegated content lock after revision",
+        "contentApprovedAt": "2026-11-01T09:19:31.296363+00:00",
+        "visualApprovedBy": null,
+        "visualApprovedAt": null,
+        "agentVisualCheck": "PASS; static keyframes and encoded preview samples checked"
+      },
+      "render": {
+        "revision": 1,
+        "path": "previews/S02-r01.mp4",
+        "dependencies": [
+          "lumina-a-mobile",
+          "lumina-b-mobile"
+        ],
+        "completedAt": "2026-11-01T12:34:03.280447+00:00"
+      },
+      "styleframes": [
+        "styleframes/S02-r01-01.png",
+        "styleframes/S02-r01-02.png"
+      ]
+    },
+    {
+      "id": "S03",
+      "startSec": 11,
+      "endSec": 17,
+      "durationSec": 6,
+      "status": "IN_REVIEW",
+      "contentStatus": "LOCKED",
+      "coreMessage": "产品是什么，用来做什么",
+      "voiceover": "它叫 Impeccable，开源的，直接配合编程 AI 改界面。",
+      "headline": "Impeccable",
+      "assets": [
+        "lumina-b-mobile"
+      ],
+      "layout": "名称大字只出现一次；下半画面保留真实完成态，不用一屏功能卡。",
+      "animation": "轻微推近；留出读名称的停顿。",
+      "transition": "Hard cut or 6-frame matched dissolve; no scene-duration overlap",
+      "productionMethod": "Remotion; original screenshots / recording + editorial crop / pan / labels",
+      "generation": {
+        "required": false,
+        "provider": null,
+        "model": null,
+        "endpoint": null,
+        "prompt": null,
+        "estimatedCostUsd": 0,
+        "actualCostUsd": 0,
+        "jobs": []
+      },
+      "review": {
+        "contentApprovedBy": "User delegated content lock after revision",
+        "contentApprovedAt": "2026-11-01T09:19:31.296363+00:00",
+        "visualApprovedBy": null,
+        "visualApprovedAt": null,
+        "agentVisualCheck": "PASS; static keyframes and encoded preview samples checked"
+      },
+      "render": {
+        "revision": 1,
+        "path": "previews/S03-r01.mp4",
+        "dependencies": [
+          "lumina-b-mobile"
+        ],
+        "completedAt": "2026-11-01T12:34:03.280447+00:00"
+      },
+      "styleframes": [
+        "styleframes/S03-r01-01.png"
+      ]
+    },
+    {
+      "id": "S04",
+      "startSec": 17,
+      "endSec": 28,
+      "durationSec": 11,
+      "status": "IN_REVIEW",
+      "contentStatus": "LOCKED",
+      "coreMessage": "Classic 的装饰与信息层级变化",
+      "voiceover": "还有这个，光晕、渐变、发光按钮，全挤在一起。打磨完再精简，内容终于没被装饰抢走。",
+      "headline": "装饰少了，内容出来了",
+      "assets": [
+        "lumina-classic-a-mobile",
+        "lumina-classic-b-mobile",
+        "lumina-classic-d-mobile"
+      ],
+      "layout": "同一手机视口、同一放大倍率；A 从标题下移至发光按钮，B/D 回到 100px 裁切。明示 A→B→D 的累计修改。",
+      "animation": "A 4.5 秒内下移镜头 100→350px，B 1.5 秒，D 5 秒；直接切换。",
+      "transition": "Hard cut or 6-frame matched dissolve; no scene-duration overlap",
+      "productionMethod": "Remotion; original screenshots / recording + editorial crop / pan / labels",
+      "generation": {
+        "required": false,
+        "provider": null,
+        "model": null,
+        "endpoint": null,
+        "prompt": null,
+        "estimatedCostUsd": 0,
+        "actualCostUsd": 0,
+        "jobs": []
+      },
+      "review": {
+        "contentApprovedBy": "User delegated content lock after revision",
+        "contentApprovedAt": "2026-11-01T09:19:31.296363+00:00",
+        "visualApprovedBy": null,
+        "visualApprovedAt": null,
+        "agentVisualCheck": "PASS; static keyframes and encoded preview samples checked"
+      },
+      "render": {
+        "revision": 1,
+        "path": "previews/S04-r01.mp4",
+        "dependencies": [
+          "lumina-classic-a-mobile",
+          "lumina-classic-b-mobile",
+          "lumina-classic-d-mobile"
+        ],
+        "completedAt": "2026-11-01T12:34:03.280447+00:00"
+      },
+      "styleframes": [
+        "styleframes/S04-r01-01.png",
+        "styleframes/S04-r01-02.png",
+        "styleframes/S04-r01-03.png"
+      ]
+    },
+    {
+      "id": "S05",
+      "startSec": 28,
+      "endSec": 34,
+      "durationSec": 6,
+      "status": "IN_REVIEW",
+      "contentStatus": "LOCKED",
+      "coreMessage": "如实解释自拟案例的有限增益",
+      "voiceover": "我们自己那几页，本来就没太多问题，更多是在换风格。",
+      "headline": "起点好，就更多是换风格",
+      "assets": [
+        "wallet-b-mobile",
+        "wallet-c-mobile"
+      ],
+      "layout": "一组钱包 B / C 风格分支，作为次要证据；不称为可用性提升，不展示安全性结论。",
+      "animation": "对位切换，保持相同截图范围。",
+      "transition": "Hard cut or 6-frame matched dissolve; no scene-duration overlap",
+      "productionMethod": "Remotion; original screenshots / recording + editorial crop / pan / labels",
+      "generation": {
+        "required": false,
+        "provider": null,
+        "model": null,
+        "endpoint": null,
+        "prompt": null,
+        "estimatedCostUsd": 0,
+        "actualCostUsd": 0,
+        "jobs": []
+      },
+      "review": {
+        "contentApprovedBy": "User delegated content lock after revision",
+        "contentApprovedAt": "2026-11-01T09:19:31.296363+00:00",
+        "visualApprovedBy": null,
+        "visualApprovedAt": null,
+        "agentVisualCheck": "PASS; static keyframes and encoded preview samples checked"
+      },
+      "render": {
+        "revision": 1,
+        "path": "previews/S05-r01.mp4",
+        "dependencies": [
+          "wallet-b-mobile",
+          "wallet-c-mobile"
+        ],
+        "completedAt": "2026-11-01T12:34:03.280447+00:00"
+      },
+      "styleframes": [
+        "styleframes/S05-r01-01.png",
+        "styleframes/S05-r01-02.png"
+      ]
+    },
+    {
+      "id": "S06",
+      "startSec": 34,
+      "endSec": 40,
+      "durationSec": 6,
+      "status": "IN_REVIEW",
+      "contentStatus": "LOCKED",
+      "coreMessage": "给出适用时机与项目入口",
+      "voiceover": "所以，页面已经做出来，但总觉得哪儿不对，我会先拿它试试。",
+      "headline": "页面做完了，还不满意？",
+      "assets": [
+        "lumina-b-mobile"
+      ],
+      "layout": "回到 Lumina 完成态，播放真实页面录影的稳定段；末 3 秒保留仓库地址。",
+      "animation": "轻微镜头运动后停稳，方便观众读地址。",
+      "transition": "Hard cut or 6-frame matched dissolve; no scene-duration overlap",
+      "productionMethod": "Remotion; original screenshots / recording + editorial crop / pan / labels",
+      "generation": {
+        "required": false,
+        "provider": null,
+        "model": null,
+        "endpoint": null,
+        "prompt": null,
+        "estimatedCostUsd": 0,
+        "actualCostUsd": 0,
+        "jobs": []
+      },
+      "review": {
+        "contentApprovedBy": "User delegated content lock after revision",
+        "contentApprovedAt": "2026-11-01T09:19:31.296363+00:00",
+        "visualApprovedBy": null,
+        "visualApprovedAt": null,
+        "agentVisualCheck": "PASS; static keyframes and encoded preview samples checked"
+      },
+      "render": {
+        "revision": 1,
+        "path": "previews/S06-r01.mp4",
+        "dependencies": [
+          "lumina-b-mobile"
+        ],
+        "completedAt": "2026-11-01T12:34:03.280447+00:00"
+      },
+      "styleframes": [
+        "styleframes/S06-r01-01.png"
+      ]
+    }
+  ],
+  "staticReview": {
+    "status": "PASS",
+    "reviewer": "Codex visual inspection",
+    "scope": "11 static keyframes; all 6 scenes",
+    "note": "标题、标签、字幕在安全区内。S04 A 增加镜头下移，真实显示发光按钮；B/D 保持原始 100px 裁切。没有修改产品截图。"
+  },
+  "preview": {
+    "path": "previews/animatic-v02.mp4",
+    "durationSec": 40,
+    "width": 720,
+    "height": 1280,
+    "fps": 30,
+    "frameCount": 1200,
+    "decodePass": true,
+    "qaReport": "production/preview-qa.json",
+    "audioIntegratedLufs": -18.57,
+    "audioTruePeakDbtp": -5.72,
+    "guideVoiceOnly": true,
+    "checkedAt": "2026-11-01T12:34:03.280447+00:00"
+  }
+}

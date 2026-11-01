@@ -1,0 +1,803 @@
+{
+  "createdAt": "2026-11-01T09:20:14.495Z",
+  "projectRoot": ".",
+  "edition": "v2 official demo focus",
+  "assets": [
+    {
+      "id": "lumina-a-desktop",
+      "key": "lumina",
+      "variant": "a",
+      "view": "desktop",
+      "files": {
+        "viewport.png": {
+          "path": "recordings/captures/2026-11-01T02-14-29-272Z-lumina-a-desktop-390759fe/viewport.png",
+          "sha256": "208e8ff36f6cd20c93de395512388faf2ec61ed43a043ceb4ae0bfa7e865abe2",
+          "bytes": 120924
+        },
+        "clip.webm": {
+          "path": "recordings/captures/2026-11-01T02-14-29-272Z-lumina-a-desktop-390759fe/clip.webm",
+          "sha256": "d7d2720f7a8116c80e9b3b6bfe8783472149716832f3699715a885af94a2ae63",
+          "bytes": 2387782
+        },
+        "capture.json": {
+          "path": "recordings/captures/2026-11-01T02-14-29-272Z-lumina-a-desktop-390759fe/capture.json",
+          "sha256": "be1c2f3cb373efbdc3086d0b2ff1db9a57a3d94b2d8860b8026fd8d37d7b5658",
+          "bytes": 1492
+        }
+      },
+      "capture": {
+        "case": "lumina",
+        "take": "a",
+        "variant": "a",
+        "route": "/demos/lumina/a/",
+        "url": "http://127.0.0.1:5173/demos/lumina/a/",
+        "title": "Lumina — Intelligent workflows for modern product teams",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "deviceScaleFactor": 1,
+        "browser": "156.0.8078.4",
+        "recordedAt": "2026-11-01T02:14:43.690Z",
+        "contentStartMs": 1679,
+        "durationMs": 13831,
+        "reducedMotion": "reduce",
+        "locale": "zh-CN",
+        "timezone": "Asia/Taipei",
+        "sourceDirectory": "demos/lumina/a",
+        "sourceSha256": {
+          "index.html": "357029f5aa688d9eb7c6d31a52a3b8f9c4784186bccc1517fc2efde1f09db700"
+        },
+        "sourceChangedDuringCapture": false,
+        "sourceRun": null,
+        "promptSha256": null,
+        "steps": [
+          {
+            "action": "hero-hold",
+            "atMs": 2109,
+            "durationMs": 2200
+          },
+          {
+            "action": "scroll",
+            "top": 720,
+            "atMs": 4311,
+            "motionMs": 900,
+            "holdMs": 1800
+          },
+          {
+            "action": "scroll",
+            "top": 1564,
+            "atMs": 7042,
+            "motionMs": 900,
+            "holdMs": 1800
+          },
+          {
+            "action": "scroll",
+            "top": 0,
+            "atMs": 9756,
+            "motionMs": 900,
+            "holdMs": 1800
+          }
+        ],
+        "metrics": {
+          "documentWidth": 1440,
+          "viewportWidth": 1440,
+          "documentHeight": 2464
+        },
+        "pageErrors": [],
+        "networkFailures": [],
+        "note": "Browser-only scroll recording. No agent conversation or interaction validation. Leading loading frames may be trimmed using contentStartMs."
+      },
+      "video": {
+        "fps": 25,
+        "width": 1440,
+        "height": 900,
+        "durationInSeconds": 12.44,
+        "codec": "vp9",
+        "canPlayInVideoTag": true,
+        "supportsSeeking": true,
+        "colorSpace": "bt601",
+        "audioCodec": null,
+        "audioFileExtension": null,
+        "pixelFormat": "yuv420p"
+      }
+    },
+    {
+      "id": "lumina-a-mobile",
+      "key": "lumina",
+      "variant": "a",
+      "view": "mobile",
+      "files": {
+        "viewport.png": {
+          "path": "recordings/captures/2026-11-01T02-14-29-257Z-lumina-a-mobile-aeae482c/viewport.png",
+          "sha256": "5894fafb02ab85b05b96ae00112406e96bb6777e6f824c8f9f7794ee577556e0",
+          "bytes": 82219
+        },
+        "clip.webm": {
+          "path": "recordings/captures/2026-11-01T02-14-29-257Z-lumina-a-mobile-aeae482c/clip.webm",
+          "sha256": "06ba7d740910b3c5de03e575c8f7f6fc6b480a8e5df226f6242be38c646d226e",
+          "bytes": 1179510
+        },
+        "capture.json": {
+          "path": "recordings/captures/2026-11-01T02-14-29-257Z-lumina-a-mobile-aeae482c/capture.json",
+          "sha256": "74cace9b5e715b6fe13ef8c26181ceac0dcb89a81b16202a60a296d1d4518b15",
+          "bytes": 1489
+        }
+      },
+      "capture": {
+        "case": "lumina",
+        "take": "a",
+        "variant": "a",
+        "route": "/demos/lumina/a/",
+        "url": "http://127.0.0.1:5173/demos/lumina/a/",
+        "title": "Lumina — Intelligent workflows for modern product teams",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "deviceScaleFactor": 1,
+        "browser": "156.0.8078.4",
+        "recordedAt": "2026-11-01T02:14:42.655Z",
+        "contentStartMs": 1665,
+        "durationMs": 12734,
+        "reducedMotion": "reduce",
+        "locale": "zh-CN",
+        "timezone": "Asia/Taipei",
+        "sourceDirectory": "demos/lumina/a",
+        "sourceSha256": {
+          "index.html": "357029f5aa688d9eb7c6d31a52a3b8f9c4784186bccc1517fc2efde1f09db700"
+        },
+        "sourceChangedDuringCapture": false,
+        "sourceRun": null,
+        "promptSha256": null,
+        "steps": [
+          {
+            "action": "hero-hold",
+            "atMs": 1967,
+            "durationMs": 2200
+          },
+          {
+            "action": "scroll",
+            "top": 675,
+            "atMs": 4169,
+            "motionMs": 900,
+            "holdMs": 1800
+          },
+          {
+            "action": "scroll",
+            "top": 2178,
+            "atMs": 6905,
+            "motionMs": 900,
+            "holdMs": 1800
+          },
+          {
+            "action": "scroll",
+            "top": 0,
+            "atMs": 9623,
+            "motionMs": 900,
+            "holdMs": 1800
+          }
+        ],
+        "metrics": {
+          "documentWidth": 698,
+          "viewportWidth": 390,
+          "documentHeight": 3022
+        },
+        "pageErrors": [],
+        "networkFailures": [],
+        "note": "Browser-only scroll recording. No agent conversation or interaction validation. Leading loading frames may be trimmed using contentStartMs."
+      },
+      "video": {
+        "fps": 25,
+        "width": 390,
+        "height": 844,
+        "durationInSeconds": 12.36,
+        "codec": "vp9",
+        "canPlayInVideoTag": true,
+        "supportsSeeking": true,
+        "colorSpace": "bt601",
+        "audioCodec": null,
+        "audioFileExtension": null,
+        "pixelFormat": "yuv420p"
+      }
+    },
+    {
+      "id": "lumina-b-mobile",
+      "key": "lumina",
+      "variant": "b",
+      "view": "mobile",
+      "files": {
+        "viewport.png": {
+          "path": "recordings/captures/2026-11-01T02-14-43-383Z-lumina-b-mobile-d6a31aa2/viewport.png",
+          "sha256": "a123f94f6bb602d236088c7b4e58a2fb390b76a686cb092975290e2587bc617e",
+          "bytes": 78318
+        },
+        "clip.webm": {
+          "path": "recordings/captures/2026-11-01T02-14-43-383Z-lumina-b-mobile-d6a31aa2/clip.webm",
+          "sha256": "f690d7586efc303c2845250e1c18ee496fe84db62b3ca3c754e60a1509f3c955",
+          "bytes": 1205569
+        },
+        "capture.json": {
+          "path": "recordings/captures/2026-11-01T02-14-43-383Z-lumina-b-mobile-d6a31aa2/capture.json",
+          "sha256": "7abf182a11710ee982d3fac27c380de261d8aaba0c2b1d0f37c8cde22b2e3d4c",
+          "bytes": 1489
+        }
+      },
+      "capture": {
+        "case": "lumina",
+        "take": "b",
+        "variant": "b",
+        "route": "/demos/lumina/b/",
+        "url": "http://127.0.0.1:5173/demos/lumina/b/",
+        "title": "Lumina — Intelligent workflows for modern product teams",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "deviceScaleFactor": 1,
+        "browser": "156.0.8078.4",
+        "recordedAt": "2026-11-01T02:14:56.010Z",
+        "contentStartMs": 1259,
+        "durationMs": 12191,
+        "reducedMotion": "reduce",
+        "locale": "zh-CN",
+        "timezone": "Asia/Taipei",
+        "sourceDirectory": "demos/lumina/b",
+        "sourceSha256": {
+          "index.html": "d17b44e6bf8381427d7c9b7dc1c4edf6822142446305271d4bc7fef7061f4ab5"
+        },
+        "sourceChangedDuringCapture": false,
+        "sourceRun": null,
+        "promptSha256": null,
+        "steps": [
+          {
+            "action": "hero-hold",
+            "atMs": 1457,
+            "durationMs": 2200
+          },
+          {
+            "action": "scroll",
+            "top": 675,
+            "atMs": 3659,
+            "motionMs": 900,
+            "holdMs": 1800
+          },
+          {
+            "action": "scroll",
+            "top": 1605,
+            "atMs": 6375,
+            "motionMs": 900,
+            "holdMs": 1800
+          },
+          {
+            "action": "scroll",
+            "top": 0,
+            "atMs": 9093,
+            "motionMs": 900,
+            "holdMs": 1800
+          }
+        ],
+        "metrics": {
+          "documentWidth": 390,
+          "viewportWidth": 390,
+          "documentHeight": 2449
+        },
+        "pageErrors": [],
+        "networkFailures": [],
+        "note": "Browser-only scroll recording. No agent conversation or interaction validation. Leading loading frames may be trimmed using contentStartMs."
+      },
+      "video": {
+        "fps": 25,
+        "width": 390,
+        "height": 844,
+        "durationInSeconds": 11.32,
+        "codec": "vp9",
+        "canPlayInVideoTag": true,
+        "supportsSeeking": true,
+        "colorSpace": "bt601",
+        "audioCodec": null,
+        "audioFileExtension": null,
+        "pixelFormat": "yuv420p"
+      }
+    },
+    {
+      "id": "lumina-classic-a-mobile",
+      "key": "lumina-classic",
+      "variant": "a",
+      "view": "mobile",
+      "files": {
+        "viewport.png": {
+          "path": "recordings/captures/2026-11-01T02-15-15-978Z-lumina-classic-a-mobile-17754a10/viewport.png",
+          "sha256": "79eb4c095183e4d8d37d6f8e06b5c13b7f8015e8e5e15d8612966dc9406a17e2",
+          "bytes": 139775
+        },
+        "clip.webm": {
+          "path": "recordings/captures/2026-11-01T02-15-15-978Z-lumina-classic-a-mobile-17754a10/clip.webm",
+          "sha256": "cf41099f9146e49b87c93df692fbe0015869e1dc349d356984fdae173dc02a2c",
+          "bytes": 1082840
+        },
+        "capture.json": {
+          "path": "recordings/captures/2026-11-01T02-15-15-978Z-lumina-classic-a-mobile-17754a10/capture.json",
+          "sha256": "2a27fa41a6f0fc3015638e7b4bb73c77df0fc237288e0d3d3bfcfabb08be2cd0",
+          "bytes": 1510
+        }
+      },
+      "capture": {
+        "case": "lumina-classic",
+        "take": "a",
+        "variant": "a",
+        "route": "/demos/lumina-classic/a/",
+        "url": "http://127.0.0.1:5173/demos/lumina-classic/a/",
+        "title": "Lumina — The future of intelligent workflows",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "deviceScaleFactor": 1,
+        "browser": "156.0.8078.4",
+        "recordedAt": "2026-11-01T02:15:28.878Z",
+        "contentStartMs": 1271,
+        "durationMs": 12510,
+        "reducedMotion": "reduce",
+        "locale": "zh-CN",
+        "timezone": "Asia/Taipei",
+        "sourceDirectory": "demos/lumina-classic/a",
+        "sourceSha256": {
+          "index.html": "f6b7693c5763bd105910bc4e60f8e26485430b6a43c113d24eeb4288a961cd21"
+        },
+        "sourceChangedDuringCapture": false,
+        "sourceRun": null,
+        "promptSha256": null,
+        "steps": [
+          {
+            "action": "hero-hold",
+            "atMs": 1690,
+            "durationMs": 2200
+          },
+          {
+            "action": "scroll",
+            "top": 675,
+            "atMs": 3890,
+            "motionMs": 900,
+            "holdMs": 1800
+          },
+          {
+            "action": "scroll",
+            "top": 2115,
+            "atMs": 6609,
+            "motionMs": 900,
+            "holdMs": 1800
+          },
+          {
+            "action": "scroll",
+            "top": 0,
+            "atMs": 9340,
+            "motionMs": 900,
+            "holdMs": 1800
+          }
+        ],
+        "metrics": {
+          "documentWidth": 694,
+          "viewportWidth": 390,
+          "documentHeight": 2959
+        },
+        "pageErrors": [],
+        "networkFailures": [],
+        "note": "Browser-only scroll recording. No agent conversation or interaction validation. Leading loading frames may be trimmed using contentStartMs."
+      },
+      "video": {
+        "fps": 25,
+        "width": 390,
+        "height": 844,
+        "durationInSeconds": 11.52,
+        "codec": "vp9",
+        "canPlayInVideoTag": true,
+        "supportsSeeking": true,
+        "colorSpace": "bt601",
+        "audioCodec": null,
+        "audioFileExtension": null,
+        "pixelFormat": "yuv420p"
+      }
+    },
+    {
+      "id": "lumina-classic-b-mobile",
+      "key": "lumina-classic",
+      "variant": "b",
+      "view": "mobile",
+      "files": {
+        "viewport.png": {
+          "path": "recordings/captures/2026-11-01T02-15-28-204Z-lumina-classic-b-mobile-4535ad40/viewport.png",
+          "sha256": "647fb76f114830e565ed25540e01c1bc98ef717ef7a8fcd0b346fae83a5215f3",
+          "bytes": 112647
+        },
+        "clip.webm": {
+          "path": "recordings/captures/2026-11-01T02-15-28-204Z-lumina-classic-b-mobile-4535ad40/clip.webm",
+          "sha256": "47930525babeba753401c07e88806b51fff9e60711aca0180aab3c2968256bba",
+          "bytes": 1252268
+        },
+        "capture.json": {
+          "path": "recordings/captures/2026-11-01T02-15-28-204Z-lumina-classic-b-mobile-4535ad40/capture.json",
+          "sha256": "d0cd0a47cc73ca88e0f621f7d9a79013e4af0739f1a0563723d3ce3c0ce125cd",
+          "bytes": 1510
+        }
+      },
+      "capture": {
+        "case": "lumina-classic",
+        "take": "b",
+        "variant": "b",
+        "route": "/demos/lumina-classic/b/",
+        "url": "http://127.0.0.1:5173/demos/lumina-classic/b/",
+        "title": "Lumina — The future of intelligent workflows",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "deviceScaleFactor": 1,
+        "browser": "156.0.8078.4",
+        "recordedAt": "2026-11-01T02:15:41.088Z",
+        "contentStartMs": 1296,
+        "durationMs": 12555,
+        "reducedMotion": "reduce",
+        "locale": "zh-CN",
+        "timezone": "Asia/Taipei",
+        "sourceDirectory": "demos/lumina-classic/b",
+        "sourceSha256": {
+          "index.html": "0b903ff4efbd74df931ce2b87ab8523d11d4a3e5ac59b50194e018ff81d6ff7e"
+        },
+        "sourceChangedDuringCapture": false,
+        "sourceRun": null,
+        "promptSha256": null,
+        "steps": [
+          {
+            "action": "hero-hold",
+            "atMs": 1677,
+            "durationMs": 2200
+          },
+          {
+            "action": "scroll",
+            "top": 675,
+            "atMs": 3879,
+            "motionMs": 900,
+            "holdMs": 1800
+          },
+          {
+            "action": "scroll",
+            "top": 1425,
+            "atMs": 6620,
+            "motionMs": 900,
+            "holdMs": 1800
+          },
+          {
+            "action": "scroll",
+            "top": 0,
+            "atMs": 9341,
+            "motionMs": 900,
+            "holdMs": 1800
+          }
+        ],
+        "metrics": {
+          "documentWidth": 390,
+          "viewportWidth": 390,
+          "documentHeight": 2269
+        },
+        "pageErrors": [],
+        "networkFailures": [],
+        "note": "Browser-only scroll recording. No agent conversation or interaction validation. Leading loading frames may be trimmed using contentStartMs."
+      },
+      "video": {
+        "fps": 25,
+        "width": 390,
+        "height": 844,
+        "durationInSeconds": 11.56,
+        "codec": "vp9",
+        "canPlayInVideoTag": true,
+        "supportsSeeking": true,
+        "colorSpace": "bt601",
+        "audioCodec": null,
+        "audioFileExtension": null,
+        "pixelFormat": "yuv420p"
+      }
+    },
+    {
+      "id": "lumina-classic-d-mobile",
+      "key": "lumina-classic",
+      "variant": "d",
+      "view": "mobile",
+      "files": {
+        "viewport.png": {
+          "path": "recordings/captures/2026-11-01T02-15-49-209Z-lumina-classic-d-mobile-ff8e8aad/viewport.png",
+          "sha256": "70411353f84213c505952a0af9a6b54e9dea1694699b168a249e7f8fa01657e0",
+          "bytes": 83510
+        },
+        "clip.webm": {
+          "path": "recordings/captures/2026-11-01T02-15-49-209Z-lumina-classic-d-mobile-ff8e8aad/clip.webm",
+          "sha256": "e2232b027d52f4c559e78088e5676755fb75af9203223b8d91e817ea2dad7d2a",
+          "bytes": 1087626
+        },
+        "capture.json": {
+          "path": "recordings/captures/2026-11-01T02-15-49-209Z-lumina-classic-d-mobile-ff8e8aad/capture.json",
+          "sha256": "e30b980f92225f5c1ba8dde8c9d45c3e3cbbd1604648a320763e103883d91776",
+          "bytes": 1509
+        }
+      },
+      "capture": {
+        "case": "lumina-classic",
+        "take": "d",
+        "variant": "d",
+        "route": "/demos/lumina-classic/d/",
+        "url": "http://127.0.0.1:5173/demos/lumina-classic/d/",
+        "title": "Lumina — The future of intelligent workflows",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "deviceScaleFactor": 1,
+        "browser": "156.0.8078.4",
+        "recordedAt": "2026-11-01T02:16:02.197Z",
+        "contentStartMs": 1425,
+        "durationMs": 12483,
+        "reducedMotion": "reduce",
+        "locale": "zh-CN",
+        "timezone": "Asia/Taipei",
+        "sourceDirectory": "demos/lumina-classic/d",
+        "sourceSha256": {
+          "index.html": "e648403f51cddb7f11ecb308612ccd7f3179c73587552ad92c3ea1830a9a1f78"
+        },
+        "sourceChangedDuringCapture": false,
+        "sourceRun": null,
+        "promptSha256": null,
+        "steps": [
+          {
+            "action": "hero-hold",
+            "atMs": 1575,
+            "durationMs": 2200
+          },
+          {
+            "action": "scroll",
+            "top": 675,
+            "atMs": 3777,
+            "motionMs": 900,
+            "holdMs": 1800
+          },
+          {
+            "action": "scroll",
+            "top": 993,
+            "atMs": 6497,
+            "motionMs": 900,
+            "holdMs": 1800
+          },
+          {
+            "action": "scroll",
+            "top": 0,
+            "atMs": 9217,
+            "motionMs": 900,
+            "holdMs": 1800
+          }
+        ],
+        "metrics": {
+          "documentWidth": 390,
+          "viewportWidth": 390,
+          "documentHeight": 1837
+        },
+        "pageErrors": [],
+        "networkFailures": [],
+        "note": "Browser-only scroll recording. No agent conversation or interaction validation. Leading loading frames may be trimmed using contentStartMs."
+      },
+      "video": {
+        "fps": 25,
+        "width": 390,
+        "height": 844,
+        "durationInSeconds": 11.92,
+        "codec": "vp9",
+        "canPlayInVideoTag": true,
+        "supportsSeeking": true,
+        "colorSpace": "bt601",
+        "audioCodec": null,
+        "audioFileExtension": null,
+        "pixelFormat": "yuv420p"
+      }
+    },
+    {
+      "id": "wallet-b-mobile",
+      "key": "wallet",
+      "variant": "b",
+      "view": "mobile",
+      "files": {
+        "viewport.png": {
+          "path": "recordings/captures/2026-11-01T02-16-33-242Z-wallet-b-mobile-ad90ffc9/viewport.png",
+          "sha256": "70db5c50cd896cfb7cd9c9734650810fa660e0140c7f4cd0a8d8e94efd8c9330",
+          "bytes": 61610
+        },
+        "clip.webm": {
+          "path": "recordings/captures/2026-11-01T02-16-33-242Z-wallet-b-mobile-ad90ffc9/clip.webm",
+          "sha256": "e3da84c85000ef4b92a5f1e6d8f34e6054c8d8ce765035f8710fa330d2f4d0bc",
+          "bytes": 1747360
+        },
+        "capture.json": {
+          "path": "recordings/captures/2026-11-01T02-16-33-242Z-wallet-b-mobile-ad90ffc9/capture.json",
+          "sha256": "026c51b4b932c08b35311259173f7165bb891d99322495e0c0a572d224269752",
+          "bytes": 1664
+        }
+      },
+      "capture": {
+        "case": "wallet",
+        "take": "b",
+        "variant": "b",
+        "route": "/experiments/wallet/b/",
+        "url": "http://127.0.0.1:5173/experiments/wallet/b/",
+        "title": "AEGIS — Delegate the task. Keep the control.",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "deviceScaleFactor": 1,
+        "browser": "156.0.8078.4",
+        "recordedAt": "2026-11-01T02:16:47.123Z",
+        "contentStartMs": 1679,
+        "durationMs": 13358,
+        "reducedMotion": "reduce",
+        "locale": "zh-CN",
+        "timezone": "Asia/Taipei",
+        "sourceDirectory": "experiments/wallet/b",
+        "sourceSha256": {
+          "app.js": "dc5ef7733d1715b9bb86fe6c4e6f42051cc8a1bd7af6e24023345554368dc852",
+          "index.html": "fb973d7655d4da433cfd8c14e4b4f93ad1efb9dcdfc6be1556379aa943b1c0be",
+          "styles.css": "60b5b22f5664617a004880bf9640e2e625683138cfd697bce7e4ed11961a7bf3"
+        },
+        "sourceChangedDuringCapture": false,
+        "sourceRun": null,
+        "promptSha256": null,
+        "steps": [
+          {
+            "action": "hero-hold",
+            "atMs": 2275,
+            "durationMs": 2200
+          },
+          {
+            "action": "scroll",
+            "top": 675,
+            "atMs": 4478,
+            "motionMs": 900,
+            "holdMs": 1800
+          },
+          {
+            "action": "scroll",
+            "top": 4130,
+            "atMs": 7233,
+            "motionMs": 900,
+            "holdMs": 1800
+          },
+          {
+            "action": "scroll",
+            "top": 0,
+            "atMs": 9963,
+            "motionMs": 900,
+            "holdMs": 1800
+          }
+        ],
+        "metrics": {
+          "documentWidth": 390,
+          "viewportWidth": 390,
+          "documentHeight": 4974
+        },
+        "pageErrors": [],
+        "networkFailures": [],
+        "note": "Browser-only scroll recording. No agent conversation or interaction validation. Leading loading frames may be trimmed using contentStartMs."
+      },
+      "video": {
+        "fps": 25,
+        "width": 390,
+        "height": 844,
+        "durationInSeconds": 12,
+        "codec": "vp9",
+        "canPlayInVideoTag": true,
+        "supportsSeeking": true,
+        "colorSpace": "bt601",
+        "audioCodec": null,
+        "audioFileExtension": null,
+        "pixelFormat": "yuv420p"
+      }
+    },
+    {
+      "id": "wallet-c-mobile",
+      "key": "wallet",
+      "variant": "c",
+      "view": "mobile",
+      "files": {
+        "viewport.png": {
+          "path": "recordings/captures/2026-11-01T02-16-48-715Z-wallet-c-mobile-2b959026/viewport.png",
+          "sha256": "f1b42c9d7261aa82cd9cc71c966be2edeae464b5a802da6af03cea392b983c26",
+          "bytes": 60707
+        },
+        "clip.webm": {
+          "path": "recordings/captures/2026-11-01T02-16-48-715Z-wallet-c-mobile-2b959026/clip.webm",
+          "sha256": "4e2783a0a8d89da386be7e34fb4d0eefe7579dce13cae47be606d2ebb6e8b465",
+          "bytes": 1948281
+        },
+        "capture.json": {
+          "path": "recordings/captures/2026-11-01T02-16-48-715Z-wallet-c-mobile-2b959026/capture.json",
+          "sha256": "6ea8b725e777bb674f8b45195a0f92747465271a152d1870c037885092c3f797",
+          "bytes": 1665
+        }
+      },
+      "capture": {
+        "case": "wallet",
+        "take": "c",
+        "variant": "c",
+        "route": "/experiments/wallet/c/",
+        "url": "http://127.0.0.1:5173/experiments/wallet/c/",
+        "title": "AEGIS — Delegate the task. Keep the control.",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "deviceScaleFactor": 1,
+        "browser": "156.0.8078.4",
+        "recordedAt": "2026-11-01T02:17:03.581Z",
+        "contentStartMs": 1604,
+        "durationMs": 14177,
+        "reducedMotion": "reduce",
+        "locale": "zh-CN",
+        "timezone": "Asia/Taipei",
+        "sourceDirectory": "experiments/wallet/c",
+        "sourceSha256": {
+          "app.js": "dc5ef7733d1715b9bb86fe6c4e6f42051cc8a1bd7af6e24023345554368dc852",
+          "index.html": "8abf836875519497919766e80bdb5ba81bd6c5b1b31af76b7dc5fded06e0e986",
+          "styles.css": "61e9aef8f65ebd91ef2e5fc4dd8f2aeb7ba66c95c06a13eebe0aa74f61474c31"
+        },
+        "sourceChangedDuringCapture": false,
+        "sourceRun": null,
+        "promptSha256": null,
+        "steps": [
+          {
+            "action": "hero-hold",
+            "atMs": 2019,
+            "durationMs": 2200
+          },
+          {
+            "action": "scroll",
+            "top": 675,
+            "atMs": 4222,
+            "motionMs": 900,
+            "holdMs": 1800
+          },
+          {
+            "action": "scroll",
+            "top": 4168,
+            "atMs": 7350,
+            "motionMs": 900,
+            "holdMs": 1800
+          },
+          {
+            "action": "scroll",
+            "top": 0,
+            "atMs": 10907,
+            "motionMs": 900,
+            "holdMs": 1800
+          }
+        ],
+        "metrics": {
+          "documentWidth": 390,
+          "viewportWidth": 390,
+          "documentHeight": 5012
+        },
+        "pageErrors": [],
+        "networkFailures": [],
+        "note": "Browser-only scroll recording. No agent conversation or interaction validation. Leading loading frames may be trimmed using contentStartMs."
+      },
+      "video": {
+        "fps": 25,
+        "width": 390,
+        "height": 844,
+        "durationInSeconds": 13.56,
+        "codec": "vp9",
+        "canPlayInVideoTag": true,
+        "supportsSeeking": true,
+        "colorSpace": "bt601",
+        "audioCodec": null,
+        "audioFileExtension": null,
+        "pixelFormat": "yuv420p"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "impeccable-social-video",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "styleframes": "node render.mjs stills",
+    "preview": "node render.mjs preview",
+    "scene": "node render.mjs scene",
+    "assemble": "node assemble.mjs"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.539",
+    "@remotion/compositor-darwin-x64": "^4.0.539",
+    "@remotion/renderer": "4.0.539",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.539"
+  }
+}

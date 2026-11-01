@@ -1,0 +1,161 @@
+{
+  "type": "LOCAL_TEMP_GUIDE",
+  "voice": "Tingting",
+  "rate": 190,
+  "costUsd": 0,
+  "clips": [
+    {
+      "sceneId": "S01",
+      "file": "audio/S01-01.wav",
+      "text": "这页第一眼还行吧？",
+      "sceneStartSec": 0.12,
+      "durationSec": 1.5677,
+      "globalStartSec": 0.12,
+      "globalEndSec": 1.6877
+    },
+    {
+      "sceneId": "S01",
+      "file": "audio/S01-02.wav",
+      "text": "一到手机，右边的导航直接没了。",
+      "sceneStartSec": 1.7677,
+      "durationSec": 2.7915,
+      "globalStartSec": 1.7677,
+      "globalEndSec": 4.5592
+    },
+    {
+      "sceneId": "S02",
+      "file": "audio/S02-01.wav",
+      "text": "我用这个设计技能打磨了一遍，",
+      "sceneStartSec": 0.12,
+      "durationSec": 2.397,
+      "globalStartSec": 5.12,
+      "globalEndSec": 7.517
+    },
+    {
+      "sceneId": "S02",
+      "file": "audio/S02-02.wav",
+      "text": "导航和按钮就顺多了。",
+      "sceneStartSec": 2.597,
+      "durationSec": 1.8527,
+      "globalStartSec": 7.597,
+      "globalEndSec": 9.4497
+    },
+    {
+      "sceneId": "S03",
+      "file": "audio/S03-01.wav",
+      "text": "它叫 Impeccable，",
+      "sceneStartSec": 0.12,
+      "durationSec": 1.1422,
+      "globalStartSec": 11.12,
+      "globalEndSec": 12.2622
+    },
+    {
+      "sceneId": "S03",
+      "file": "audio/S03-02.wav",
+      "text": "开源的，直接配合编程 AI 改界面。",
+      "sceneStartSec": 1.3422,
+      "durationSec": 3.1165,
+      "globalStartSec": 12.3422,
+      "globalEndSec": 15.4588
+    },
+    {
+      "sceneId": "S04",
+      "file": "audio/S04-01.wav",
+      "text": "还有这个，",
+      "sceneStartSec": 0.12,
+      "durationSec": 0.7525,
+      "globalStartSec": 17.12,
+      "globalEndSec": 17.8725
+    },
+    {
+      "sceneId": "S04",
+      "file": "audio/S04-02.wav",
+      "text": "光晕、渐变、发光按钮，",
+      "sceneStartSec": 0.9525,
+      "durationSec": 2.5667,
+      "globalStartSec": 17.9525,
+      "globalEndSec": 20.5192
+    },
+    {
+      "sceneId": "S04",
+      "file": "audio/S04-03.wav",
+      "text": "全挤在一起。",
+      "sceneStartSec": 3.5992,
+      "durationSec": 1.1808,
+      "globalStartSec": 20.5992,
+      "globalEndSec": 21.7801
+    },
+    {
+      "sceneId": "S04",
+      "file": "audio/S04-04.wav",
+      "text": "打磨完再精简，",
+      "sceneStartSec": 4.8601,
+      "durationSec": 1.3301,
+      "globalStartSec": 21.8601,
+      "globalEndSec": 23.1902
+    },
+    {
+      "sceneId": "S04",
+      "file": "audio/S04-05.wav",
+      "text": "内容终于没被装饰抢走。",
+      "sceneStartSec": 6.2702,
+      "durationSec": 2.1428,
+      "globalStartSec": 23.2702,
+      "globalEndSec": 25.413
+    },
+    {
+      "sceneId": "S05",
+      "file": "audio/S05-01.wav",
+      "text": "我们自己那几页，",
+      "sceneStartSec": 0.12,
+      "durationSec": 1.2244,
+      "globalStartSec": 28.12,
+      "globalEndSec": 29.3444
+    },
+    {
+      "sceneId": "S05",
+      "file": "audio/S05-02.wav",
+      "text": "本来就没太多问题，",
+      "sceneStartSec": 1.4244,
+      "durationSec": 1.7792,
+      "globalStartSec": 29.4244,
+      "globalEndSec": 31.2035
+    },
+    {
+      "sceneId": "S05",
+      "file": "audio/S05-03.wav",
+      "text": "更多是在换风格。",
+      "sceneStartSec": 3.2835,
+      "durationSec": 1.5675,
+      "globalStartSec": 31.2835,
+      "globalEndSec": 32.8511
+    },
+    {
+      "sceneId": "S06",
+      "file": "audio/S06-01.wav",
+      "text": "所以，页面已经做出来，",
+      "sceneStartSec": 0.12,
+      "durationSec": 2.2792,
+      "globalStartSec": 34.12,
+      "globalEndSec": 36.3992
+    },
+    {
+      "sceneId": "S06",
+      "file": "audio/S06-02.wav",
+      "text": "但总觉得哪儿不对，",
+      "sceneStartSec": 2.4792,
+      "durationSec": 1.3652,
+      "globalStartSec": 36.4792,
+      "globalEndSec": 37.8444
+    },
+    {
+      "sceneId": "S06",
+      "file": "audio/S06-03.wav",
+      "text": "我会先拿它试试。",
+      "sceneStartSec": 3.9244,
+      "durationSec": 1.503,
+      "globalStartSec": 37.9244,
+      "globalEndSec": 39.4273
+    }
+  ]
+}

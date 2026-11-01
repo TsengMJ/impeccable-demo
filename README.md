@@ -125,3 +125,7 @@ npm run test:smoke   # 需先 npm run dev
 ```
 
 另见 [VALIDATION.md](docs/evidence/VALIDATION.md)、[OFFICIAL-RESULTS.md](docs/evidence/OFFICIAL-RESULTS.md)、[BRIEF-RESULTS.md](docs/evidence/BRIEF-RESULTS.md)、[录影索引](recordings/INDEX.md)。
+
+## 社群短片制作
+
+40 秒竖屏视频的锁定脚本、分镜、素材来源与独立 Scene 工程见 [制作交接](video/impeccable-40s/README.md)。v2 以官方 Lumina / Classic 的实际问题为主，自拟案例用于说明风格变化。预览使用本机临时旁白，尚未当作最终成片。

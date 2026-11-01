@@ -1,0 +1,11 @@
+production/node_modules/
+production/.bundle/
+production/.cache/
+# Keep render scripts in git; leave heavy local media out of the remote.
+previews/**/*.mp4
+previews/**/*.webm
+previews/qa/
+production/public/audio/
+production/public/assets/
+styleframes/*.png
+generated-assets/
