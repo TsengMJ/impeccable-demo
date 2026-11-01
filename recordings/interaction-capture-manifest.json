@@ -1,10 +1,10 @@
 {
-  "createdAt": "2026-10-31T18:14:51.412Z",
+  "createdAt": "2026-11-01T02:18:07.197Z",
   "records": [
     {
       "key": "wallet",
       "variant": "a",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-10-31T18-12-08-046Z-wallet-a-d42b776b",
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-11-01T02-15-34-882Z-wallet-a-11c909fb",
       "failure": null,
       "pageErrors": [],
       "sourceChangedDuringCapture": false
@@ -12,7 +12,7 @@
     {
       "key": "wallet",
       "variant": "b",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-10-31T18-12-20-098Z-wallet-b-5566f305",
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-11-01T02-15-42-975Z-wallet-b-8eddb85d",
       "failure": null,
       "pageErrors": [],
       "sourceChangedDuringCapture": false
@@ -20,7 +20,7 @@
     {
       "key": "wallet",
       "variant": "c",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-10-31T18-12-32-825Z-wallet-c-004092d2",
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-11-01T02-15-50-993Z-wallet-c-2a0c7b7e",
       "failure": null,
       "pageErrors": [],
       "sourceChangedDuringCapture": false
@@ -28,7 +28,7 @@
     {
       "key": "wallet",
       "variant": "d",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-10-31T18-12-46-854Z-wallet-d-f1ec1d8c",
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-11-01T02-15-58-480Z-wallet-d-fa273ccc",
       "failure": null,
       "pageErrors": [],
       "sourceChangedDuringCapture": false
@@ -36,7 +36,7 @@
     {
       "key": "wallet",
       "variant": "e",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-10-31T18-13-00-763Z-wallet-e-98cd0bee",
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-11-01T02-16-08-845Z-wallet-e-6ee78c67",
       "failure": null,
       "pageErrors": [],
       "sourceChangedDuringCapture": false
@@ -44,7 +44,7 @@
     {
       "key": "tea",
       "variant": "a",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-10-31T18-13-20-683Z-tea-a-7027c136",
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-11-01T02-16-24-238Z-tea-a-9c526cb1",
       "failure": null,
       "pageErrors": [],
       "sourceChangedDuringCapture": false
@@ -52,7 +52,7 @@
     {
       "key": "tea",
       "variant": "b",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-10-31T18-13-47-276Z-tea-b-b55ea519",
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-11-01T02-16-34-147Z-tea-b-771ccff1",
       "failure": null,
       "pageErrors": [],
       "sourceChangedDuringCapture": false
@@ -60,7 +60,7 @@
     {
       "key": "tea",
       "variant": "c",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-10-31T18-13-55-013Z-tea-c-f0aa0968",
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-11-01T02-16-43-808Z-tea-c-3ccf1af7",
       "failure": null,
       "pageErrors": [],
       "sourceChangedDuringCapture": false
@@ -68,7 +68,7 @@
     {
       "key": "tea",
       "variant": "d",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-10-31T18-14-01-665Z-tea-d-399356de",
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-11-01T02-16-54-518Z-tea-d-6ea9c7f7",
       "failure": null,
       "pageErrors": [],
       "sourceChangedDuringCapture": false
@@ -76,7 +76,7 @@
     {
       "key": "tea",
       "variant": "e",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-10-31T18-14-08-112Z-tea-e-300e5ef2",
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-11-01T02-17-05-667Z-tea-e-f3436f98",
       "failure": null,
       "pageErrors": [],
       "sourceChangedDuringCapture": false
@@ -84,7 +84,7 @@
     {
       "key": "festival",
       "variant": "a",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-10-31T18-14-15-103Z-festival-a-c3175385",
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-11-01T02-17-13-544Z-festival-a-eeafe7a0",
       "failure": null,
       "pageErrors": [],
       "sourceChangedDuringCapture": false
@@ -92,7 +92,7 @@
     {
       "key": "festival",
       "variant": "b",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-10-31T18-14-22-516Z-festival-b-e0afe67a",
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-11-01T02-17-22-251Z-festival-b-0f5b22ee",
       "failure": null,
       "pageErrors": [],
       "sourceChangedDuringCapture": false
@@ -100,7 +100,7 @@
     {
       "key": "festival",
       "variant": "c",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-10-31T18-14-29-438Z-festival-c-e66fea29",
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-11-01T02-17-32-587Z-festival-c-9a399854",
       "failure": null,
       "pageErrors": [],
       "sourceChangedDuringCapture": false
@@ -108,7 +108,7 @@
     {
       "key": "festival",
       "variant": "d",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-10-31T18-14-36-959Z-festival-d-0f1fde96",
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-11-01T02-17-47-368Z-festival-d-0fe0eeba",
       "failure": null,
       "pageErrors": [],
       "sourceChangedDuringCapture": false
@@ -116,7 +116,7 @@
     {
       "key": "festival",
       "variant": "e",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-10-31T18-14-45-036Z-festival-e-e17c708a",
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/interactions/2026-11-01T02-17-56-386Z-festival-e-85c3a433",
       "failure": null,
       "pageErrors": [],
       "sourceChangedDuringCapture": false

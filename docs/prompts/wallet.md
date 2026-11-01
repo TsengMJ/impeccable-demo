@@ -1,21 +1,21 @@
 # W01 — AEGIS / Web3 Agentic Wallet
 
-請在這個現有 Vite 專案製作 AEGIS 的單頁 Landing Page，直接編輯 experiments/wallet/index.html，路徑 /experiments/wallet/。這是一個虛構品牌的前端概念測試，所有畫面與交易都是模擬資料。
+请在这个现有 Vite 专案制作 AEGIS 的单页 Landing Page，直接编辑 experiments/wallet/index.html，路径 /experiments/wallet/。这是一个虚构品牌的前端概念测试，所有画面与交易都是模拟资料。
 
-產品：讓 AI Agent 在使用者定義的權限內執行鏈上任務的錢包。核心承諾是「Delegate the task. Keep the control.」，不是投資報酬。目標受眾是已理解加密錢包、正在研究 Agent 自動化的開發者與進階使用者。成功標準：訪客在 10 秒內明白 Agent 能做什麼、不能做什麼，以及自己如何停止它。主要文案使用英文。
+产品：让 AI Agent 在使用者定义的权限内执行链上任务的钱包。核心承诺是「Delegate the task. Keep the control.」，不是投资报酬。目标受众是已理解加密钱包、正在研究 Agent 自动化的开发者与进阶使用者。成功标准：访客在 10 秒内明白 Agent 能做什么、不能做什么，以及自己如何停止它。主要文案使用英文。
 
-必備內容：
-1. Hero：產品名、清楚的價值主張、主 CTA「Try the sandbox」、次 CTA「See how permissions work」。不要把抽象 Web3 詞彙當作產品說明。
-2. 可互動的權限演示：每日支出上限預設 100 USDC；可選擇 Swap 或 Transfer；允許的協議固定為 DemoSwap；權限期限 24 小時；使用者可隨時 Revoke。畫面需明確標示「Simulation · No real funds」。
-3. 三個任務案例：在預設限額內兌換代幣、支付固定服務費、達到使用者自訂條件時通知。最後一項只通知、不自動交易。
-4. 一段可讀的模擬活動紀錄：20 USDC swap allowed、150 USDC transfer blocked、permission revoked；把執行理由與權限規則對上。
-5. 安全邊界：最小權限、交易前模擬、撤銷授權。明講這是概念介面，沒有接上真實錢包、合約或安全審計。
-6. FAQ 至少三題：Agent 能移走所有資產嗎？如何停止 Agent？是否需要連接真實錢包？最後一題回答不需要。
+必备内容：
+1. Hero：产品名、清楚的价值主张、主 CTA「Try the sandbox」、次 CTA「See how permissions work」。不要把抽象 Web3 词汇当作产品说明。
+2. 可互动的权限演示：每日支出上限预设 100 USDC；可选择 Swap 或 Transfer；允许的协议固定为 DemoSwap；权限期限 24 小时；使用者可随时 Revoke。画面需明确标示「Simulation · No real funds」。
+3. 三个任务案例：在预设限额内兑换代币、支付固定服务费、达到使用者自订条件时通知。最后一项只通知、不自动交易。
+4. 一段可读的模拟活动纪录：20 USDC swap allowed、150 USDC transfer blocked、permission revoked；把执行理由与权限规则对上。
+5. 安全边界：最小权限、交易前模拟、撤销授权。明讲这是概念介面，没有接上真实钱包、合约或安全审计。
+6. FAQ 至少三题：Agent 能移走所有资产吗？如何停止 Agent？是否需要连接真实钱包？最后一题回答不需要。
 
-互動：Try the sandbox 滾到演示區；使用者修改上限後，20 USDC 任務在上限足夠時顯示允許，150 USDC 任務只有在上限足夠且選擇 Transfer 時允許；Revoke 後所有任務顯示 blocked，並可重新啟用模擬授權。FAQ 可展開與收合。狀態除了顏色也要有文字。不要連 RPC、不要要求助記詞、不要發送真實交易。
+互动：Try the sandbox 滚到演示区；使用者修改上限后，20 USDC 任务在上限足够时显示允许，150 USDC 任务只有在上限足够且选择 Transfer 时允许；Revoke 后所有任务显示 blocked，并可重新启用模拟授权。FAQ 可展开与收合。状态除了颜色也要有文字。不要连 RPC、不要要求助记词、不要发送真实交易。
 
-設計開放給你決定，讓「授權與控制的關係」成為視覺重點。避免以裝飾性金融圖表、虛構審計標章、合作品牌或收益率製造信任。希望成品有具體產品感，不能只是一頁功能卡片。
+设计开放给你决定，让「授权与控制的关系」成为视觉重点。避免以装饰性金融图表、虚构审计标章、合作品牌或收益率制造信任。希望成品有具体产品感，不能只是一页功能卡片。
 
-實作限制：保持原生 HTML/CSS/JS，只修改 experiments/wallet/ 下的檔案；不要改工作台、其他頁面、官方 baseline 或 package.json。可使用語意化 HTML、CSS、SVG 幾何圖與本地圖片，不引入 UI 框架。所有素材須記錄來源或完整生成 Prompt。桌面 1440×900、手機 390×844 和 360×800 可用，200% 縮放不遮蔽內容；鍵盤可完成互動；支援 prefers-reduced-motion。不要使用假成功通知，狀態應與實際模擬一致。
+实作限制：保持原生 HTML/CSS/JS，只修改 experiments/wallet/ 下的档案；不要改工作台、其他页面、官方 baseline 或 package.json。可使用语意化 HTML、CSS、SVG 几何图与本地图片，不引入 UI 框架。所有素材须记录来源或完整生成 Prompt。桌面 1440×900、手机 390×844 和 360×800 可用，200% 缩放不遮蔽内容；键盘可完成互动；支援 prefers-reduced-motion。不要使用假成功通知，状态应与实际模拟一致。
 
-交付：完成頁面、實際執行 npm run build，檢查桌面與手機渲染。列出採用的視覺決策、檢查結果、已知問題、所有額外 Prompt、是否人工修補。保留失敗與限制，不用「完成」取代未驗證的結論。
+交付：完成页面、实际执行 npm run build，检查桌面与手机渲染。列出采用的视觉决策、检查结果、已知问题、所有额外 Prompt、是否人工修补。保留失败与限制，不用「完成」取代未验证的结论。

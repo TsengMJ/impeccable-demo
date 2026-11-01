@@ -1,4 +1,4 @@
-# OFFGRID 離線聲場 — Version A (no-skill control)
+# OFFGRID 离线声场 — Version A (no-skill control)
 
 **Path:** `/Users/tsengmingchun/Documents/LAB/impeccable-control-festival/experiments/festival/`  
 **Model:** Cursor Task subagent inherit  
@@ -8,8 +8,8 @@
 ## Visual decisions
 
 - **Direction:** Print / signal-poster — paper ground `#f2f0e8`, ink black, acid lime `#d6ff3a`, noise magenta `#ff3b6b`, cyan focus `#1fd6ff`. High saturation accents; asymmetric hero (copy left, geometric plane right).
-- **Type:** Syne (Latin display) + Noto Sans TC (body / CJK) + IBM Plex Mono (meta). Large OFFGRID lockup with 離線聲場 secondary; claim as second hierarchy.
-- **Info first:** Top fiction banner; hero carries date, venue, primary CTA「查看票種」and secondary「探索陣容」before deeper sections.
+- **Type:** Syne (Latin display) + Noto Sans TC (body / CJK) + IBM Plex Mono (meta). Large OFFGRID lockup with 离线声场 secondary; claim as second hierarchy.
+- **Info first:** Top fiction banner; hero carries date, venue, primary CTA「查看票种」and secondary「探索阵容」before deeper sections.
 - **Stage encoding:** Text labels SIGNAL / NOISE plus color chips — not color-only. Schedule rows also include「SIGNAL 舞台／NOISE 舞台」hint text.
 - **No cards-as-decoration:** Lineup / tickets / FAQ use hard ink borders as poster blocks, not soft UI cards. No scarcity counters.
 - **Assets:** No photos or AI images. Hero plane is pure CSS geometry (gradients, rotated square, diamond). Fonts from Google Fonts.
@@ -31,7 +31,7 @@ Composition (brand, claim, meta, CTAs, geometric plane) remains fully present wh
 - Artist expand / collapse bios (`aria-expanded`)
 - Schedule filter 全部／SIGNAL／NOISE (`aria-pressed`, chronological order preserved)
 - Ticket modal: name, unit price, qty 1–4, live total; early-bird `disabled`
-- Disclaimer「這是設計測試，不會產生訂單。」
+- Disclaimer「这是设计测试，不会产生订单。」
 - Escape / backdrop / close button; basic focus trap while modal open; skip link
 
 ## Extra prompts / assets

@@ -23,7 +23,7 @@ async function capture(key, variant) {
   const output = resolve('recordings/interactions', `${stamp()}-${key}-${variant}-${randomUUID().slice(0, 8)}`);
   await mkdir(output, { recursive: true });
   const sourceSha256 = await inventory(directory);
-  const context = await browser.newContext({ viewport: { width: 1440, height: 900 }, deviceScaleFactor: 1, locale: 'zh-TW', timezoneId: 'Asia/Taipei', reducedMotion: 'reduce', recordVideo: { dir: output, size: { width: 1440, height: 900 } } });
+  const context = await browser.newContext({ viewport: { width: 1440, height: 900 }, deviceScaleFactor: 1, locale: 'zh-CN', timezoneId: 'Asia/Taipei', reducedMotion: 'reduce', recordVideo: { dir: output, size: { width: 1440, height: 900 } } });
   const page = await context.newPage();
   const errors = [];
   page.on('pageerror', error => errors.push(error.message));

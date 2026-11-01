@@ -1,3 +1,3 @@
 $impeccable distill demos/lumina-classic/d/index.html
 
-只處理 /demos/lumina-classic/d/。從凍結 B 分叉；不得改 a/ 或 b/。
+只处理 /demos/lumina-classic/d/。从冻结 B 分叉；不得改 a/ 或 b/。

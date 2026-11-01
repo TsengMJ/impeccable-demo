@@ -67,7 +67,7 @@ try {
 
   await page.goto(base + '/');
   await page.keyboard.press('Tab');
-  assert.equal(await page.locator(':focus').textContent(), '跳至內容');
+  assert.equal(await page.locator(':focus').textContent(), '跳至内容');
   checks.push('Keyboard entry: skip link is the first focus target');
   await page.goto(base + '/not-a-case');
   assert((await page.locator('h1').textContent()).includes('不存在'));

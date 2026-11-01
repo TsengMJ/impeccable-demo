@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-31T18:18:49.909Z",
-  "sourceFreeze": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/source-freeze-2026-10-31T18-08-14-085Z",
+  "checkedAt": "2026-11-01T02:21:21.914Z",
+  "sourceFreeze": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/source-freeze-2026-11-01T02-14-24-724Z",
   "scrollVideos": 60,
   "interactionVideos": 15,
   "issues": [],
@@ -30,660 +30,660 @@
       "variant": "a",
       "view": "mobile",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-07-04-395Z-lumina-a-mobile-6e1c6afa",
-      "videoBytes": 1362399,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-14-29-257Z-lumina-a-mobile-aeae482c",
+      "videoBytes": 1179510,
       "sourceMatchFreeze": true,
       "overflowPx": 308,
-      "durationMs": 13662
+      "durationMs": 12734
+    },
+    {
+      "key": "lumina",
+      "variant": "a",
+      "view": "desktop",
+      "motion": "reduce",
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-14-29-272Z-lumina-a-desktop-390759fe",
+      "videoBytes": 2387782,
+      "sourceMatchFreeze": true,
+      "overflowPx": 0,
+      "durationMs": 13831
     },
     {
       "key": "lumina",
       "variant": "b",
       "view": "desktop",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-07-04-410Z-lumina-b-desktop-fc4c8bdc",
-      "videoBytes": 2206477,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-14-29-260Z-lumina-b-desktop-2a21aeb4",
+      "videoBytes": 2685118,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 14595
-    },
-    {
-      "key": "lumina",
-      "variant": "a",
-      "view": "desktop",
-      "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-07-04-397Z-lumina-a-desktop-13167391",
-      "videoBytes": 2638993,
-      "sourceMatchFreeze": true,
-      "overflowPx": 0,
-      "durationMs": 15160
+      "durationMs": 14165
     },
     {
       "key": "lumina",
       "variant": "b",
       "view": "mobile",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-07-20-144Z-lumina-b-mobile-a0d2c951",
-      "videoBytes": 1136442,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-14-43-383Z-lumina-b-mobile-d6a31aa2",
+      "videoBytes": 1205569,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 12415
+      "durationMs": 12191
     },
     {
       "key": "lumina",
       "variant": "c",
       "view": "mobile",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-07-21-524Z-lumina-c-mobile-8b3f919f",
-      "videoBytes": 1168281,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-14-44-971Z-lumina-c-mobile-e2c5221d",
+      "videoBytes": 1189427,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 12899
+      "durationMs": 12418
     },
     {
       "key": "lumina",
       "variant": "c",
       "view": "desktop",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-07-21-382Z-lumina-c-desktop-5ca1d932",
-      "videoBytes": 2598714,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-14-44-466Z-lumina-c-desktop-16ba3b40",
+      "videoBytes": 2545496,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 15807
+      "durationMs": 14194
     },
     {
       "key": "lumina",
       "variant": "d",
       "view": "desktop",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-07-33-831Z-lumina-d-desktop-c744829c",
-      "videoBytes": 2340954,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-14-56-657Z-lumina-d-desktop-684f6df3",
+      "videoBytes": 2161074,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 14185
+      "durationMs": 13786
     },
     {
       "key": "lumina",
       "variant": "d",
       "view": "mobile",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-07-36-365Z-lumina-d-mobile-93458b0c",
-      "videoBytes": 1319651,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-14-58-926Z-lumina-d-mobile-77b0bcc5",
+      "videoBytes": 1227986,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 12552
+      "durationMs": 12234
     },
     {
       "key": "lumina",
       "variant": "e",
       "view": "desktop",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-07-38-926Z-lumina-e-desktop-8aeb6b90",
-      "videoBytes": 2609805,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-14-59-950Z-lumina-e-desktop-fc7338f7",
+      "videoBytes": 2558883,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 14694
+      "durationMs": 14886
     },
     {
       "key": "lumina",
       "variant": "e",
       "view": "mobile",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-07-49-198Z-lumina-e-mobile-dd549dd6",
-      "videoBytes": 1183779,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-15-11-625Z-lumina-e-mobile-70b76f7c",
+      "videoBytes": 1182300,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 12544
+      "durationMs": 12533
     },
     {
       "key": "lumina-classic",
       "variant": "a",
       "view": "desktop",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-07-50-562Z-lumina-classic-a-desktop-3df0cd57",
-      "videoBytes": 2529397,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-15-12-369Z-lumina-classic-a-desktop-9c6fdda2",
+      "videoBytes": 2249957,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 15935
+      "durationMs": 14744
     },
     {
       "key": "lumina-classic",
       "variant": "a",
       "view": "mobile",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-07-54-845Z-lumina-classic-a-mobile-26b34175",
-      "videoBytes": 1145112,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-15-15-978Z-lumina-classic-a-mobile-17754a10",
+      "videoBytes": 1082840,
       "sourceMatchFreeze": true,
       "overflowPx": 304,
-      "durationMs": 13142
+      "durationMs": 12510
     },
     {
       "key": "lumina-classic",
       "variant": "b",
       "view": "desktop",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-08-03-342Z-lumina-classic-b-desktop-b1c5ccf4",
-      "videoBytes": 2719296,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-15-25-481Z-lumina-classic-b-desktop-165fd9ad",
+      "videoBytes": 2537109,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 16812
+      "durationMs": 14813
     },
     {
       "key": "lumina-classic",
       "variant": "b",
       "view": "mobile",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-08-07-586Z-lumina-classic-b-mobile-7f188993",
-      "videoBytes": 1322674,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-15-28-204Z-lumina-classic-b-mobile-4535ad40",
+      "videoBytes": 1252268,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 13082
+      "durationMs": 12555
     },
     {
       "key": "lumina-classic",
       "variant": "c",
       "view": "desktop",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-08-10-256Z-lumina-classic-c-desktop-cf7dc518",
-      "videoBytes": 2762023,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-15-29-615Z-lumina-classic-c-desktop-5ea375c2",
+      "videoBytes": 2854641,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 17750
+      "durationMs": 18269
     },
     {
       "key": "lumina-classic",
       "variant": "c",
       "view": "mobile",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-08-21-804Z-lumina-classic-c-mobile-06aa9dff",
-      "videoBytes": 1313820,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-15-41-764Z-lumina-classic-c-mobile-a8fd5775",
+      "videoBytes": 1361585,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 12620
+      "durationMs": 12862
     },
     {
       "key": "lumina-classic",
       "variant": "d",
       "view": "desktop",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-08-22-739Z-lumina-classic-d-desktop-5a34c602",
-      "videoBytes": 2080778,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-15-42-301Z-lumina-classic-d-desktop-6886f403",
+      "videoBytes": 1993070,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 13640
+      "durationMs": 14325
     },
     {
       "key": "lumina-classic",
       "variant": "d",
       "view": "mobile",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-08-29-178Z-lumina-classic-d-mobile-a6256fd3",
-      "videoBytes": 1124440,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-15-49-209Z-lumina-classic-d-mobile-ff8e8aad",
+      "videoBytes": 1087626,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 12295
+      "durationMs": 12483
     },
     {
       "key": "lumina-classic",
       "variant": "e",
       "view": "mobile",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-08-38-170Z-lumina-classic-e-mobile-ec3ee56c",
-      "videoBytes": 1201714,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-15-58-078Z-lumina-classic-e-mobile-6b947155",
+      "videoBytes": 1289197,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 12499
+      "durationMs": 16336
     },
     {
       "key": "lumina-classic",
       "variant": "e",
       "view": "desktop",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-08-35-700Z-lumina-classic-e-desktop-6b90ba61",
-      "videoBytes": 2652087,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-15-56-067Z-lumina-classic-e-desktop-b68831f0",
+      "videoBytes": 2854566,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 16401
-    },
-    {
-      "key": "wallet",
-      "variant": "a",
-      "view": "desktop",
-      "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-08-42-931Z-wallet-a-desktop-49503361",
-      "videoBytes": 3593899,
-      "sourceMatchFreeze": true,
-      "overflowPx": 0,
-      "durationMs": 17283
+      "durationMs": 28899
     },
     {
       "key": "wallet",
       "variant": "a",
       "view": "mobile",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-08-52-011Z-wallet-a-mobile-e35d2d97",
-      "videoBytes": 1747526,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-16-16-227Z-wallet-a-mobile-1d393785",
+      "videoBytes": 1552724,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 12515
+      "durationMs": 15602
+    },
+    {
+      "key": "wallet",
+      "variant": "a",
+      "view": "desktop",
+      "motion": "reduce",
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-16-03-939Z-wallet-a-desktop-43dc59e2",
+      "videoBytes": 3442323,
+      "sourceMatchFreeze": true,
+      "overflowPx": 0,
+      "durationMs": 30548
+    },
+    {
+      "key": "wallet",
+      "variant": "b",
+      "view": "mobile",
+      "motion": "reduce",
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-16-33-242Z-wallet-b-mobile-ad90ffc9",
+      "videoBytes": 1747360,
+      "sourceMatchFreeze": true,
+      "overflowPx": 0,
+      "durationMs": 13358
     },
     {
       "key": "wallet",
       "variant": "b",
       "view": "desktop",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-08-53-419Z-wallet-b-desktop-232a3fd6",
-      "videoBytes": 3752147,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-16-27-495Z-wallet-b-desktop-2dd1ac86",
+      "videoBytes": 3346506,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 18844
-    },
-    {
-      "key": "wallet",
-      "variant": "b",
-      "view": "mobile",
-      "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-09-01-755Z-wallet-b-mobile-63e28229",
-      "videoBytes": 1741504,
-      "sourceMatchFreeze": true,
-      "overflowPx": 0,
-      "durationMs": 12908
+      "durationMs": 23428
     },
     {
       "key": "wallet",
       "variant": "c",
       "view": "desktop",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-09-05-641Z-wallet-c-desktop-8d6e769c",
-      "videoBytes": 3621167,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-16-36-837Z-wallet-c-desktop-544fd675",
+      "videoBytes": 2846711,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 19987
+      "durationMs": 20120
     },
     {
       "key": "wallet",
       "variant": "c",
       "view": "mobile",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-09-14-013Z-wallet-c-mobile-b21605b3",
-      "videoBytes": 1828029,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-16-48-715Z-wallet-c-mobile-2b959026",
+      "videoBytes": 1948281,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 13379
-    },
-    {
-      "key": "wallet",
-      "variant": "d",
-      "view": "desktop",
-      "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-09-16-503Z-wallet-d-desktop-a6156fca",
-      "videoBytes": 3624301,
-      "sourceMatchFreeze": true,
-      "overflowPx": 0,
-      "durationMs": 16873
+      "durationMs": 14177
     },
     {
       "key": "wallet",
       "variant": "d",
       "view": "mobile",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-09-26-805Z-wallet-d-mobile-6ec4fb9c",
-      "videoBytes": 1714956,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-16-59-295Z-wallet-d-mobile-4590e5c2",
+      "videoBytes": 1840480,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 12571
+      "durationMs": 13463
+    },
+    {
+      "key": "wallet",
+      "variant": "d",
+      "view": "desktop",
+      "motion": "reduce",
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-16-52-703Z-wallet-d-desktop-b4880f15",
+      "videoBytes": 3344495,
+      "sourceMatchFreeze": true,
+      "overflowPx": 0,
+      "durationMs": 21026
     },
     {
       "key": "wallet",
       "variant": "e",
       "view": "desktop",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-09-28-890Z-wallet-e-desktop-b995ec91",
-      "videoBytes": 3585589,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-17-04-586Z-wallet-e-desktop-7de6a5ab",
+      "videoBytes": 3594794,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 15628
+      "durationMs": 23562
     },
     {
       "key": "wallet",
       "variant": "e",
       "view": "mobile",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-09-35-091Z-wallet-e-mobile-eb2594ae",
-      "videoBytes": 1747979,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-17-15-206Z-wallet-e-mobile-8e540223",
+      "videoBytes": 1821162,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 12616
+      "durationMs": 13043
     },
     {
       "key": "tea",
       "variant": "a",
       "view": "desktop",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-09-40-850Z-tea-a-desktop-e86c53ed",
-      "videoBytes": 2219053,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-17-15-275Z-tea-a-desktop-3e032aa5",
+      "videoBytes": 2300302,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 16176
+      "durationMs": 25562
     },
     {
       "key": "tea",
       "variant": "a",
       "view": "mobile",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-09-45-926Z-tea-a-mobile-160ecc2c",
-      "videoBytes": 1145856,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-17-29-770Z-tea-a-mobile-a375c361",
+      "videoBytes": 1115780,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 13103
-    },
-    {
-      "key": "tea",
-      "variant": "b",
-      "view": "desktop",
-      "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-09-48-914Z-tea-b-desktop-12608770",
-      "videoBytes": 2229967,
-      "sourceMatchFreeze": true,
-      "overflowPx": 0,
-      "durationMs": 18964
+      "durationMs": 13948
     },
     {
       "key": "tea",
       "variant": "b",
       "view": "mobile",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-09-58-256Z-tea-b-mobile-9b3566ea",
-      "videoBytes": 1243113,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-17-43-351Z-tea-b-mobile-876c1b29",
+      "videoBytes": 1264061,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 13771
+      "durationMs": 14292
+    },
+    {
+      "key": "tea",
+      "variant": "b",
+      "view": "desktop",
+      "motion": "reduce",
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-17-30-028Z-tea-b-desktop-248a96c1",
+      "videoBytes": 2364513,
+      "sourceMatchFreeze": true,
+      "overflowPx": 0,
+      "durationMs": 27988
     },
     {
       "key": "tea",
       "variant": "c",
       "view": "desktop",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-10-00-515Z-tea-c-desktop-a7da4c36",
-      "videoBytes": 2328980,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-17-46-263Z-tea-c-desktop-afb76c61",
+      "videoBytes": 2404699,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 17795
+      "durationMs": 25321
     },
     {
       "key": "tea",
       "variant": "c",
       "view": "mobile",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-10-09-230Z-tea-c-mobile-cddc11fe",
-      "videoBytes": 1174344,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-17-59-700Z-tea-c-mobile-c74446d5",
+      "videoBytes": 1295732,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 13176
+      "durationMs": 13884
     },
     {
       "key": "tea",
       "variant": "d",
       "view": "desktop",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-10-13-284Z-tea-d-desktop-9fba88b4",
-      "videoBytes": 2088860,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-18-00-502Z-tea-d-desktop-0b0327d9",
+      "videoBytes": 2096607,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 17040
+      "durationMs": 22480
     },
     {
       "key": "tea",
       "variant": "d",
       "view": "mobile",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-10-20-430Z-tea-d-mobile-3151caa1",
-      "videoBytes": 1106901,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-18-13-351Z-tea-d-mobile-1adc3e36",
+      "videoBytes": 1095545,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 13187
+      "durationMs": 13256
     },
     {
       "key": "tea",
       "variant": "e",
       "view": "desktop",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-10-23-703Z-tea-e-desktop-d3a78f1f",
-      "videoBytes": 2320849,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-18-15-526Z-tea-e-desktop-df569fb4",
+      "videoBytes": 2294226,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 20456
+      "durationMs": 19923
     },
     {
       "key": "tea",
       "variant": "e",
       "view": "mobile",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-10-31-962Z-tea-e-mobile-5cb970be",
-      "videoBytes": 1219596,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-18-24-661Z-tea-e-mobile-ae9b80c0",
+      "videoBytes": 1182822,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 13540
+      "durationMs": 13280
     },
     {
       "key": "festival",
       "variant": "a",
       "view": "desktop",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-10-35-508Z-festival-a-desktop-8abe3310",
-      "videoBytes": 3010643,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-18-28-217Z-festival-a-desktop-15485871",
+      "videoBytes": 2962797,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 18119
+      "durationMs": 19967
     },
     {
       "key": "festival",
       "variant": "a",
       "view": "mobile",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-10-45-455Z-festival-a-mobile-eda8b99c",
-      "videoBytes": 1473810,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-18-37-417Z-festival-a-mobile-f575994a",
+      "videoBytes": 1536996,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 13240
+      "durationMs": 13597
     },
     {
       "key": "festival",
       "variant": "b",
       "view": "desktop",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-10-47-163Z-festival-b-desktop-baa33420",
-      "videoBytes": 3053059,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-18-39-841Z-festival-b-desktop-23fa5b72",
+      "videoBytes": 3279759,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 17918
+      "durationMs": 17996
     },
     {
       "key": "festival",
       "variant": "b",
       "view": "mobile",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-10-54-975Z-festival-b-mobile-9a2fc4fe",
-      "videoBytes": 1563191,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-18-49-552Z-festival-b-mobile-f9dba496",
+      "videoBytes": 1470450,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 13193
+      "durationMs": 13352
     },
     {
       "key": "festival",
       "variant": "c",
       "view": "desktop",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-10-59-969Z-festival-c-desktop-bd93ae7e",
-      "videoBytes": 3045417,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-18-52-625Z-festival-c-desktop-f68891d2",
+      "videoBytes": 3161821,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 19528
+      "durationMs": 17952
     },
     {
       "key": "festival",
       "variant": "c",
       "view": "mobile",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-11-06-812Z-festival-c-mobile-162397c8",
-      "videoBytes": 1479385,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-18-59-237Z-festival-c-mobile-3c7ad7fe",
+      "videoBytes": 1435015,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 14626
+      "durationMs": 13377
     },
     {
       "key": "festival",
       "variant": "d",
       "view": "desktop",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-11-09-794Z-festival-d-desktop-b8d7966e",
-      "videoBytes": 2367511,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-19-04-450Z-festival-d-desktop-0a33520a",
+      "videoBytes": 2343914,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 19351
+      "durationMs": 17470
     },
     {
       "key": "festival",
       "variant": "d",
       "view": "mobile",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-11-22-263Z-festival-d-mobile-87f2d9d0",
-      "videoBytes": 1319433,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-19-11-861Z-festival-d-mobile-92ae8c49",
+      "videoBytes": 1190197,
       "sourceMatchFreeze": true,
       "overflowPx": 45,
-      "durationMs": 14394
+      "durationMs": 13428
+    },
+    {
+      "key": "festival",
+      "variant": "e",
+      "view": "desktop",
+      "motion": "reduce",
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-20-50-802Z-festival-e-desktop-b42625f2",
+      "videoBytes": 3022058,
+      "sourceMatchFreeze": true,
+      "overflowPx": 0,
+      "durationMs": 13705
     },
     {
       "key": "festival",
       "variant": "e",
       "view": "mobile",
       "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-11-30-950Z-festival-e-mobile-993f3af0",
-      "videoBytes": 1709108,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-19-23-531Z-festival-e-mobile-d3b580e2",
+      "videoBytes": 1492136,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 14676
-    },
-    {
-      "key": "festival",
-      "variant": "e",
-      "view": "desktop",
-      "motion": "reduce",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-11-23-219Z-festival-e-desktop-4ccbfb90",
-      "videoBytes": 3137188,
-      "sourceMatchFreeze": true,
-      "overflowPx": 0,
-      "durationMs": 30274
+      "durationMs": 13923
     },
     {
       "key": "lumina",
       "variant": "a",
       "view": "desktop",
       "motion": "no-preference",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-11-38-875Z-lumina-a-desktop-motion-18a63632",
-      "videoBytes": 3119165,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-19-26-681Z-lumina-a-desktop-motion-26e05959",
+      "videoBytes": 2418147,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 25111
+      "durationMs": 19341
     },
     {
       "key": "lumina",
       "variant": "e",
       "view": "desktop",
       "motion": "no-preference",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-11-48-040Z-lumina-e-desktop-motion-fc5bb794",
-      "videoBytes": 2817383,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-19-33-216Z-lumina-e-desktop-motion-2e3c4da7",
+      "videoBytes": 2790752,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 20823
+      "durationMs": 18061
     },
     {
       "key": "lumina-classic",
       "variant": "a",
       "view": "desktop",
       "motion": "no-preference",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-11-55-512Z-lumina-classic-a-desktop-motion-cc7d5c12",
-      "videoBytes": 2529141,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-19-39-021Z-lumina-classic-a-desktop-motion-e46d9d98",
+      "videoBytes": 2652905,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 20371
+      "durationMs": 16465
     },
     {
       "key": "lumina-classic",
       "variant": "e",
       "view": "desktop",
       "motion": "no-preference",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-12-05-687Z-lumina-classic-e-desktop-motion-fa7aaa9b",
-      "videoBytes": 3180544,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-19-47-286Z-lumina-classic-e-desktop-motion-2459a844",
+      "videoBytes": 2753052,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 27842
+      "durationMs": 15459
     },
     {
       "key": "wallet",
       "variant": "a",
       "view": "desktop",
       "motion": "no-preference",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-12-10-751Z-wallet-a-desktop-motion-44a1fac0",
-      "videoBytes": 3808930,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-19-52-267Z-wallet-a-desktop-motion-940755ac",
+      "videoBytes": 3896054,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 34198
+      "durationMs": 19233
     },
     {
       "key": "wallet",
       "variant": "e",
       "view": "desktop",
       "motion": "no-preference",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-12-17-926Z-wallet-e-desktop-motion-39f57d46",
-      "videoBytes": 3773994,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-19-56-842Z-wallet-e-desktop-motion-dd8d4725",
+      "videoBytes": 3663162,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 36307
+      "durationMs": 20048
     },
     {
       "key": "tea",
       "variant": "a",
       "view": "desktop",
       "motion": "no-preference",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-12-36-248Z-tea-a-desktop-motion-1f718eb4",
-      "videoBytes": 2174986,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-20-03-872Z-tea-a-desktop-motion-a225a57f",
+      "videoBytes": 2440975,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 42431
+      "durationMs": 22852
     },
     {
       "key": "tea",
       "variant": "e",
       "view": "desktop",
       "motion": "no-preference",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-12-47-325Z-tea-e-desktop-motion-c8d8757b",
-      "videoBytes": 2669594,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-20-12-886Z-tea-e-desktop-motion-bef8e02d",
+      "videoBytes": 2564280,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 58658
+      "durationMs": 24833
     },
     {
       "key": "festival",
       "variant": "a",
       "view": "desktop",
       "motion": "no-preference",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-12-56-491Z-festival-a-desktop-motion-03c32749",
-      "videoBytes": 3662730,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-20-18-461Z-festival-a-desktop-motion-eb989817",
+      "videoBytes": 3369878,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 52588
+      "durationMs": 22194
     },
     {
       "key": "festival",
       "variant": "e",
       "view": "desktop",
       "motion": "no-preference",
-      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T18-13-21-680Z-festival-e-desktop-motion-10763d4a",
-      "videoBytes": 3856731,
+      "directory": "/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-11-01T02-20-28-131Z-festival-e-desktop-motion-4485b1ce",
+      "videoBytes": 3602916,
       "sourceMatchFreeze": true,
       "overflowPx": 0,
-      "durationMs": 37201
+      "durationMs": 18076
     }
   ]
 }

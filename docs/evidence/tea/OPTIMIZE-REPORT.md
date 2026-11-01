@@ -1,4 +1,4 @@
-# Tea (山間製茶) — optimize (from B, `_optimize/` only)
+# Tea (山间制茶) — optimize (from B, `_optimize/` only)
 
 ## Prompt
 See `optimize-prompt.txt`. Applied `$impeccable optimize` to `experiments/tea/_optimize/` after copying frozen B.

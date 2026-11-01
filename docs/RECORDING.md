@@ -1,150 +1,152 @@
-# 錄影與測試手冊
+# 录影与测试手册
 
-## 素材身份先說清楚
+## 素材身份先说清楚
 
-**2026-11-01 更新：**五案 A–E 現已完成並錄製，請先看 [新素材索引](../recordings/MATRIX-INDEX.md)、[README 剪輯選片建議](../README.md#剪輯優先看哪些版本相對-a-變化最明顯) 與 [錄影稽核](evidence/CAPTURE-AUDIT.json)。以下較早的操作流程仍保留作方法與重跑參考；不能把舊的「待生成」狀態當成當前進度。
+**2026-11-01 更新：**五案 A–E 现已完成并录制，请先看 [新素材索引](../recordings/MATRIX-INDEX.md)、[README 剪辑选片建议](../README.md#剪辑优先看哪些版本相对-a-变化最明显) 与 [录影稽核](evidence/CAPTURE-AUDIT.json)。以下较早的操作流程仍保留作方法与重跑参考；不能把旧的「待生成」状态当成当前进度。
 
-- 五案 A–E 已上架，C／D／E 各自從 B 分叉；60 段頁面片與 15 段操作片已留證。
-- 工作台、題目封面和預留頁都不是用 Impeccable 完整流程生成的測試結果。
-- 官方 Lumina 主版本與 classic 是兩個起始範例，不能剪成同一頁的改善前後。
-- 官方原始生成 Prompt 未公開；本地 D01/D02 是我們新擬的修改 Prompt。
-- D01／D02 已讀取 Impeccable skill 與 playbook，執行 polish／distill 類型的修改；沒有在獨立新對話貼上 slash 指令。完整執行限制見 `docs/evidence/OFFICIAL-RESULTS.md`。先前的 engine-probe 只證明引擎能啟動。
+当前页面已统一为简体中文，旧录影仍代表转换前的页面。`docs/prompts/` 是新的简体需求稿，`docs/evidence/*-prompt.txt` 是历史指令的简体转写；要核对当时逐字输入，请查看转换前的 Git 提交 `91642f3`，或本机旧版 `recordings/runs/` 快照。
 
-## 必須遵守的前後比較（使用者後續確認）
+- 五案 A–E 已上架，C／D／E 各自从 B 分叉；60 段页面片与 15 段操作片已留证。
+- 工作台、题目封面和预留页都不是用 Impeccable 完整流程生成的测试结果。
+- 官方 Lumina 主版本与 classic 是两个起始范例，不能剪成同一页的改善前后。
+- 官方原始生成 Prompt 未公开；本地 D01/D02 是我们新拟的修改 Prompt。
+- D01／D02 已读取 Impeccable skill 与 playbook，执行 polish／distill 类型的修改；没有在独立新对话贴上 slash 指令。完整执行限制见 `docs/evidence/OFFICIAL-RESULTS.md`。先前的 engine-probe 只证明引擎能启动。
 
-三個原創題目已依下列順序建立 A–E。此流程仍是重跑時必須遵守的比較原則：
+## 必须遵守的前后比较（使用者后续确认）
 
-1. **A／未使用 Impeccable**：在乾淨的新對話與隔離專案，用相同 Brief 生成完整可操作頁面。檢查本地、全域、外掛與 hooks 都沒有載入 Impeccable，也不能帶入本對話已讀到的 skill 規則。只移除 `$impeccable` 前綴不算隔離。若無法確認隔離，不得標成無 skill 對照。
-2. **凍結 A**：保存實際 Prompt、模型與推理設定、素材、工具條件、程式碼、桌面／手機截圖與錄影。現在的預留頁不算 A。
-3. **B／使用 Impeccable 改善**：複製 A，在副本套用一個明確的 skill 指令。保留產品需求與模型設定，記錄額外指令、skill 問答、圖片生成與人工修補；不得覆蓋 A。
-4. **並排交付**：將 A、B 匯入同一個前端專案的兩個獨立路徑，擴充現有案例與錄影 registry，驗證兩份都可開啟；以相同尺寸、捲動節奏和互動情境錄製前後素材。兩份成果與紀錄齊全才算該題完成。
+三个原创题目已依下列顺序建立 A–E。此流程仍是重跑时必须遵守的比较原则：
 
-這是「同一頁使用 skill 改善前後」的比較；B 多了一輪修改，不能把差異全部歸因於 skill。若另外測「有／無 skill 從零生成」，另設 C 組，使用同樣的空白起點與 Brief，不混作 A→B 的改善成果。
+1. **A／未使用 Impeccable**：在干净的新对话与隔离专案，用相同 Brief 生成完整可操作页面。检查本地、全域、外挂与 hooks 都没有载入 Impeccable，也不能带入本对话已读到的 skill 规则。只移除 `$impeccable` 前缀不算隔离。若无法确认隔离，不得标成无 skill 对照。
+2. **冻结 A**：保存实际 Prompt、模型与推理设定、素材、工具条件、程式码、桌面／手机截图与录影。现在的预留页不算 A。
+3. **B／使用 Impeccable 改善**：复制 A，在副本套用一个明确的 skill 指令。保留产品需求与模型设定，记录额外指令、skill 问答、图片生成与人工修补；不得覆盖 A。
+4. **并排交付**：将 A、B 汇入同一个前端专案的两个独立路径，扩充现有案例与录影 registry，验证两份都可开启；以相同尺寸、卷动节奏和互动情境录制前后素材。两份成果与纪录齐全才算该题完成。
 
-三題 A 是 Cursor 在隔離控制目錄啟動的子代理結果，並非全新 IDE 視窗；方法限制見 `docs/evidence/BRIEF-RESULTS.md`。工作台展示原始 Brief；矩陣內 B–E 使用另行記錄的 skill 指令。A–E 各有獨立路徑；capture 現支援 `--take a|b|c|d|e`，並在 metadata 保存來源雜湊。
+这是「同一页使用 skill 改善前后」的比较；B 多了一轮修改，不能把差异全部归因于 skill。若另外测「有／无 skill 从零生成」，另设 C 组，使用同样的空白起点与 Brief，不混作 A→B 的改善成果。
 
-## 三個題目為什麼這樣選
+三题 A 是 Cursor 在隔离控制目录启动的子代理结果，并非全新 IDE 视窗；方法限制见 `docs/evidence/BRIEF-RESULTS.md`。工作台展示原始 Brief；矩阵内 B–E 使用另行记录的 skill 指令。A–E 各有独立路径；capture 现支援 `--take a|b|c|d|e`，并在 metadata 保存来源杂凑。
 
-| ID | 內容與轉換目標 | 能力邊界 | 可觀測失敗 |
+## 三个题目为什么这样选
+
+| ID | 内容与转换目标 | 能力边界 | 可观测失败 |
 |---|---|---|---|
-| W01 AEGIS | Agentic wallet，讓進階用戶進入權限 sandbox | 抽象產品理解、信任表達、互動狀態一致 | 看起來像交易所、假審計、Revoke 無效、上限規則錯誤 |
-| T01 山間製茶 | 台灣茶季訂閱，選擇方案並預覽 | 中文品牌敘事、素材、非 SaaS 結構 | 全部品牌變米色、圖片空缺、中文層級差、價格未更新 |
-| F01 OFFGRID | 虛構音樂祭，找演出與票種 | 大膽構圖、高密度資訊、混排、動態降級 | 日期被藏、時刻表手機溢出、長名稱截斷、減少動態後消失 |
+| W01 AEGIS | Agentic wallet，让进阶用户进入权限 sandbox | 抽象产品理解、信任表达、互动状态一致 | 看起来像交易所、假审计、Revoke 无效、上限规则错误 |
+| T01 山间制茶 | 台湾茶季订阅，选择方案并预览 | 中文品牌叙事、素材、非 SaaS 结构 | 全部品牌变米色、图片空缺、中文层级差、价格未更新 |
+| F01 OFFGRID | 虚构音乐祭，找演出与票种 | 大胆构图、高密度资讯、混排、动态降级 | 日期被藏、时刻表手机溢出、长名称截断、减少动态后消失 |
 
-完整產品內容在 `docs/prompts/`；這些品牌與價格、活動均為虛構測試設定。
+完整产品内容在 `docs/prompts/`；这些品牌与价格、活动均为虚构测试设定。
 
-## 建議測試順序與完整呼叫
+## 建议测试顺序与完整呼叫
 
-1. D01：完整要求存於 `docs/prompts/lumina.md`，首行 `$impeccable polish demos/lumina/index.html`。本輪已由代理讀取本地 skill 與 polish playbook 執行；沒有獨立對話貼上整份 Prompt。不可在影片中宣稱錄下了 slash 指令。
-2. D02：完整要求存於 `docs/prompts/lumina-classic.md`，首行 `$impeccable distill demos/lumina-classic/index.html`。同樣是在此對話讀取 skill 與 distill playbook 後執行。
-3. W01 / T01 / F01：先依上節完成無 skill 的 A 並凍結，再在 A 的副本執行選定 skill 指令得到 B。工作台「使用 Impeccable」的完整生成 Prompt 保留供獨立 C 組使用，不能跳過 A。`scripts/prompt.mjs` 是共用的組合規則，snapshot 與畫面相同。
-4. 後續單輪：audit / critique 先評估，adapt 測手機，bolder 測變化。每一輪都從已記錄快照開始，不要一次貼三個修改指令。
+1. D01：完整要求存于 `docs/prompts/lumina.md`，首行 `$impeccable polish demos/lumina/index.html`。本轮已由代理读取本地 skill 与 polish playbook 执行；没有独立对话贴上整份 Prompt。不可在影片中宣称录下了 slash 指令。
+2. D02：完整要求存于 `docs/prompts/lumina-classic.md`，首行 `$impeccable distill demos/lumina-classic/index.html`。同样是在此对话读取 skill 与 distill playbook 后执行。
+3. W01 / T01 / F01：先依上节完成无 skill 的 A 并冻结，再在 A 的副本执行选定 skill 指令得到 B。工作台「使用 Impeccable」的完整生成 Prompt 保留供独立 C 组使用，不能跳过 A。`scripts/prompt.mjs` 是共用的组合规则，snapshot 与画面相同。
+4. 后续单轮：audit / critique 先评估，adapt 测手机，bolder 测变化。每一轮都从已记录快照开始，不要一次贴三个修改指令。
 
-工作台後續按鈕複製的**完整格式**如下（由 `followupPrompt` 統一產生）：
+工作台后续按钮复制的**完整格式**如下（由 `followupPrompt` 统一产生）：
 
 ```text
 $impeccable <command> <directory>/index.html
 
-只處理 <route>，遵守 docs/prompts/<case>.md 的原始產品事實與範圍限制。先記錄此完整 Prompt；不得修改官方 baseline 或其他頁面。回報實際檢查證據、額外指令與未解決問題。
+只处理 <route>，遵守 docs/prompts/<case>.md 的原始产品事实与范围限制。先记录此完整 Prompt；不得修改官方 baseline 或其他页面。回报实际检查证据、额外指令与未解决问题。
 ```
 
-命令不限於以上；自訂指令先存成 UTF-8 `.txt`，後續記錄用 `--prompt` 指向該檔。不要覆蓋上一輪 Prompt。
+命令不限于以上；自订指令先存成 UTF-8 `.txt`，后续记录用 `--prompt` 指向该档。不要覆盖上一轮 Prompt。
 
-## 每輪實際操作
+## 每轮实际操作
 
-以下是重跑單輪時的快照／錄影工具範例；現有 A–E 成果與原始碼副本已在新素材索引。階段名稱與 mode 應如實標記，例如 `a-no-skill` 配 `--mode plain`、`b-polish` 配該輪的完整 `--prompt`。
+以下是重跑单轮时的快照／录影工具范例；现有 A–E 成果与原始码副本已在新素材索引。阶段名称与 mode 应如实标记，例如 `a-no-skill` 配 `--mode plain`、`b-polish` 配该轮的完整 `--prompt`。
 
-終端機 A：
+终端机 A：
 
 ```sh
 npm run dev
 ```
 
-終端機 B：
+终端机 B：
 
 ```sh
-# 第一次安裝錄影用瀏覽器
+# 第一次安装录影用浏览器
 npx playwright install chromium
 
-# 保存起點，輸出唯一資料夾
-npm run snapshot -- --case wallet --phase before --model "實際模型與設定" --note "首輪，尚未生成"
+# 保存起点，输出唯一资料夹
+npm run snapshot -- --case wallet --phase before --model "实际模型与设定" --note "首轮，尚未生成"
 ```
 
-開始 macOS 螢幕錄影（Shift + Command + 5），錄下案例名、完整 Prompt、貼上與送出、skill 的互動選擇、生成、任何錯誤與修補。模型名稱／推理設定應從你實際使用的介面抄錄；本次工具無法替你證明 UI 所選設定。
+开始 macOS 萤幕录影（Shift + Command + 5），录下案例名、完整 Prompt、贴上与送出、skill 的互动选择、生成、任何错误与修补。模型名称／推理设定应从你实际使用的介面抄录；本次工具无法替你证明 UI 所选设定。
 
-完成後：
+完成后：
 
 ```sh
 npm run build
-npm run snapshot -- --case wallet --phase after --model "實際模型與設定" --transcript docs/my-session.md --note "如有額外要求，在 transcript 原文記錄"
-# 省略 --transcript 也能保存，但必須在 observations.md 誠實註記沒有完整對話紀錄。
+npm run snapshot -- --case wallet --phase after --model "实际模型与设定" --transcript docs/my-session.md --note "如有额外要求，在 transcript 原文记录"
+# 省略 --transcript 也能保存，但必须在 observations.md 诚实注记没有完整对话纪录。
 
-# RUN_DIRECTORY 請替換成上一條真正輸出的快照路徑
+# RUN_DIRECTORY 请替换成上一条真正输出的快照路径
 npm run capture -- --case wallet --take b --viewport desktop --run RUN_DIRECTORY
 npm run capture -- --case wallet --take b --viewport mobile --run RUN_DIRECTORY
 ```
 
-後續指令使用與工作台完全一致的 Prompt：
+后续指令使用与工作台完全一致的 Prompt：
 
 ```sh
-npm run snapshot -- --case wallet --phase before-adapt --model "實際模型" --command adapt
-# 複製工作台 adapt Prompt、執行、記錄對話
-npm run snapshot -- --case wallet --phase after-adapt --model "實際模型" --command adapt
+npm run snapshot -- --case wallet --phase before-adapt --model "实际模型" --command adapt
+# 复制工作台 adapt Prompt、执行、记录对话
+npm run snapshot -- --case wallet --phase after-adapt --model "实际模型" --command adapt
 ```
 
-自訂／額外 Prompt 要逐字保存：
+自订／额外 Prompt 要逐字保存：
 
 ```sh
-npm run snapshot -- --case tea --phase after-polish --model "實際模型" --prompt docs/my-exact-prompt.txt --transcript docs/my-session.md
+npm run snapshot -- --case tea --phase after-polish --model "实际模型" --prompt docs/my-exact-prompt.txt --transcript docs/my-session.md
 ```
 
-`--prompt` 預設 `--mode exact`，不增加 skill 前綴、不剝除標題。內建 Brief 預設 `skill`，對照組可用 `--mode plain`。`run.json` 的 status 永遠表示「快照」，不是完成宣告。實際執行、得分與結論填在 observations.md。
+`--prompt` 预设 `--mode exact`，不增加 skill 前缀、不剥除标题。内建 Brief 预设 `skill`，对照组可用 `--mode plain`。`run.json` 的 status 永远表示「快照」，不是完成宣告。实际执行、得分与结论填在 observations.md。
 
-## 素材輸出
+## 素材输出
 
-- `recordings/runs/<UTC>-<case>-<phase>-<uuid>/`：prompt.txt、brief.md、source/、package/lockfile、context/、provenance.json、run.json、observations.md，及選填 transcript.md。
+- `recordings/runs/<UTC>-<case>-<phase>-<uuid>/`：prompt.txt、brief.md、source/、package/lockfile、context/、provenance.json、run.json、observations.md，及选填 transcript.md。
 - `recordings/captures/<UTC>-<case>-<take>-<viewport>-<uuid>/`：viewport.png、full-page.png、clip.webm、capture.json。
-- `capture.json` 含 URL、時間、尺寸、browser 版本、捲動時間點、console error、資源失敗和來源快照關聯。
-- 目前自動影片是無聲頁面捲動 B-roll，非滑鼠互動演示、非 Codex 對話錄影、非效能 benchmark。開頭可能有載入幀，使用 contentStartMs 裁掉；headless 錄影可能有時間量化，最終剪輯以播放器時間軸為準。
-- `--take a|b|c|d|e` 分別錄五個公開變體；`baseline`／`working` 仍是舊版 a／b 別名。
-- 桌面 1440×900、手機 390×844、DPR 1、zh-TW、Asia/Taipei、light、reduced-motion；手機模式是窄 viewport，沒有模擬觸控或特定手機裝置。
-- reduced-motion 是為固定比較而設；要測完整動畫，請另用正常動態的實際瀏覽器錄製，標註模式，不能拿這份影片斷言動畫好壞。
-- Google Fonts 需要網路，字型載入若失敗會記錄。若要固定離線字型，另開一輪處理並記錄差異，不動官方原始碼基準。
-- `--run` 比對的是本地來源，請搭配 dev server；若用 preview 或自訂 --base，需自己確認剛 build 的版本與快照相同。
-- 快照保留單頁目錄；新頁面須把資產放在自己的目錄，不要依賴未記錄的外部共享檔。第三方 CDN 與 font 的內容未被快照封存。
+- `capture.json` 含 URL、时间、尺寸、browser 版本、卷动时间点、console error、资源失败和来源快照关联。
+- 目前自动影片是无声页面卷动 B-roll，非滑鼠互动演示、非 Codex 对话录影、非效能 benchmark。开头可能有载入帧，使用 contentStartMs 裁掉；headless 录影可能有时间量化，最终剪辑以播放器时间轴为准。
+- `--take a|b|c|d|e` 分别录五个公开变体；`baseline`／`working` 仍是旧版 a／b 别名。
+- 桌面 1440×900、手机 390×844、DPR 1、zh-CN、Asia/Taipei、light、reduced-motion；手机模式是窄 viewport，没有模拟触控或特定手机装置。
+- reduced-motion 是为固定比较而设；要测完整动画，请另用正常动态的实际浏览器录制，标注模式，不能拿这份影片断言动画好坏。
+- Google Fonts 需要网路，字型载入若失败会记录。若要固定离线字型，另开一轮处理并记录差异，不动官方原始码基准。
+- `--run` 比对的是本地来源，请搭配 dev server；若用 preview 或自订 --base，需自己确认刚 build 的版本与快照相同。
+- 快照保留单页目录；新页面须把资产放在自己的目录，不要依赖未记录的外部共享档。第三方 CDN 与 font 的内容未被快照封存。
 
-## 建議分鏡（每個案例約 60–120 秒，可按成片調整）
+## 建议分镜（每个案例约 60–120 秒，可按成片调整）
 
-| 片段 | 拍攝內容 | 剪輯時可用的旁白重點 |
+| 片段 | 拍摄内容 | 剪辑时可用的旁白重点 |
 |---|---|---|
-| A 題目 | 案例名、目的、測試條件 5–8 秒 | 這次要測哪個能力，什麼算失敗 |
-| B 起點 | 官方原始版／真正無 skill 對照，首屏與全頁 10–15 秒 | 起點是什麼；尚未生成要明說 |
-| C 指令 | 完整 Prompt，停留首段與限制，另提供可讀全文 | 模型、skill、需求和工具條件 |
-| D 過程 | 送出、必要問答、生成、報錯、修補 | 不把多輪包裝成一鍵完成 |
-| E 結果 | 相同 viewport 與捲動節奏的結果 | 具體指出改善與倒退 |
-| F 功能 | 手動演示 sandbox／方案／時刻表，含失敗邊界 | 畫面之外，功能是否真的成立 |
-| G 手機 | 390px 與 360px、200% 縮放、鍵盤焦點 | 響應式和可及性是否過關 |
-| H 結論 | 依六維度與證據給分 | 只總結實際觀察，不過度歸因 |
+| A 题目 | 案例名、目的、测试条件 5–8 秒 | 这次要测哪个能力，什么算失败 |
+| B 起点 | 官方原始版／真正无 skill 对照，首屏与全页 10–15 秒 | 起点是什么；尚未生成要明说 |
+| C 指令 | 完整 Prompt，停留首段与限制，另提供可读全文 | 模型、skill、需求和工具条件 |
+| D 过程 | 送出、必要问答、生成、报错、修补 | 不把多轮包装成一键完成 |
+| E 结果 | 相同 viewport 与卷动节奏的结果 | 具体指出改善与倒退 |
+| F 功能 | 手动演示 sandbox／方案／时刻表，含失败边界 | 画面之外，功能是否真的成立 |
+| G 手机 | 390px 与 360px、200% 缩放、键盘焦点 | 响应式和可及性是否过关 |
+| H 结论 | 依六维度与证据给分 | 只总结实际观察，不过度归因 |
 
-## 評分規則
+## 评分规则
 
-每一項 1–5 分，未測填「未測」，不要當作 0 或默認通過。
+每一项 1–5 分，未测填「未测」，不要当作 0 或默认通过。
 
-| 維度 | 1 分 | 3 分 | 5 分 |
+| 维度 | 1 分 | 3 分 | 5 分 |
 |---|---|---|---|
-| 辨識度 | 通用模板、主題不明 | 能辨識主題，部分慣用模式 | 具體品牌語言與一致構圖 |
-| 內容層級 | 主資訊難找 | 核心資訊清楚、次級仍亂 | 首屏與全頁閱讀順序清楚 |
-| 需求完成 | 大量遺漏或捏造 | 主要需求成立、細節遺漏 | 所有 Brief 條件可驗證 |
-| 互動正確 | 假按鈕或狀態錯誤 | 主流程可用、邊界失敗 | 正常與阻擋／撤銷等邊界一致 |
-| 響應式 | 溢出或不可用 | 手機可用、構圖妥協 | 多尺寸和縮放均維持閱讀 |
-| 可及性 | 鍵盤不可操作／文字不清 | 部分焦點或對比問題 | 鍵盤、標籤、對比、降級有證據 |
+| 辨识度 | 通用模板、主题不明 | 能辨识主题，部分惯用模式 | 具体品牌语言与一致构图 |
+| 内容层级 | 主资讯难找 | 核心资讯清楚、次级仍乱 | 首屏与全页阅读顺序清楚 |
+| 需求完成 | 大量遗漏或捏造 | 主要需求成立、细节遗漏 | 所有 Brief 条件可验证 |
+| 互动正确 | 假按钮或状态错误 | 主流程可用、边界失败 | 正常与阻挡／撤销等边界一致 |
+| 响应式 | 溢出或不可用 | 手机可用、构图妥协 | 多尺寸和缩放均维持阅读 |
+| 可及性 | 键盘不可操作／文字不清 | 部分焦点或对比问题 | 键盘、标签、对比、降级有证据 |
 
-一人主觀評分不是可及性認證。每項附素材時間碼與具體例子，盡可能讓第二位觀察者盲評。
+一人主观评分不是可及性认证。每项附素材时间码与具体例子，尽可能让第二位观察者盲评。
 
-## 想測 skill 的因果效果
+## 想测 skill 的因果效果
 
-1. 建立兩個乾淨的同版專案副本、新對話、相同模型／推理設定／工具／素材／時間預算。
-2. 無 skill 對照組不得載入 `.agents/skills/impeccable`、全域同名 skill、外掛或 hooks，也不要把 skill 規則帶入 prompt/context。需先確認全域安裝情況；本工作台切換 plain 只移除呼叫語法，不會自動隔離。
-3. 兩組使用相同原始 Brief；只差 skill 的載入與呼叫。記錄 skill 自己詢問的選擇和額外圖片生成。
-4. 若模型、圖片或手動介入不同，不宣稱只因 skill 改善。三題只能形成案例觀察，不能直接推廣到所有網站。
-5. 目前這個已讀過 skill 文件的對話不適合作為乾淨「無 skill」對照。
+1. 建立两个干净的同版专案副本、新对话、相同模型／推理设定／工具／素材／时间预算。
+2. 无 skill 对照组不得载入 `.agents/skills/impeccable`、全域同名 skill、外挂或 hooks，也不要把 skill 规则带入 prompt/context。需先确认全域安装情况；本工作台切换 plain 只移除呼叫语法，不会自动隔离。
+3. 两组使用相同原始 Brief；只差 skill 的载入与呼叫。记录 skill 自己询问的选择和额外图片生成。
+4. 若模型、图片或手动介入不同，不宣称只因 skill 改善。三题只能形成案例观察，不能直接推广到所有网站。
+5. 目前这个已读过 skill 文件的对话不适合作为干净「无 skill」对照。

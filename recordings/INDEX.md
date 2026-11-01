@@ -1,10 +1,10 @@
-# 錄影素材索引
+# 录影素材索引
 
-2026-11-01 的五案 A–E 新錄影、操作片、來源雜湊與前後並排圖請先看 [MATRIX-INDEX.md](MATRIX-INDEX.md)。以下保留較早的官方 D01／D02 第一輪素材，作為歷史紀錄。
+2026-11-01 的五案 A–E 新录影、操作片、来源杂凑与前后并排图请先看 [MATRIX-INDEX.md](MATRIX-INDEX.md)。以下保留较早的官方 D01／D02 第一轮素材，作为历史纪录。
 
-兩個官方案例已各保存 **原始版 → 使用 Impeccable 指令修改後** 的桌面與手機素材。原始版未經本專案修改；官方原始生成過程未知。3 個自訂題目仍未生成。WebM 是無聲頁面捲動，不含 Codex 對話錄影。
+两个官方案例已各保存 **原始版 → 使用 Impeccable 指令修改后** 的桌面与手机素材。原始版未经本专案修改；官方原始生成过程未知。3 个自订题目仍未生成。WebM 是无声页面卷动，不含 Codex 对话录影。
 
-| 案例 | 階段 | 尺寸 | 影片 | 首屏 | 全頁 | 紀錄 |
+| 案例 | 阶段 | 尺寸 | 影片 | 首屏 | 全页 | 纪录 |
 |---|---|---|---|---|---|---|
 | lumina | baseline | 1440×900 | [WebM](/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T15-12-56-985Z-lumina-baseline-desktop-8bc5be8d/clip.webm) | [PNG](/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T15-12-56-985Z-lumina-baseline-desktop-8bc5be8d/viewport.png) | [PNG](/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T15-12-56-985Z-lumina-baseline-desktop-8bc5be8d/full-page.png) | [metadata](/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T15-12-56-985Z-lumina-baseline-desktop-8bc5be8d/capture.json) |
 | lumina-classic | baseline | 1440×900 | [WebM](/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T15-12-56-985Z-lumina-classic-baseline-desktop-302d705d/clip.webm) | [PNG](/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T15-12-56-985Z-lumina-classic-baseline-desktop-302d705d/viewport.png) | [PNG](/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T15-12-56-985Z-lumina-classic-baseline-desktop-302d705d/full-page.png) | [metadata](/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T15-12-56-985Z-lumina-classic-baseline-desktop-302d705d/capture.json) |
@@ -15,11 +15,11 @@
 | lumina-classic | after-distill | 1440×900 | [WebM](/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T15-35-37-319Z-lumina-classic-after-distill-desktop-0eb0785a/clip.webm) | [PNG](/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T15-35-37-319Z-lumina-classic-after-distill-desktop-0eb0785a/viewport.png) | [PNG](/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T15-35-37-319Z-lumina-classic-after-distill-desktop-0eb0785a/full-page.png) | [metadata](/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T15-35-37-319Z-lumina-classic-after-distill-desktop-0eb0785a/capture.json) |
 | lumina-classic | after-distill | 390×844 | [WebM](/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T15-35-37-370Z-lumina-classic-after-distill-mobile-8469b9dc/clip.webm) | [PNG](/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T15-35-37-370Z-lumina-classic-after-distill-mobile-8469b9dc/viewport.png) | [PNG](/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T15-35-37-370Z-lumina-classic-after-distill-mobile-8469b9dc/full-page.png) | [metadata](/Users/tsengmingchun/Documents/LAB/impeccable/recordings/captures/2026-10-31T15-35-37-370Z-lumina-classic-after-distill-mobile-8469b9dc/capture.json) |
 
-影片開頭可能包含載入幀，裁切可參考 capture.json 的 contentStartMs。影片使用 reduced-motion；不能用來評價完整動畫。
+影片开头可能包含载入帧，裁切可参考 capture.json 的 contentStartMs。影片使用 reduced-motion；不能用来评价完整动画。
 
-## Prompt 與來源碼快照
+## Prompt 与来源码快照
 
-| 案例 | 階段 | 精確 Prompt | 原始碼與 metadata |
+| 案例 | 阶段 | 精确 Prompt | 原始码与 metadata |
 |---|---|---|---|
 | lumina | imported | [Prompt](/Users/tsengmingchun/Documents/LAB/impeccable/recordings/runs/2026-10-31T15-12-13-626Z-lumina-imported-867d7afc/prompt.txt) | [run.json](/Users/tsengmingchun/Documents/LAB/impeccable/recordings/runs/2026-10-31T15-12-13-626Z-lumina-imported-867d7afc/run.json) |
 | lumina-classic | imported | [Prompt](/Users/tsengmingchun/Documents/LAB/impeccable/recordings/runs/2026-10-31T15-12-14-187Z-lumina-classic-imported-3de9b2c7/prompt.txt) | [run.json](/Users/tsengmingchun/Documents/LAB/impeccable/recordings/runs/2026-10-31T15-12-14-187Z-lumina-classic-imported-3de9b2c7/run.json) |
@@ -31,6 +31,6 @@
 | lumina-classic | before-distill | [Prompt](/Users/tsengmingchun/Documents/LAB/impeccable/recordings/runs/2026-10-31T15-33-43-607Z-lumina-classic-before-distill-51bf0bc2/prompt.txt) | [run.json](/Users/tsengmingchun/Documents/LAB/impeccable/recordings/runs/2026-10-31T15-33-43-607Z-lumina-classic-before-distill-51bf0bc2/run.json) |
 | lumina-classic | after-distill | [Prompt](/Users/tsengmingchun/Documents/LAB/impeccable/recordings/runs/2026-10-31T15-35-31-699Z-lumina-classic-after-distill-6058da42/prompt.txt) | [run.json](/Users/tsengmingchun/Documents/LAB/impeccable/recordings/runs/2026-10-31T15-35-31-699Z-lumina-classic-after-distill-6058da42/run.json) |
 
-`imported` 是官方原始頁匯入；`planned` 是未生成題目的預留起點。`before-*` 與 `after-*` 是本輪兩個官方案例的修改前後。模型記錄為 GPT-6，但當前介面未暴露更細的 variant，故沒有猜測。
+`imported` 是官方原始页汇入；`planned` 是未生成题目的预留起点。`before-*` 与 `after-*` 是本轮两个官方案例的修改前后。模型记录为 GPT-6，但当前介面未暴露更细的 variant，故没有猜测。
 
-所有錄影與快照只保存在本機，recordings/captures 與 recordings/runs 已 gitignore。剪輯前請備份這兩個資料夾。
+所有录影与快照只保存在本机，recordings/captures 与 recordings/runs 已 gitignore。剪辑前请备份这两个资料夹。

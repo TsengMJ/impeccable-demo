@@ -1,4 +1,4 @@
-# OFFGRID 離線聲場 — Version B (Impeccable polish)
+# OFFGRID 离线声场 — Version B (Impeccable polish)
 
 **Path:** `experiments/festival/b/`  
 **Command:** `$impeccable polish experiments/festival/b/index.html`  
@@ -16,14 +16,14 @@ Refinement only on B. Preserved signal-poster world (paper / ink / acid lime / n
 ## Top changes
 
 1. **Ticket modal keyboard / focus trap** — panel is the dialog focus root (`tabindex="-1"`); Tab cycles only panel controls; Escape closes; background gets `inert` while open; focus restores to opener; backdrop no longer focusable.
-2. **Info hierarchy** — hero facts block now surfaces 日期 → 場地 → 票價 (早鳥售完／一般／雙人) before CTAs; brand lockup remains the primary poster signal.
-3. **Mobile schedule** — ≤560px uses a 時間｜舞台 grid with visible field labels plus artist row; stage still named in text, not color-only.
+2. **Info hierarchy** — hero facts block now surfaces 日期 → 场地 → 票价 (早鸟售完／一般／双人) before CTAs; brand lockup remains the primary poster signal.
+3. **Mobile schedule** — ≤560px uses a 时间｜舞台 grid with visible field labels plus artist row; stage still named in text, not color-only.
 4. **Reduced-motion integrity** — hero rise-in / plane spin / diamond pulse off; static transforms kept so geometry stays; control transitions zeroed; smooth scroll → `auto`.
-5. **Craft cleanup** — removed section eyebrows and Ticket A/B/C kickers; brand tracking capped at `-0.04em`; `離線聲場` min size; paper-safe `--noise-text` for brand contrast; themed `::selection`.
+5. **Craft cleanup** — removed section eyebrows and Ticket A/B/C kickers; brand tracking capped at `-0.04em`; `离线声场` min size; paper-safe `--noise-text` for brand contrast; themed `::selection`.
 
 ## Facts preserved
 
-Fiction banner; 2027.05.22 14:00–22:00; 聲場倉庫; SIGNAL/NOISE lineup + times; ticket prices; early-bird disabled; FAQ answers; no scroll-jack / autoplay / flash; no scarcity counters.
+Fiction banner; 2027.05.22 14:00–22:00; 声场仓库; SIGNAL/NOISE lineup + times; ticket prices; early-bird disabled; FAQ answers; no scroll-jack / autoplay / flash; no scarcity counters.
 
 ## Motion & `prefers-reduced-motion`
 
@@ -39,7 +39,7 @@ Fiction banner; 2027.05.22 14:00–22:00; 聲場倉庫; SIGNAL/NOISE lineup + ti
 
 `impeccable detect --json` on B HTML/CSS/JS → `docs/evidence/festival/b-polish-detector.json` (exit 2 = findings present).
 
-Cleared during polish: undersized `離線聲場`, low-contrast brand magenta on hero paper.
+Cleared during polish: undersized `离线声场`, low-contrast brand magenta on hero paper.
 
 **Remaining (intentional / poster world):**
 

@@ -9,7 +9,7 @@
     {
       "path": "/guide",
       "status": 200,
-      "title": "錄影手冊 / Impeccable Test Lab"
+      "title": "录影手册 / Impeccable Test Lab"
     },
     {
       "path": "/cases/wallet",
@@ -44,7 +44,7 @@
     {
       "path": "/experiments/tea/",
       "status": 200,
-      "title": "山間製茶 — 待生成 / Test Lab"
+      "title": "山间制茶 — 待生成 / Test Lab"
     },
     {
       "path": "/experiments/festival/",

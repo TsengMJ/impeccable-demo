@@ -13,17 +13,17 @@ Substitution note: ran as distill subagent with fixed festival brief; no interac
 
 - Hero decorative plane (striped field, spinning square, diamond pulse, date mark collage)
 - Dual-column hero scaffold → single information column
-- Section ledes that restated controls already visible (陣容 / 時刻表 / 票種)
+- Section ledes that restated controls already visible (阵容 / 时刻表 / 票种)
 - Ticket card lime wash + sold-ticket stripe pattern
 - Footer restating the claim already in the hero
 - Rise-in cascade tied to the denser hero composition
 
 ## Preserved
 
-- Fiction banner「虛構活動・設計測試」
-- Brand **OFFGRID / 離線聲場**, claim「把訊號關掉，把感官打開。」
-- Hero facts: 2027.05.22 14:00–22:00, 聲場倉庫, ticket prices
-- CTAs 查看票種 / 探索陣容
+- Fiction banner「虚构活动・设计测试」
+- Brand **OFFGRID / 离线声场**, claim「把讯号关掉，把感官打开。」
+- Hero facts: 2027.05.22 14:00–22:00, 声场仓库, ticket prices
+- CTAs 查看票种 / 探索阵容
 - Six artists on SIGNAL/NOISE with expand intros; schedule filter 全部／SIGNAL／NOISE
 - Tickets: early sold-out disabled, general/duo preview modal with qty 1–4 + total + disclaimer
 - FAQ (age / food / accessibility); keyboard modal trap; `prefers-reduced-motion`

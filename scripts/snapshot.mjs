@@ -13,10 +13,10 @@ try {
   }
   const item = getCase(args.case);
   if (!args.phase || !/^[a-z0-9-]+$/.test(args.phase)) throw new Error('--phase 必填：例如 before / after / adapt-01');
-  if (typeof args.model !== 'string' || !args.model.trim()) throw new Error('--model 必填；不知道時請寫 unknown，不要猜測模型版本');
-  if (args.command && args.prompt) throw new Error('--command 與 --prompt 請擇一');
+  if (typeof args.model !== 'string' || !args.model.trim()) throw new Error('--model 必填；不知道时请写 unknown，不要猜测模型版本');
+  if (args.command && args.prompt) throw new Error('--command 与 --prompt 请择一');
   const mode = args.mode || (args.prompt ? 'exact' : 'skill');
-  if (!['skill', 'plain', 'exact'].includes(mode)) throw new Error('--mode 必須是 skill / plain / exact');
+  if (!['skill', 'plain', 'exact'].includes(mode)) throw new Error('--mode 必须是 skill / plain / exact');
   const raw = await readFile(args.prompt || item.prompt, 'utf8');
   const prompt = args.command ? followupPrompt(item, args.case, args.command) : formatPrompt(raw, mode);
   const id = `${stamp()}-${args.case}-${args.phase}-${randomUUID().slice(0, 8)}`;
@@ -48,6 +48,6 @@ try {
     status: 'snapshot-only; no skill execution or quality claim',
   };
   await writeFile(join(output, 'run.json'), JSON.stringify(metadata, null, 2) + '\n');
-  await writeFile(join(output, 'observations.md'), `# ${item.id} / ${args.phase}\n\n模型：${args.model}\n\n## 實際執行（人工填寫）\n- 開始／結束時間：\n- 額外 Prompt：\n- 手動修改與失敗：\n- 圖片來源／生成 Prompt：\n\n## 評分（未測留空，1–5 分；每項附證據）\n| 維度 | 分數 | 證據／素材時間碼 |\n|---|---|---|\n| 辨識度 | | |\n| 內容層級 | | |\n| 需求完成 | | |\n| 互動正確 | | |\n| 響應式 | | |\n| 可及性 | | |\n\n## 結論範圍與未解決問題\n\n`);
+  await writeFile(join(output, 'observations.md'), `# ${item.id} / ${args.phase}\n\n模型：${args.model}\n\n## 实际执行（人工填写）\n- 开始／结束时间：\n- 额外 Prompt：\n- 手动修改与失败：\n- 图片来源／生成 Prompt：\n\n## 评分（未测留空，1–5 分；每项附证据）\n| 维度 | 分数 | 证据／素材时间码 |\n|---|---|---|\n| 辨识度 | | |\n| 内容层级 | | |\n| 需求完成 | | |\n| 互动正确 | | |\n| 响应式 | | |\n| 可及性 | | |\n\n## 结论范围与未解决问题\n\n`);
   console.log(output);
 } catch (error) { console.error(error.message); process.exitCode = 1; }

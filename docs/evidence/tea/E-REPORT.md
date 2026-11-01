@@ -1,4 +1,4 @@
-# 山間製茶 Version E — Impeccable animate report
+# 山间制茶 Version E — Impeccable animate report
 
 **Workspace:** `/Users/tsengmingchun/Documents/LAB/impeccable`  
 **Target:** `experiments/tea/e/` (independent fork from polished B)  

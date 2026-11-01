@@ -1,11 +1,13 @@
 {
-  "checkedAt": "2026-10-31T18:16:27.846Z",
+  "checkedAt": "2026-11-01T02:18:17.095Z",
   "pass": true,
   "checks": [
     {
       "key": "wallet",
       "variant": "a",
       "pass": true,
+      "behavior": true,
+      "sourceMatchCurrent": true,
       "steps": [
         {
           "step": "01-default",
@@ -29,6 +31,8 @@
       "key": "wallet",
       "variant": "b",
       "pass": true,
+      "behavior": true,
+      "sourceMatchCurrent": true,
       "steps": [
         {
           "step": "01-default",
@@ -52,6 +56,8 @@
       "key": "wallet",
       "variant": "c",
       "pass": true,
+      "behavior": true,
+      "sourceMatchCurrent": true,
       "steps": [
         {
           "step": "01-default",
@@ -75,6 +81,8 @@
       "key": "wallet",
       "variant": "d",
       "pass": true,
+      "behavior": true,
+      "sourceMatchCurrent": true,
       "steps": [
         {
           "step": "01-default",
@@ -98,6 +106,8 @@
       "key": "wallet",
       "variant": "e",
       "pass": true,
+      "behavior": true,
+      "sourceMatchCurrent": true,
       "steps": [
         {
           "step": "01-default",
@@ -121,6 +131,8 @@
       "key": "tea",
       "variant": "a",
       "pass": true,
+      "behavior": true,
+      "sourceMatchCurrent": true,
       "steps": [
         {
           "step": "01-quarterly",
@@ -144,6 +156,8 @@
       "key": "tea",
       "variant": "b",
       "pass": true,
+      "behavior": true,
+      "sourceMatchCurrent": true,
       "steps": [
         {
           "step": "01-quarterly",
@@ -167,6 +181,8 @@
       "key": "tea",
       "variant": "c",
       "pass": true,
+      "behavior": true,
+      "sourceMatchCurrent": true,
       "steps": [
         {
           "step": "01-quarterly",
@@ -190,6 +206,8 @@
       "key": "tea",
       "variant": "d",
       "pass": true,
+      "behavior": true,
+      "sourceMatchCurrent": true,
       "steps": [
         {
           "step": "01-quarterly",
@@ -213,6 +231,8 @@
       "key": "tea",
       "variant": "e",
       "pass": true,
+      "behavior": true,
+      "sourceMatchCurrent": true,
       "steps": [
         {
           "step": "01-quarterly",
@@ -236,14 +256,16 @@
       "key": "festival",
       "variant": "a",
       "pass": true,
+      "behavior": true,
+      "sourceMatchCurrent": true,
       "steps": [
         {
           "step": "01-schedule-all",
-          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n15:00–16:00\nNOISE\n玻璃海\nNOISE 舞台\n16:00–17:00\nSIGNAL\n低頻植物\nSIGNAL 舞台\n17:00–18:00\nNOISE\nNULL FM\nNOISE 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台\n20:00–22:00\nNOISE\n夜間格式\nNOISE 舞台"
+          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n15:00–16:00\nNOISE\n玻璃海\nNOISE 舞台\n16:00–17:00\nSIGNAL\n低频植物\nSIGNAL 舞台\n17:00–18:00\nNOISE\nNULL FM\nNOISE 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台\n20:00–22:00\nNOISE\n夜间格式\nNOISE 舞台"
         },
         {
           "step": "02-signal-filter",
-          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n16:00–17:00\nSIGNAL\n低頻植物\nSIGNAL 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台"
+          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n16:00–17:00\nSIGNAL\n低频植物\nSIGNAL 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台"
         },
         {
           "step": "03-general-ticket",
@@ -259,14 +281,16 @@
       "key": "festival",
       "variant": "b",
       "pass": true,
+      "behavior": true,
+      "sourceMatchCurrent": true,
       "steps": [
         {
           "step": "01-schedule-all",
-          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n15:00–16:00\nNOISE\n玻璃海\nNOISE 舞台\n16:00–17:00\nSIGNAL\n低頻植物\nSIGNAL 舞台\n17:00–18:00\nNOISE\nNULL FM\nNOISE 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台\n20:00–22:00\nNOISE\n夜間格式\nNOISE 舞台"
+          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n15:00–16:00\nNOISE\n玻璃海\nNOISE 舞台\n16:00–17:00\nSIGNAL\n低频植物\nSIGNAL 舞台\n17:00–18:00\nNOISE\nNULL FM\nNOISE 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台\n20:00–22:00\nNOISE\n夜间格式\nNOISE 舞台"
         },
         {
           "step": "02-signal-filter",
-          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n16:00–17:00\nSIGNAL\n低頻植物\nSIGNAL 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台"
+          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n16:00–17:00\nSIGNAL\n低频植物\nSIGNAL 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台"
         },
         {
           "step": "03-general-ticket",
@@ -282,14 +306,16 @@
       "key": "festival",
       "variant": "c",
       "pass": true,
+      "behavior": true,
+      "sourceMatchCurrent": true,
       "steps": [
         {
           "step": "01-schedule-all",
-          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n15:00–16:00\nNOISE\n玻璃海\nNOISE 舞台\n16:00–17:00\nSIGNAL\n低頻植物\nSIGNAL 舞台\n17:00–18:00\nNOISE\nNULL FM\nNOISE 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台\n20:00–22:00\nNOISE\n夜間格式\nNOISE 舞台"
+          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n15:00–16:00\nNOISE\n玻璃海\nNOISE 舞台\n16:00–17:00\nSIGNAL\n低频植物\nSIGNAL 舞台\n17:00–18:00\nNOISE\nNULL FM\nNOISE 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台\n20:00–22:00\nNOISE\n夜间格式\nNOISE 舞台"
         },
         {
           "step": "02-signal-filter",
-          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n16:00–17:00\nSIGNAL\n低頻植物\nSIGNAL 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台"
+          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n16:00–17:00\nSIGNAL\n低频植物\nSIGNAL 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台"
         },
         {
           "step": "03-general-ticket",
@@ -305,14 +331,16 @@
       "key": "festival",
       "variant": "d",
       "pass": true,
+      "behavior": true,
+      "sourceMatchCurrent": true,
       "steps": [
         {
           "step": "01-schedule-all",
-          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n15:00–16:00\nNOISE\n玻璃海\nNOISE 舞台\n16:00–17:00\nSIGNAL\n低頻植物\nSIGNAL 舞台\n17:00–18:00\nNOISE\nNULL FM\nNOISE 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台\n20:00–22:00\nNOISE\n夜間格式\nNOISE 舞台"
+          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n15:00–16:00\nNOISE\n玻璃海\nNOISE 舞台\n16:00–17:00\nSIGNAL\n低频植物\nSIGNAL 舞台\n17:00–18:00\nNOISE\nNULL FM\nNOISE 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台\n20:00–22:00\nNOISE\n夜间格式\nNOISE 舞台"
         },
         {
           "step": "02-signal-filter",
-          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n16:00–17:00\nSIGNAL\n低頻植物\nSIGNAL 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台"
+          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n16:00–17:00\nSIGNAL\n低频植物\nSIGNAL 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台"
         },
         {
           "step": "03-general-ticket",
@@ -328,14 +356,16 @@
       "key": "festival",
       "variant": "e",
       "pass": true,
+      "behavior": true,
+      "sourceMatchCurrent": true,
       "steps": [
         {
           "step": "01-schedule-all",
-          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n15:00–16:00\nNOISE\n玻璃海\nNOISE 舞台\n16:00–17:00\nSIGNAL\n低頻植物\nSIGNAL 舞台\n17:00–18:00\nNOISE\nNULL FM\nNOISE 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台\n20:00–22:00\nNOISE\n夜間格式\nNOISE 舞台"
+          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n15:00–16:00\nNOISE\n玻璃海\nNOISE 舞台\n16:00–17:00\nSIGNAL\n低频植物\nSIGNAL 舞台\n17:00–18:00\nNOISE\nNULL FM\nNOISE 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台\n20:00–22:00\nNOISE\n夜间格式\nNOISE 舞台"
         },
         {
           "step": "02-signal-filter",
-          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n16:00–17:00\nSIGNAL\n低頻植物\nSIGNAL 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台"
+          "value": "14:00–15:00\nSIGNAL\nMOSS CIRCUIT\nSIGNAL 舞台\n16:00–17:00\nSIGNAL\n低频植物\nSIGNAL 舞台\n18:00–19:00\nSIGNAL\nSOFT ERROR\nSIGNAL 舞台"
         },
         {
           "step": "03-general-ticket",

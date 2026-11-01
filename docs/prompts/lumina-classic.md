@@ -2,8 +2,8 @@
 
 $impeccable distill demos/lumina-classic/index.html
 
-這是官方公開 classic demo 的本地工作副本，瀏覽路徑 /demos/lumina-classic/。請簡化這頁過度裝飾的介面，讓核心價值主張與主要 CTA 更容易閱讀。保留 Lumina 名稱、既有文案與資訊、主要 CTA 文字和連結；可以重組版面、去除純裝飾，但不能刪除產品資訊、創造新的承諾或把它改成另一個產品。
+这是官方公开 classic demo 的本地工作副本，浏览路径 /demos/lumina-classic/。请简化这页过度装饰的介面，让核心价值主张与主要 CTA 更容易阅读。保留 Lumina 名称、既有文案与资讯、主要 CTA 文字和连结；可以重组版面、去除纯装饰，但不能删除产品资讯、创造新的承诺或把它改成另一个产品。
 
-只修改 demos/lumina-classic/；不要修改 public/baselines/、其他 demo、工作台、package.json 或根目錄設計文件。官方連結是 # 的示範連結，保留它們並在結果中如實說明。不要把官方範例文案當成經查證的產品宣稱。
+只修改 demos/lumina-classic/；不要修改 public/baselines/、其他 demo、工作台、package.json 或根目录设计文件。官方连结是 # 的示范连结，保留它们并在结果中如实说明。不要把官方范例文案当成经查证的产品宣称。
 
-請直接在現有程式碼上實作，不先生成設計圖片。完成後執行 npm run build，檢查 1440×900 與 390×844，記錄實際修改、額外 Prompt、未解決問題及檢查證據。這是單一 distill 指令的測試，不能默默加入 polish 或其他設計指令。
+请直接在现有程式码上实作，不先生成设计图片。完成后执行 npm run build，检查 1440×900 与 390×844，记录实际修改、额外 Prompt、未解决问题及检查证据。这是单一 distill 指令的测试，不能默默加入 polish 或其他设计指令。

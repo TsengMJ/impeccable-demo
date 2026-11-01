@@ -1,29 +1,29 @@
-# Session 001 — 準備階段記錄
+# Session 001 — 准备阶段记录
 
-日期：2026-10-31（Asia/Shanghai）。此檔是操作摘要與原始使用者要求，不是完整對話逐字稿。
+日期：2026-10-31（Asia/Shanghai）。此档是操作摘要与原始使用者要求，不是完整对话逐字稿。
 
-## 使用者原始需求（逐字內容，連結格式保留語意）
+## 使用者原始需求（逐字内容，连结格式保留语意）
 
-我想要實際測試 https://github.com/pbakaus/impeccable 這個 skill, 幫我想 3 個題目的 Landing Page, 其中一個是 Web3 Agentic Wallet
+我想要实际测试 https://github.com/pbakaus/impeccable 这个 skill, 帮我想 3 个题目的 Landing Page, 其中一个是 Web3 Agentic Wallet
 
-我的目標是實際測試這個 skill 的能力邊界，並且使將測試結果給錄影下來（這些素材都會變成之後剪輯影片用）
-除了我們額外的 3 個主題外，他們給的 Demo 頁面也可以試試
+我的目标是实际测试这个 skill 的能力边界，并且使将测试结果给录影下来（这些素材都会变成之后剪辑影片用）
+除了我们额外的 3 个主题外，他们给的 Demo 页面也可以试试
 
-這個因為不是說要多複雜的前端項目，就是個測試，怎麼簡單怎麼來，就一個前端項目，把所有頁面都是一個路徑就可
+这个因为不是说要多复杂的前端项目，就是个测试，怎么简单怎么来，就一个前端项目，把所有页面都是一个路径就可
 
-先把項目起起來，然後demo 有的頁面先加上，3 個主題的內容跟需求 Prompt 都給我個
+先把项目起起来，然后demo 有的页面先加上，3 个主题的内容跟需求 Prompt 都给我个
 
-另外因為所有內容我之後剪影片要用，你一定要明確記錄每一個種頁面給的 Prompt 指令是什麼，甚至其他內容幫助我之後剪影片時可以使用
+另外因为所有内容我之后剪影片要用，你一定要明确记录每一个种页面给的 Prompt 指令是什么，甚至其他内容帮助我之后剪影片时可以使用
 
-## 本次解讀與範圍
+## 本次解读与范围
 
-- 先搭建測試環境、匯入官方公開 Demo，提供三個題目完整需求；新題目保留到錄影時生成。
-- 選用 Vite + 原生 HTML/CSS/JS，無後端、無路由套件、每個展示頁獨立路徑。
-- 選題：AEGIS / Web3 Agentic Wallet、山間製茶 / 台灣茶訂閱、OFFGRID / 實驗音樂祭。
-- 沒有呼叫外部圖片生成，沒有圖片生成 Prompt；封面是工作台自製的 CSS/文字題目識別，不是測試成果。
-- 工作台由此對話的程式碼編寫建立；閱讀了 Impeccable 文件，但沒有執行完整 init/new-work 設計流程，因此不把它當成 skill 測試。
+- 先搭建测试环境、汇入官方公开 Demo，提供三个题目完整需求；新题目保留到录影时生成。
+- 选用 Vite + 原生 HTML/CSS/JS，无后端、无路由套件、每个展示页独立路径。
+- 选题：AEGIS / Web3 Agentic Wallet、山间制茶 / 台湾茶订阅、OFFGRID / 实验音乐祭。
+- 没有呼叫外部图片生成，没有图片生成 Prompt；封面是工作台自制的 CSS/文字题目识别，不是测试成果。
+- 工作台由此对话的程式码编写建立；阅读了 Impeccable 文件，但没有执行完整 init/new-work 设计流程，因此不把它当成 skill 测试。
 
-## 已執行的來源與安裝操作
+## 已执行的来源与安装操作
 
 ```sh
 git clone --depth 1 --filter=blob:none --no-checkout https://github.com/pbakaus/impeccable.git .reference/impeccable
@@ -33,26 +33,26 @@ python3 /Users/tsengmingchun/.codex/skills/.system/skill-installer/scripts/insta
 sh .agents/skills/impeccable/scripts/impeccable engine-probe
 ```
 
-安裝尚未完成時曾提早執行 context，回覆檔案不存在；該次 context 未執行。後續未將 setup 記成成功的 init。安裝完成後 engine-probe 真正回覆 `impeccable-engine 0.1.18`，原始輸出在 evidence/engine-probe.txt。
+安装尚未完成时曾提早执行 context，回复档案不存在；该次 context 未执行。后续未将 setup 记成成功的 init。安装完成后 engine-probe 真正回复 `impeccable-engine 0.1.18`，原始输出在 evidence/engine-probe.txt。
 
-最初安裝 Vite 8.0.0 / Playwright 1.58.2，npm audit 回報一項 high；隨後改成 npm 當下提供的 Vite 8.3.5 / Playwright 1.64.1，安裝摘要 0 vulnerabilities。實際依賴以 package-lock.json 為準。
+最初安装 Vite 8.0.0 / Playwright 1.58.2，npm audit 回报一项 high；随后改成 npm 当下提供的 Vite 8.3.5 / Playwright 1.64.1，安装摘要 0 vulnerabilities。实际依赖以 package-lock.json 为准。
 
-## 頁面與 Prompt 狀態
+## 页面与 Prompt 状态
 
-| 頁面 | 本次動作 | 生成 / 修改 Prompt | 執行狀態 |
+| 页面 | 本次动作 | 生成 / 修改 Prompt | 执行状态 |
 |---|---|---|---|
-| 官方 Lumina 原始版 | 原始 HTML 逐 byte 匯入 | 官方原始 Prompt 未公開 | 匯入，非生成 |
-| 官方 Lumina 工作副本 | 原始 HTML 複製 | docs/prompts/lumina.md | polish 未執行 |
-| 官方 Classic 原始版 | 原始 HTML 逐 byte 匯入 | 官方原始 Prompt 未公開 | 匯入，非生成 |
-| 官方 Classic 工作副本 | 原始 HTML 複製 | docs/prompts/lumina-classic.md | distill 未執行 |
-| AEGIS | Brief＋預留頁 | docs/prompts/wallet.md | 未生成 |
-| 山間製茶 | Brief＋預留頁 | docs/prompts/tea.md | 未生成 |
-| OFFGRID | Brief＋預留頁 | docs/prompts/festival.md | 未生成 |
-| 工作台／案例頁／手冊 | 此對話直接編寫 | 上述使用者需求＋本檔範圍解讀 | 基礎設施，不計入 skill 成績 |
+| 官方 Lumina 原始版 | 原始 HTML 逐 byte 汇入 | 官方原始 Prompt 未公开 | 汇入，非生成 |
+| 官方 Lumina 工作副本 | 原始 HTML 复制 | docs/prompts/lumina.md | polish 未执行 |
+| 官方 Classic 原始版 | 原始 HTML 逐 byte 汇入 | 官方原始 Prompt 未公开 | 汇入，非生成 |
+| 官方 Classic 工作副本 | 原始 HTML 复制 | docs/prompts/lumina-classic.md | distill 未执行 |
+| AEGIS | Brief＋预留页 | docs/prompts/wallet.md | 未生成 |
+| 山间制茶 | Brief＋预留页 | docs/prompts/tea.md | 未生成 |
+| OFFGRID | Brief＋预留页 | docs/prompts/festival.md | 未生成 |
+| 工作台／案例页／手册 | 此对话直接编写 | 上述使用者需求＋本档范围解读 | 基础设施，不计入 skill 成绩 |
 
-## 尚未有的證據
+## 尚未有的证据
 
-- 沒有設計指令執行前後對照、正式評分或能力結論。
-- 沒有本次搭建過程的完整螢幕錄影；不要把稍後錄到的官方頁面捲動素材說成生成過程。
-- 執行環境為 Codex；實際 UI 選用的模型名稱／推理設定未從介面確認，記為 unknown。
-- 後續任何額外 Prompt、指令、圖片工具呼叫與人工修改，都應在對應 run 的 transcript / observations 記錄原文。
+- 没有设计指令执行前后对照、正式评分或能力结论。
+- 没有本次搭建过程的完整萤幕录影；不要把稍后录到的官方页面卷动素材说成生成过程。
+- 执行环境为 Codex；实际 UI 选用的模型名称／推理设定未从介面确认，记为 unknown。
+- 后续任何额外 Prompt、指令、图片工具呼叫与人工修改，都应在对应 run 的 transcript / observations 记录原文。

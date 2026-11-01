@@ -1,4 +1,4 @@
-# Version B Report — 山間製茶 (Impeccable polish)
+# Version B Report — 山间制茶 (Impeccable polish)
 
 **Command:** `$impeccable polish experiments/tea/b/index.html`  
 **Skill:** `.agents/skills/impeccable` (pinned) · polish playbook + craft-floor  
@@ -9,7 +9,7 @@
 ## What changed (top)
 
 1. **Hero cup on narrow screens** — Dual SVG cup groups: wide keeps right-side placement; ≤720px shows a centered, higher cup so `xMidYMid slice` no longer crops it off-frame. Soft bottom scrim lifts type over ridges without burying the cup.
-2. **Sticky header at 360** — Shorter label「選方案」under 420px (full「選擇這一季的茶」kept via `aria-label`), tighter but less cramped brand/CTA spacing.
+2. **Sticky header at 360** — Shorter label「选方案」under 420px (full「选择这一季的茶」kept via `aria-label`), tighter but less cramped brand/CTA spacing.
 3. **Hierarchy / readability** — Removed banned hero kicker; brand leads; mist scrim + measure tweaks; darker amber/leaf tokens for AA contrast on demo labels and step numbers; tabular nums on brew/plan figures; themed `::selection`.
 4. **Brand world preserved** — Cool mountain mist (sage/forest + amber), Noto Serif/Sans TC, Chinese-first; no cream + English italic serif redesign.
 
@@ -41,8 +41,8 @@ One pass → `docs/evidence/tea/b-polish-detector.json` (exit 2 = findings prese
 | Playwright 1440×900 / 390×844 / 360×800 | Pass; `_checks/*-hero.png`, `*-full.png` |
 | Horizontal overflow @ 360 | None |
 | Plan → annual `NT$3,600` | Pass |
-| Brew → 紅玉 `90°C` | Pass |
-| Brew tab ArrowRight | Pass (`aria-selected` on 紅玉) |
+| Brew → 红玉 `90°C` | Pass |
+| Brew tab ArrowRight | Pass (`aria-selected` on 红玉) |
 | Preview + Escape | Pass |
 | 200% zoom hero | Captured `_checks/zoom200-hero.png` |
 | `prefers-reduced-motion` | CSS present (not separately automated) |

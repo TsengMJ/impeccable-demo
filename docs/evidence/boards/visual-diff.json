@@ -30,8 +30,8 @@
           "changedPixelsPct": 21.2
         },
         "d": {
-          "meanRgbDelta": 43.6,
-          "changedPixelsPct": 22
+          "meanRgbDelta": 43.5,
+          "changedPixelsPct": 21.9
         },
         "e": {
           "meanRgbDelta": 36.7,
@@ -68,8 +68,8 @@
           "changedPixelsPct": 21.1
         },
         "d": {
-          "meanRgbDelta": 44.4,
-          "changedPixelsPct": 43.8
+          "meanRgbDelta": 44.3,
+          "changedPixelsPct": 43.7
         },
         "e": {
           "meanRgbDelta": 36.1,
@@ -118,26 +118,26 @@
     "tea": {
       "desktop": {
         "b": {
-          "meanRgbDelta": 46.8,
-          "changedPixelsPct": 57.2
+          "meanRgbDelta": 46.9,
+          "changedPixelsPct": 57.3
         },
         "c": {
           "meanRgbDelta": 42.1,
           "changedPixelsPct": 53.8
         },
         "d": {
-          "meanRgbDelta": 49.2,
+          "meanRgbDelta": 49.3,
           "changedPixelsPct": 61.3
         },
         "e": {
-          "meanRgbDelta": 46.8,
-          "changedPixelsPct": 57.2
+          "meanRgbDelta": 46.9,
+          "changedPixelsPct": 57.3
         }
       },
       "mobile": {
         "b": {
           "meanRgbDelta": 47.8,
-          "changedPixelsPct": 51.4
+          "changedPixelsPct": 51.3
         },
         "c": {
           "meanRgbDelta": 47.9,
@@ -149,45 +149,45 @@
         },
         "e": {
           "meanRgbDelta": 47.8,
-          "changedPixelsPct": 51.4
+          "changedPixelsPct": 51.3
         }
       }
     },
     "festival": {
       "desktop": {
         "b": {
-          "meanRgbDelta": 9.7,
-          "changedPixelsPct": 5.9
+          "meanRgbDelta": 9.4,
+          "changedPixelsPct": 5.6
         },
         "c": {
-          "meanRgbDelta": 38.6,
-          "changedPixelsPct": 21.1
+          "meanRgbDelta": 38.1,
+          "changedPixelsPct": 20.8
         },
         "d": {
-          "meanRgbDelta": 58.5,
-          "changedPixelsPct": 27.3
+          "meanRgbDelta": 58.1,
+          "changedPixelsPct": 26.9
         },
         "e": {
-          "meanRgbDelta": 10,
-          "changedPixelsPct": 6.2
+          "meanRgbDelta": 9.7,
+          "changedPixelsPct": 6
         }
       },
       "mobile": {
         "b": {
-          "meanRgbDelta": 24,
-          "changedPixelsPct": 14
+          "meanRgbDelta": 23.7,
+          "changedPixelsPct": 13.8
         },
         "c": {
-          "meanRgbDelta": 47.9,
-          "changedPixelsPct": 37.6
+          "meanRgbDelta": 47.1,
+          "changedPixelsPct": 36.9
         },
         "d": {
-          "meanRgbDelta": 81.7,
-          "changedPixelsPct": 45.1
+          "meanRgbDelta": 81.4,
+          "changedPixelsPct": 44.8
         },
         "e": {
-          "meanRgbDelta": 28.2,
-          "changedPixelsPct": 18.8
+          "meanRgbDelta": 27.9,
+          "changedPixelsPct": 18.5
         }
       }
     }

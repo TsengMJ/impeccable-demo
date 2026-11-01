@@ -4,6 +4,8 @@
 
 工作台封面不是 skill 成绩。另见 [BRIEF-RESULTS](docs/evidence/BRIEF-RESULTS.md)、[AGENTS.md](AGENTS.md)、[录影手册](docs/RECORDING.md)。
 
+**简体中文版说明（2026-11-01）：**当前 A–E 页面、工作台和项目文档的中文已统一转为简体；这是原有测试成果的文字本地化，不能算作新一轮 skill 生成。`docs/prompts/` 是供后续重跑的简体需求稿；`docs/evidence/*-prompt.txt` 是当时指令的简体转写，**不是逐字原文**。原始繁体 Prompt 与页面可从转换前的提交 `91642f3` 取得，例如 `git show 91642f3:docs/evidence/tea/prompt-a.txt`。旧录影与原始统计保留其拍摄时状态；请用下方新索引核对当前简体页面。转换范围与剪辑留证见 [简体中文转换记录](docs/evidence/LOCALIZATION-2026-11-01.md)。
+
 ```sh
 npm ci
 npm run dev
@@ -34,29 +36,31 @@ npm run dev
 
 C / D / E 彼此独立，均从同一冻结 B 分叉，不做串烧。
 
-## 剪輯優先看：哪些版本相對 A 變化最明顯
+## 剪辑优先看：哪些版本相对 A 变化最明显
 
-以下是以同尺寸桌面／手機首屏、完整頁面和實際操作片做的**視覺與資訊呈現判斷**；「明顯」不是品質分數，也不代表差異全由單一 skill 指令造成。C／D／E 都是先經過 B 的 polish，再各自分叉。各案下方的桌面／手機並排圖與 [逐片錄影索引](recordings/MATRIX-INDEX.md) 可直接核對。
+以下是以同尺寸桌面／手机首屏、完整页面和实际操作片做的**视觉与资讯呈现判断**；「明显」不是品质分数，也不代表差异全由单一 skill 指令造成。C／D／E 都是先经过 B 的 polish，再各自分叉。各案下方的桌面／手机并排图与 [逐片录影索引](recordings/MATRIX-INDEX.md) 可直接核对。
 
-| 案例 | 最值得先剪的 A 對照 | 具體可見差異 | 補充片段 |
+| 案例 | 最值得先剪的 A 对照 | 具体可见差异 | 补充片段 |
 |---|---|---|---|
-| **Lumina** | **A→D**、**A→C** | D 把置中暖色 Hero 改成緊湊、靠左的資訊層級，首屏已露出品牌列與下一區；C 加大 Lumina 字標與暖色品牌語氣。 | **A→B 手機**：導覽和 CTA 從擠壓／橫排變成可讀的折行與直排。[桌面並排](docs/evidence/boards/lumina-desktop.png) · [手機並排](docs/evidence/boards/lumina-mobile.png) |
-| **Lumina Classic** | **A→D** | D 把霓虹光暈、漸層標題與卡片收成靠左、以文字和分隔線為主的版面；手機首屏能更早看到下一段資訊。 | C 的巨大 Lumina 字標也很醒目，但首屏 CTA 被推低，適合呈現「更大膽」的取捨。[桌面並排](docs/evidence/boards/lumina-classic-desktop.png) · [手機並排](docs/evidence/boards/lumina-classic-mobile.png) |
-| **AEGIS / Web3 Agentic Wallet** | **A→D**、**A→C** | D 移除右側授權閘門圖與背景格線，讓權限說明更早出現；C 放大 AEGIS 字標、LIMIT 閘門與控制邊界。 | **A→B 手機**：內容先於圖形，導覽與操作 CTA 更容易看見；授權、Revoke、重新啟用的操作片另收錄。[桌面並排](docs/evidence/boards/wallet-desktop.png) · [手機並排](docs/evidence/boards/wallet-mobile.png) |
-| **山間製茶** | **A→B 手機**、**A→D** | A 手機首屏茶杯被裁掉且文字壓在深色山景上；B 把茶杯移入視野，霧層與文案對比也改善。D 進一步拿掉茶杯與裝飾，改成較安靜的山景文字構圖。 | C 字標與山稜更強，但相對 B 的變化較細；方案切換和訂閱預覽有獨立操作片。[桌面並排](docs/evidence/boards/tea-desktop.png) · [手機並排](docs/evidence/boards/tea-mobile.png) |
-| **OFFGRID** | **A→D**、**A→C** | D 整片移除海報右側訊號平面，把日期、場地、票價和陣容提到更早；C 則把酸綠色塊與訊號圖形推得更滿，兩者方向相反，很適合並置。 | B 對票券彈窗和手機時刻表的修正需看操作／全頁片，首屏差異不大。[桌面並排](docs/evidence/boards/festival-desktop.png) · [手機並排](docs/evidence/boards/festival-mobile.png) |
+| **Lumina** | **A→D**、**A→C** | D 把置中暖色 Hero 改成紧凑、靠左的资讯层级，首屏已露出品牌列与下一区；C 加大 Lumina 字标与暖色品牌语气。 | **A→B 手机**：导览和 CTA 从挤压／横排变成可读的折行与直排。[桌面并排](docs/evidence/boards/lumina-desktop.png) · [手机并排](docs/evidence/boards/lumina-mobile.png) |
+| **Lumina Classic** | **A→D** | D 把霓虹光晕、渐层标题与卡片收成靠左、以文字和分隔线为主的版面；手机首屏能更早看到下一段资讯。 | C 的巨大 Lumina 字标也很醒目，但首屏 CTA 被推低，适合呈现「更大胆」的取舍。[桌面并排](docs/evidence/boards/lumina-classic-desktop.png) · [手机并排](docs/evidence/boards/lumina-classic-mobile.png) |
+| **AEGIS / Web3 Agentic Wallet** | **A→D**、**A→C** | D 移除右侧授权闸门图与背景格线，让权限说明更早出现；C 放大 AEGIS 字标、LIMIT 闸门与控制边界。 | **A→B 手机**：内容先于图形，导览与操作 CTA 更容易看见；授权、Revoke、重新启用的操作片另收录。[桌面并排](docs/evidence/boards/wallet-desktop.png) · [手机并排](docs/evidence/boards/wallet-mobile.png) |
+| **山间制茶** | **A→B 手机**、**A→D** | A 手机首屏茶杯被裁掉且文字压在深色山景上；B 把茶杯移入视野，雾层与文案对比也改善。D 进一步拿掉茶杯与装饰，改成较安静的山景文字构图。 | C 字标与山棱更强，但相对 B 的变化较细；方案切换和订阅预览有独立操作片。[桌面并排](docs/evidence/boards/tea-desktop.png) · [手机并排](docs/evidence/boards/tea-mobile.png) |
+| **OFFGRID** | **A→D**、**A→C** | D 整片移除海报右侧讯号平面，把日期、场地、票价和阵容提到更早；C 则把酸绿色块与讯号图形推得更满，两者方向相反，很适合并置。 | B 对票券弹窗和手机时刻表的修正需看操作／全页片，首屏差异不大。[桌面并排](docs/evidence/boards/festival-desktop.png) · [手机并排](docs/evidence/boards/festival-mobile.png) |
 
-**E 版要看動態影片。** 它們從 B 加入動畫，降低動態模式的截圖不會呈現主要差異；索引中每案都有 A／E 的正常動態桌面片。這些片只錄網頁，沒有 Cursor/Codex 的生成過程。
+**E 版要看动态影片。** 它们从 B 加入动画，降低动态模式的截图不会呈现主要差异；索引中每案都有 A／E 的正常动态桌面片。这些片只录网页，没有 Cursor/Codex 的生成过程。
 
-**剪片時保留限制：** OFFGRID A／B／C／E 的巨大 OFFGRID 字標在 390／360px 被 Hero 裁切；D 不裁切，但 390px 水平溢出 45px、360px 溢出 75px，不能稱為手機版全數通過。[實測尺寸](docs/evidence/FESTIVAL-MOBILE-BRAND.json)。官方 Lumina／Classic 的 A 手機版也有既有水平溢出，正好可作修正前素材。三題 A 是 Cursor 在隔離控制目錄啟動的子代理結果，並非全新 IDE 視窗；B 又多一輪修改，因此這是可觀察的迭代比較，不是 skill 單獨效果的因果證明。[方法限制](docs/evidence/BRIEF-RESULTS.md)。
+**剪片时保留限制：** OFFGRID A／B／C／E 的巨大 OFFGRID 字标在 390／360px 被 Hero 裁切；D 不裁切，但 390px 水平溢出 45px、360px 溢出 75px，不能称为手机版全数通过。[实测尺寸](docs/evidence/FESTIVAL-MOBILE-BRAND.json)。官方 Lumina／Classic 的 A 手机版也有既有水平溢出，正好可作修正前素材。三题 A 是 Cursor 在隔离控制目录启动的子代理结果，并非全新 IDE 视窗；B 又多一轮修改，因此这是可观察的迭代比较，不是 skill 单独效果的因果证明。[方法限制](docs/evidence/BRIEF-RESULTS.md)。
 
-首屏像素差異輔助數據在 [visual-diff.json](docs/evidence/boards/visual-diff.json)，它只反映同尺寸畫素改動範圍，不是美感評分。
+首屏像素差异辅助数据在 [visual-diff.json](docs/evidence/boards/visual-diff.json)，它只反映同尺寸画素改动范围，不是美感评分。
 
 ## Optimize 前后数据
 
 对各案 **B** 复制到 `_optimize/` 后执行 `$impeccable optimize`，**不**写入 A–E 路径。指标为可静态复算的源码与字体请求统计（**不是**场外 Lighthouse）。原始 JSON：[optimize-before.json](docs/evidence/optimize-before.json)、[optimize-after.json](docs/evidence/optimize-after.json)、[optimize-diff.json](docs/evidence/optimize-diff.json)；汇总：[OPTIMIZE-SUMMARY.md](docs/evidence/OPTIMIZE-SUMMARY.md)。
 
 说明：源码字节在加入 `contain` / `content-visibility` 等后可能**略增**；本轮可观测收益主要是 **削减 Google Fonts 字重请求**（加载更轻）。`https://` 外链次数五案前后均为 3（preconnect ×2 + stylesheet）。
+
+以下 optimize 数值取自文字转换前的原始测试，不能当作当前简体文件的字节数。
 
 ### 对比总表
 
@@ -100,9 +104,9 @@ C / D / E 彼此独立，均从同一冻结 B 分叉，不做串烧。
 
 ## 录影与留证
 
-本輪已完成 **60 段** A–E 頁面捲動片（五案 × 五版 × 桌面／手機，加十段 A／E 正常動態桌面片）和 **15 段**原創題目操作片。每段有 PNG、WebM、來源 SHA-256、瀏覽器／尺寸／時間／錯誤 metadata；[完整逐片索引](recordings/MATRIX-INDEX.md)、[錄影稽核](docs/evidence/CAPTURE-AUDIT.json)、[15 組操作狀態驗證](docs/evidence/INTERACTION-VALIDATION.json)。當下 A–E 原始碼及已存在的 Prompt／報告另存於 [source freeze 清單](recordings/source-freeze-2026-10-31T18-08-14-085Z/freeze.json)；素材只在本機，剪輯前請備份 `recordings/captures/`、`recordings/interactions/` 和該來源副本。
+简体本地化后重新录制 **60 段** A–E 页面卷动片（五案 × 五版 × 桌面／手机，加十段 A／E 正常动态桌面片）和 **15 段**原创题目操作片。每段有 PNG、WebM、来源 SHA-256、浏览器／尺寸／时间／错误 metadata；[完整逐片索引](recordings/MATRIX-INDEX.md)、[录影稽核](docs/evidence/CAPTURE-AUDIT.json)、[15 组操作状态验证](docs/evidence/INTERACTION-VALIDATION.json)。录制时 A–E 页面源码与当时的简体 Prompt／报告另存于 [source freeze 清单](recordings/source-freeze-2026-11-01T02-14-24-724Z/freeze.json)；素材只在本机，剪辑前请备份 `recordings/captures/`、`recordings/interactions/` 和该来源副本。
 
-重新錄製單一版本：
+重新录制单一版本：
 
 ```sh
 npm run capture -- --case wallet --take a --viewport desktop
@@ -110,7 +114,7 @@ npm run capture -- --case wallet --take d --viewport mobile
 npm run capture -- --case wallet --take e --viewport desktop --motion no-preference
 ```
 
-錄影腳本只錄無聲網頁捲動，操作片另有腳本；不含生成對話。影片開頭可能有載入幀，剪輯可參考各 `capture.json` 的 `contentStartMs`。官方原始生成 Prompt 未公開；部分後續變體有 Prompt 原文，缺失處在逐片索引如實標記，不能用現在的 README 補寫成當時的對話。
+录影脚本只录无声网页卷动，操作片另有脚本；不含生成对话。影片开头可能有载入帧，剪辑可参考各 `capture.json` 的 `contentStartMs`。官方原始生成 Prompt 未公开；部分后续变体有 Prompt 原文，缺失处在逐片索引如实标记，不能用现在的 README 补写成当时的对话。
 
 ## 验证
 

@@ -1,4 +1,4 @@
-# 山間製茶 Version C — Impeccable bolder report
+# 山间制茶 Version C — Impeccable bolder report
 
 **Workspace:** `/Users/tsengmingchun/Documents/LAB/impeccable`  
 **Target:** `experiments/tea/c/` (copied from polished B; amplify only)  

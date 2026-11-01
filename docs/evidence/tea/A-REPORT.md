@@ -1,4 +1,4 @@
-# Version A Report — 山間製茶 (no-skill control)
+# Version A Report — 山间制茶 (no-skill control)
 
 **Model:** Cursor Task subagent inherit  
 **Workspace:** `/Users/tsengmingchun/Documents/LAB/impeccable-control-tea/`  
@@ -9,8 +9,8 @@
 
 - **Direction:** Cool mountain mist — sage/forest greens (`#e8efe6` fog, `#1f4a3a` ridge) with amber tea accent (`#b86a2e`). Intentionally not cream paper + English italic serif + terracotta.
 - **Typography:** Google Fonts **Noto Serif TC** for brand/headlines; **Noto Sans TC** for UI/body. Chinese-first hierarchy; English only as light assist (none in hero tagline).
-- **Hero:** Full-bleed SVG of layered ridges + tea cup with steam (CSS animation, disabled under `prefers-reduced-motion`). Brand name as hero signal; core line「把一座山，留給一杯茶。」; CTAs link to `#plans` / `#brew`.
-- **Teas:** Inline SVG tin/liquor illustrations (green for 烏龍, russet for 紅玉) — no empty image frames, no invented farmers/awards/altitude.
+- **Hero:** Full-bleed SVG of layered ridges + tea cup with steam (CSS animation, disabled under `prefers-reduced-motion`). Brand name as hero signal; core line「把一座山，留给一杯茶。」; CTAs link to `#plans` / `#brew`.
+- **Teas:** Inline SVG tin/liquor illustrations (green for 乌龙, russet for 红玉) — no empty image frames, no invented farmers/awards/altitude.
 - **Layout:** Section rhythm (teas → steps → brew → plans → FAQ); sticky header; single plan card with quarterly/annual toggle rather than SaaS feature-card grid.
 - **Motion:** Steam rise on hero cup; transitions on buttons/tabs; reduced-motion kills animations/transitions.
 
@@ -19,7 +19,7 @@
 | Asset | Origin |
 |-------|--------|
 | Hero mountain + cup SVG | Hand-authored inline SVG in `experiments/tea/index.html` (original) |
-| Tea swatch SVGs (烏龍／紅玉) | Hand-authored inline SVG in `experiments/tea/index.html` (original) |
+| Tea swatch SVGs (乌龙／红玉) | Hand-authored inline SVG in `experiments/tea/index.html` (original) |
 | Noto Serif TC / Noto Sans TC | Google Fonts CDN (`fonts.googleapis.com` / `fonts.gstatic.com`) |
 | Photos / stock / AI images | None used |
 
@@ -49,8 +49,8 @@ dist/assets/index-*.js
 | Playwright load @ 1440×900, 390×844, 360×800 | Pass; screenshots in `experiments/tea/_checks/` |
 | Horizontal overflow @ 360 | None (`scrollWidth === clientWidth`) |
 | Plan toggle → price/ships/summary | Pass (`NT$3,600`／年; 4 shipments copy) |
-| Brew toggle 烏龍→紅玉 | Pass (`90°C`, `45 秒`) |
-| Brew tab ArrowRight keyboard | Pass (`aria-selected` on 紅玉) |
+| Brew toggle 乌龙→红玉 | Pass (`90°C`, `45 秒`) |
+| Brew tab ArrowRight keyboard | Pass (`aria-selected` on 红玉) |
 | Preview modal open + Escape close | Pass; copy states no payment |
 | FAQ accordion open | Pass |
 | Console/page errors on load | None observed |

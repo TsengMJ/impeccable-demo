@@ -1,14 +1,14 @@
 (() => {
   const brewData = {
     oolong: {
-      name: "阿里山烏龍",
+      name: "阿里山乌龙",
       temp: "95°C",
       water: "150ml",
       time: "60 秒",
       tabId: "tab-oolong",
     },
     ruby: {
-      name: "南投紅玉",
+      name: "南投红玉",
       temp: "90°C",
       water: "150ml",
       time: "45 秒",
@@ -21,19 +21,19 @@
       label: "季付方案",
       amount: "NT$980",
       period: "／季",
-      ships: "每季寄送 1 次 · 兩款各 50g + 沖泡卡",
+      ships: "每季寄送 1 次 · 两款各 50g + 冲泡卡",
       modalPlan: "季付",
       modalPrice: "NT$980／季",
-      modalShips: "每季 1 次 · 兩款各 50g + 沖泡卡",
+      modalShips: "每季 1 次 · 两款各 50g + 冲泡卡",
     },
     annual: {
       label: "年付方案",
       amount: "NT$3,600",
       period: "／年",
-      ships: "一年 4 次寄送 · 每次兩款各 50g + 沖泡卡",
+      ships: "一年 4 次寄送 · 每次两款各 50g + 冲泡卡",
       modalPlan: "年付",
       modalPrice: "NT$3,600／年（四次寄送）",
-      modalShips: "一年 4 次 · 每次兩款各 50g + 沖泡卡",
+      modalShips: "一年 4 次 · 每次两款各 50g + 冲泡卡",
     },
   };
 

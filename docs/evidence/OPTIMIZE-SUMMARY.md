@@ -2,6 +2,8 @@
 
 Private `_optimize/` copies from frozen **B**. Not registered as a public A–E variant.
 
+These byte counts were measured before the 2026-11-01 Simplified Chinese localization. They are historical optimize results, not the current source sizes.
+
 **Font weight requests** = count of weight entries in Google Fonts CSS URLs (family×weight slots).  
 **Motion** = `@keyframes` + `animation:` + `transition:` decls in html+css.  
 **Bytes** = local html+css+js only (exclude `_checks`). Source bytes often rise slightly from containment/IO helpers; the intended wins are fewer font files and lower runtime work.

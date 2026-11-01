@@ -1,4 +1,4 @@
-# OFFGRID 離線聲場 Version E — Impeccable animate report
+# OFFGRID 离线声场 Version E — Impeccable animate report
 
 **Workspace:** `/Users/tsengmingchun/Documents/LAB/impeccable`  
 **Target:** `experiments/festival/e/` (independent fork from polished B)  

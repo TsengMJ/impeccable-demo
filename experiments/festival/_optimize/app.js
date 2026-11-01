@@ -5,49 +5,49 @@
       stage: "SIGNAL",
       time: "14:00–15:00",
       name: "MOSS CIRCUIT",
-      bio: "以苔蘚紋理採樣與模組合成構築緩慢成長的聲場；像訊號在潮濕空氣裡發芽，不急著到達終點。",
+      bio: "以苔藓纹理采样与模组合成构筑缓慢成长的声场；像讯号在潮湿空气里发芽，不急著到达终点。",
     },
     {
       id: "glass",
       stage: "NOISE",
       time: "15:00–16:00",
       name: "玻璃海",
-      bio: "碎玻璃與海流共振的現場拼貼。高頻割裂與低壓流動交替，逼你重新校準聽覺邊界。",
+      bio: "碎玻璃与海流共振的现场拼贴。高频割裂与低压流动交替，逼你重新校准听觉边界。",
     },
     {
       id: "plant",
       stage: "SIGNAL",
       time: "16:00–17:00",
-      name: "低頻植物",
-      bio: "把植物電位轉成低頻脈衝，搭配現場投影的葉脈拓撲。安靜，卻會在胸口留下震動。",
+      name: "低频植物",
+      bio: "把植物电位转成低频脉冲，搭配现场投影的叶脉拓扑。安静，却会在胸口留下震动。",
     },
     {
       id: "nullfm",
       stage: "NOISE",
       time: "17:00–18:00",
       name: "NULL FM",
-      bio: "失效電台的美學：空頻雜訊、誤讀語音、延遲回授。把「沒有節目」變成唯一節目。",
+      bio: "失效电台的美学：空频杂讯、误读语音、延迟回授。把「没有节目」变成唯一节目。",
     },
     {
       id: "soft",
       stage: "SIGNAL",
       time: "18:00–19:00",
       name: "SOFT ERROR",
-      bio: "溫柔的系統錯誤。柔焦人聲與錯誤碼節奏對撞，讓故障聽起來像一次擁抱。",
+      bio: "温柔的系统错误。柔焦人声与错误码节奏对撞，让故障听起来像一次拥抱。",
     },
     {
       id: "night",
       stage: "NOISE",
       time: "20:00–22:00",
-      name: "夜間格式",
-      bio: "閉幕長段：夜色編碼、重低音格式轉換與即時視覺同步，把整晚訊號收束成一次斷線。",
+      name: "夜间格式",
+      bio: "闭幕长段：夜色编码、重低音格式转换与即时视觉同步，把整晚讯号收束成一次断线。",
     },
   ];
 
   const tickets = {
-    early: { id: "early", name: "早鳥", price: 980, soldOut: true },
+    early: { id: "early", name: "早鸟", price: 980, soldOut: true },
     general: { id: "general", name: "一般", price: 1280, soldOut: false },
-    duo: { id: "duo", name: "雙人", price: 2200, soldOut: false },
+    duo: { id: "duo", name: "双人", price: 2200, soldOut: false },
   };
 
   const lineupRoot = document.getElementById("lineup");
@@ -76,7 +76,7 @@
   let lastFocus = null;
 
   function formatMoney(n) {
-    return `NT$${n.toLocaleString("zh-TW")}`;
+    return `NT$${n.toLocaleString("zh-CN")}`;
   }
 
   function getFocusable(container) {
@@ -134,7 +134,7 @@
         (a) => `
       <div class="slot" data-stage="${a.stage}" data-time="${a.time}">
         <div class="slot__time">
-          <span class="slot__label">時間</span>
+          <span class="slot__label">时间</span>
           <span>${a.time}</span>
         </div>
         <div class="slot__stage" aria-label="舞台 ${a.stage}">

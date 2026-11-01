@@ -1,4 +1,4 @@
-/* OFFGRID · 離線聲場 — control A */
+/* OFFGRID · 离线声场 — control A */
 :root {
   --ink: #0a0a0a;
   --paper: #f2f0e8;
@@ -12,8 +12,8 @@
   --surface: #ffffff;
   --max: 72rem;
   --gap: clamp(1rem, 3vw, 2rem);
-  --font-display: "Syne", "Noto Sans TC", sans-serif;
-  --font-body: "Noto Sans TC", "Helvetica Neue", sans-serif;
+  --font-display: "Syne", "Noto Sans SC", sans-serif;
+  --font-body: "Noto Sans SC", "Helvetica Neue", sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
 }
 

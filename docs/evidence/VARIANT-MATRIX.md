@@ -1,19 +1,21 @@
-# 五案變體矩陣（A–E + optimize 證據）
+# 五案变体矩阵（A–E + optimize 证据）
 
 日期：2026-11-01。
 
-| 代號 | 定義 | 上架路徑 | 來源 |
+当前 A–E 页面已统一转成简体中文。A 的「无 skill」身份指转换前的生成来源；文字本地化在所有版本上统一进行，原始文件见 Git 提交 `91642f3`。
+
+| 代号 | 定义 | 上架路径 | 来源 |
 |---|---|---|---|
-| **A** | 原圖／無 skill 對照 | `…/a/`（官方 A 對齊凍結 baseline） | 官方：`public/baselines/*` 副本；原創：隔離生成 |
-| **B** | polish | `…/b/` | 由 A 複製後 `$impeccable polish` |
-| **C** | bolder | `…/c/` | **由 B 複製**後 `$impeccable bolder` |
-| **D** | distill | `…/d/` | **由 B 複製**後 `$impeccable distill` |
-| **E** | animate | `…/e/` | **由 B 複製**後 `$impeccable animate` |
-| **optimize** | 效能診斷／改善 | **不上架** | 對 B 的暫存副本執行；只寫 `docs/evidence/<key>/optimize-*` |
+| **A** | 原图／无 skill 对照 | `…/a/`（官方 A 对齐冻结 baseline） | 官方：`public/baselines/*` 副本；原创：隔离生成 |
+| **B** | polish | `…/b/` | 由 A 复制后 `$impeccable polish` |
+| **C** | bolder | `…/c/` | **由 B 复制**后 `$impeccable bolder` |
+| **D** | distill | `…/d/` | **由 B 复制**后 `$impeccable distill` |
+| **E** | animate | `…/e/` | **由 B 复制**后 `$impeccable animate` |
+| **optimize** | 效能诊断／改善 | **不上架** | 对 B 的暂存副本执行；只写 `docs/evidence/<key>/optimize-*` |
 
-C／D／E 彼此獨立，皆從同一個凍結的 B 分叉，不做 C→D 串燒。
+C／D／E 彼此独立，皆从同一个冻结的 B 分叉，不做 C→D 串烧。
 
-## 路徑
+## 路径
 
 | Case | 根 |
 |---|---|

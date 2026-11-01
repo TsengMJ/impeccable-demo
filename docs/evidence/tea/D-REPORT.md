@@ -1,4 +1,4 @@
-# 山間製茶 Version D — Impeccable distill report
+# 山间制茶 Version D — Impeccable distill report
 
 **Target:** `experiments/tea/d/` (copy of polished B, then distill)  
 **Command:** `$impeccable distill experiments/tea/d/index.html`  
@@ -19,10 +19,10 @@ Substitution note: ran as distill subagent with fixed tea brief; no interactive 
 
 ## Preserved
 
-- Brand **山間製茶**, core line「把一座山，留給一杯茶。」, both CTAs
+- Brand **山间制茶**, core line「把一座山，留给一杯茶。」, both CTAs
 - Demo disclaimer; two teas with required facts (name, 50g, flavor, origin)
-- Three steps content; brew tabs with 烏龍 95°C/150ml/60s and 紅玉 90°C/150ml/45s
-- Plans: 季付 NT$980 / 年付 NT$3,600, shipping rules, cancel rule, 預覽訂閱 modal (no payment)
+- Three steps content; brew tabs with 乌龙 95°C/150ml/60s and 红玉 90°C/150ml/45s
+- Plans: 季付 NT$980 / 年付 NT$3,600, shipping rules, cancel rule, 预览订阅 modal (no payment)
 - FAQ (保存 / 寄送 / 取消); Chinese-first Noto serif/sans world
 - Interactions in `script.js` (plan toggle, brew tabs + arrows, modal Escape/focus)
 

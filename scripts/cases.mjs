@@ -25,12 +25,12 @@ export const cases = {
   lumina: official('D01', 'Lumina', 'demos/lumina', 'docs/prompts/lumina.md'),
   'lumina-classic': official('D02', 'Lumina Classic', 'demos/lumina-classic', 'docs/prompts/lumina-classic.md'),
   wallet: brief('W01', 'AEGIS', 'experiments/wallet', 'docs/prompts/wallet.md'),
-  tea: brief('T01', '山間製茶', 'experiments/tea', 'docs/prompts/tea.md'),
-  festival: brief('F01', 'OFFGRID 離線聲場', 'experiments/festival', 'docs/prompts/festival.md'),
+  tea: brief('T01', '山间制茶', 'experiments/tea', 'docs/prompts/tea.md'),
+  festival: brief('F01', 'OFFGRID 离线声场', 'experiments/festival', 'docs/prompts/festival.md'),
 };
 
 export const variantMeta = {
-  a: { label: 'A · 原圖', command: null },
+  a: { label: 'A · 原图', command: null },
   b: { label: 'B · polish', command: 'polish' },
   c: { label: 'C · bolder', command: 'bolder' },
   d: { label: 'D · distill', command: 'distill' },
@@ -40,7 +40,7 @@ export const variantMeta = {
 export function options(args = process.argv.slice(2)) {
   const result = {};
   for (let i = 0; i < args.length; i++) {
-    if (!args[i].startsWith('--')) throw new Error(`未知參數：${args[i]}`);
+    if (!args[i].startsWith('--')) throw new Error(`未知参数：${args[i]}`);
     const key = args[i].slice(2);
     result[key] = args[i + 1] && !args[i + 1].startsWith('--') ? args[++i] : true;
   }
@@ -49,7 +49,7 @@ export function options(args = process.argv.slice(2)) {
 
 export function getCase(key) {
   const entry = cases[key];
-  if (!entry) throw new Error(`--case 必須是 ${Object.keys(cases).join(' / ')}`);
+  if (!entry) throw new Error(`--case 必须是 ${Object.keys(cases).join(' / ')}`);
   return entry;
 }
 

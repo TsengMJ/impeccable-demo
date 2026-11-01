@@ -1,4 +1,4 @@
-/* 山間製茶 — cool mountain mist palette; avoid cream + italic English serif */
+/* 山间制茶 — cool mountain mist palette; avoid cream + italic English serif */
 :root {
   --ink: #14241c;
   --ink-soft: #3a4f44;
@@ -11,8 +11,8 @@
   --tea-leaf: #5d8f6a;
   --line: rgba(20, 36, 28, 0.14);
   --focus: #1a6b4a;
-  --serif: "Noto Serif TC", "Source Han Serif TC", "Songti TC", serif;
-  --sans: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  --serif: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+  --sans: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
   --space: clamp(1.25rem, 3vw, 2.5rem);
   --max: 1120px;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
